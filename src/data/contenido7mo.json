@@ -1,0 +1,115 @@
+{
+  "grado": "7° Grado",
+  "institucion": "Escuela Rural Digital",
+  "temaGeneral": "Guardianes de la Tierra: Mitos Ancestrales y Biodiversidad Viva",
+  "areas": {
+    "espanol": {
+      "nombre": "Lengua Castellana y Literatura",
+      "slug": "espanol",
+      "icono": "📖",
+      "color": "amber",
+      "descripcion": "Explora el poder de la palabra, los mitos precolombinos y las leyendas que protegen nuestros bosques y ríos.",
+      "modulos": [
+        {
+          "id": "esp-01",
+          "titulo": "La Madremonte y el Cuidado de las Selvas",
+          "contexto": "Cuentan los abuelos campesinos que la Madremonte ruge cuando alguien tala árboles sin permiso o ensucia los manantiales de la cordillera. Se le describe vestida con musgo, hojas verdes y enredaderas, siendo la protectora suprema de la vegetación nativa.",
+          "pregunta": "¿Cuál es la función pedagógica y simbólica principal del mito de la Madremonte en las comunidades rurales?",
+          "opciones": [
+            { "id": 0, "texto": "Infundir miedo para que los niños nunca salgan a jugar al bosque." },
+            { "id": 1, "texto": "Fomentar el respeto ecológico y la protección de los recursos hídricos y bosques." },
+            { "id": 2, "texto": "Explicar el origen de los terremotos y volcanes mediante la ciencia moderna." },
+            { "id": 3, "texto": "Promover la venta de madera talada para mejorar la economía de la vereda." }
+          ],
+          "respuestaCorrecta": 1,
+          "explicacion": "¡Excelente deducción! Los mitos tradicionales campesinos son lecciones vivas de educación ambiental; la Madremonte simboliza el equilibrio que los seres humanos debemos mantener con la naturaleza.",
+          "puntos": 100
+        },
+        {
+          "id": "esp-02",
+          "titulo": "El Mohán: Guardián de los Grandes Ríos",
+          "contexto": "El Mohán es una figura de la tradición oral ribereña. Fuma tabaco en piedras solitarias del río Magdalena y castiga a los pescadores codiciosos que utilizan redes destructivas o capturan peces demasiado pequeños.",
+          "pregunta": "Identifica la figura literaria presente en la frase: 'El río susurraba enfurecido advertencias a los pescadores'.",
+          "opciones": [
+            { "id": 0, "texto": "Personificación o Prosopopeya (dar cualidades humanas al río)." },
+            { "id": 1, "texto": "Hipérbaton (alterar el orden lógico de las palabras)." },
+            { "id": 2, "texto": "Símil directo mediante comparación con la palabra 'como'." },
+            { "id": 3, "texto": "Onomatopeya sonora de una caída." }
+          ],
+          "respuestaCorrecta": 0,
+          "explicacion": "¡Correcto! La personificación otorga vida y sentimientos al río ('susurrar', 'enfurecido'), conectando la sensibilidad poética con la vida de los ecosistemas fluviales.",
+          "puntos": 100
+        },
+        {
+          "id": "esp-03",
+          "titulo": "Cosmogonía Indígena: El Origen del Maíz",
+          "contexto": "En la cosmovisión de los pueblos originarios, el maíz no era una simple cosecha mercantil, sino una deidad dadora de vida nacida del corazón de la Madre Tierra para nutrir el espíritu de la comunidad.",
+          "pregunta": "¿Qué diferencia sustancial existe entre un mito cosmogónico y una leyenda popular?",
+          "opciones": [
+            { "id": 0, "texto": "Los mitos no tienen personajes, mientras que las leyendas siempre tienen animales." },
+            { "id": 1, "texto": "El mito explica el origen sagrado del universo o la vida; la leyenda relata hechos locales con elementos fantásticos." },
+            { "id": 2, "texto": "Las leyendas se escriben en verso y los mitos en tablas de arcilla obligatoriamente." },
+            { "id": 3, "texto": "No existe ninguna diferencia; son términos exactamente iguales en la literatura." }
+          ],
+          "respuestaCorrecta": 1,
+          "explicacion": "¡Brillante! El mito tiene carácter fundacional y sagrado (creación del mundo, de los alimentos sagrados), mientras que la leyenda parte de sucesos o testimonios históricos locales que se van transformando con la tradición oral.",
+          "puntos": 100
+        }
+      ]
+    },
+    "matematicas": {
+      "nombre": "Pensamiento Matemático y Lógico",
+      "slug": "matematicas",
+      "icono": "📐",
+      "color": "emerald",
+      "descripcion": "Resuelve desafíos cotidianos de proporciones, porcentajes y estadísticas aplicados a la protección de nuestra fauna y flora silvestre.",
+      "modulos": [
+        {
+          "id": "mat-01",
+          "titulo": "Reforestación de la Cuenca Alta del Río",
+          "contexto": "En la vereda La Esperanza se inició un plan de siembra comunitaria para proteger el páramo. De un total de 400 árboles nativos que se van a plantar, el 45% son Frailejones y el 30% son Alisos de montaña. El resto son Encenillos.",
+          "pregunta": "¿Cuántos Frailejones en total sembrarán los estudiantes y campesinos?",
+          "opciones": [
+            { "id": 0, "texto": "150 Frailejones" },
+            { "id": 1, "texto": "180 Frailejones" },
+            { "id": 2, "texto": "220 Frailejones" },
+            { "id": 3, "texto": "90 Frailejones" }
+          ],
+          "respuestaCorrecta": 1,
+          "explicacion": "¡Muy bien calculado! Para hallar el 45% de 400, multiplicas (400 × 45) / 100 = 18.000 / 100 = 180 Frailejones. ¡Cada frailejón retiene miles de litros de agua!",
+          "puntos": 100
+        },
+        {
+          "id": "mat-02",
+          "titulo": "Monitoreo de Aves y Biodiversidad Rural",
+          "contexto": "En una salida de campo para avistar aves endémicas, un grupo de séptimo grado registró 12 Colibríes por cada 4 Tucanes de montaña avistados en el bosque de niebla.",
+          "pregunta": "¿Cuál es la razón simplificada entre la cantidad de Colibríes y Tucanes de montaña?",
+          "opciones": [
+            { "id": 0, "texto": "1 a 3 (Por cada colibrí hay 3 tucanes)" },
+            { "id": 1, "texto": "3 a 1 (Por cada 3 colibríes hay 1 tucán)" },
+            { "id": 2, "texto": "4 a 12 (No se puede simplificar)" },
+            { "id": 3, "texto": "2 a 2 (Tienen proporciones idénticas)" }
+          ],
+          "respuestaCorrecta": 1,
+          "explicacion": "¡Exacto! Dividimos ambos términos entre 4: 12 / 4 = 3, y 4 / 4 = 1. La razón matemática es 3:1, lo que evidencia la alta densidad de polinizadores en el dosel.",
+          "puntos": 100
+        },
+        {
+          "id": "mat-03",
+          "titulo": "Fracciones en la Huerta Agroecológica",
+          "contexto": "La huerta escolar mide 600 metros cuadrados. Se destina 2/5 del terreno para plantas medicinales tradicionales y 1/3 para cultivo de hortalizas sin pesticidas químicos. El resto queda como zona de compostaje y flores polinizadoras.",
+          "pregunta": "¿Qué fracción total del terreno ocupan juntas las plantas medicinales y las hortalizas?",
+          "opciones": [
+            { "id": 0, "texto": "3/8 del terreno total" },
+            { "id": 1, "texto": "11/15 del terreno total" },
+            { "id": 2, "texto": "3/15 del terreno total" },
+            { "id": 3, "texto": "7/10 del terreno total" }
+          ],
+          "respuestaCorrecta": 1,
+          "explicacion": "¡Excelente dominio de fracciones heterogéneas! 2/5 + 1/3 = (6 + 5) / 15 = 11/15. Esto equivale a 440 m² dedicados a la soberanía alimentaria.",
+          "puntos": 100
+        }
+      ]
+    }
+  }
+}

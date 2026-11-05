@@ -7,23 +7,23 @@ export default function CuentacuentosIlustrado({ titulo = "El Relato del Campo",
     {
       titulo: 'Acto 1: El Amanecer en la Vereda',
       texto: 'El sol doraba la cúspide de las montañas andinas y las gotas de rocío brillaban sobre las hojas del cafetal. En la escuela de la colina, los niños llegaban saludando al río cantarino con cantos de alegría.',
-      icono: '🌄',
+      icono: '',
       fondo: 'from-amber-400 via-orange-300 to-yellow-200',
-      clima: '☀️ Mañana luminosa y fresca'
+      clima: ' Mañana luminosa y fresca'
     },
     {
       titulo: 'Acto 2: El Misterio del Bosque de Niebla',
       texto: 'De repente, un susurro entre los frailejones alertó a los caminantes: la Madremonte había dejado una huella luminosa de musgo y agua clara en la piedra solitaria, pidiendo cuidar los manantiales de la cordillera.',
-      icono: '🌿',
+      icono: '',
       fondo: 'from-emerald-500 via-teal-400 to-green-300',
-      clima: '🌫️ Niebla mágica y misteriosa'
+      clima: ' Niebla mágica y misteriosa'
     },
     {
       titulo: 'Acto 3: El Pacto con la Madre Tierra',
       texto: 'Toda la comunidad veredal se unió sembrando alisos y sauces en la cuenca del agua. La selva floreció con orquídeas y las aves volvieron a cantar en paz, recordando que cuidar la naturaleza es cuidar la vida.',
-      icono: '🌸',
+      icono: '',
       fondo: 'from-sky-500 via-blue-400 to-indigo-300',
-      clima: '🌈 Paz y florecimiento comunitario'
+      clima: ' Paz y florecimiento comunitario'
     }
   ];
 
@@ -57,7 +57,7 @@ export default function CuentacuentosIlustrado({ titulo = "El Relato del Campo",
     <div className="bg-white rounded-4xl p-6 sm:p-9 shadow-2xl border-4 border-amber-300 space-y-6">
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border-b-2 border-slate-100 pb-4">
         <div className="flex items-center gap-3">
-          <span className="text-4xl">🎬</span>
+          
           <div>
             <span className="text-xs font-black text-amber-600 uppercase tracking-widest bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
               Modo Teatro Visual para el Salón
@@ -78,7 +78,7 @@ export default function CuentacuentosIlustrado({ titulo = "El Relato del Campo",
                 : 'bg-amber-100 text-amber-900 border border-amber-300 hover:bg-amber-200'
             }`}
           >
-            <span>{narrando ? '⏹️ Pausar Voz' : '🔊 Narrar Escena'}</span>
+            <span>{narrando ? ' Pausar Voz' : ' Narrar Escena'}</span>
           </button>
 
           <span className="text-xs font-black bg-slate-100 text-slate-700 px-3 py-2 rounded-xl border border-slate-300">
@@ -122,7 +122,7 @@ export default function CuentacuentosIlustrado({ titulo = "El Relato del Campo",
               : 'bg-slate-100 text-slate-400 border-slate-200 cursor-not-allowed'
           }`}
         >
-          <span>⬅️</span> Escena Anterior
+          <span>⬅</span> Escena Anterior
         </button>
 
         {/* Indicadores de bolitas */}
@@ -147,7 +147,7 @@ export default function CuentacuentosIlustrado({ titulo = "El Relato del Campo",
               : 'bg-slate-100 text-slate-400 border-slate-200 cursor-not-allowed'
           }`}
         >
-          Siguiente Escena <span>➔</span>
+          Siguiente Escena 
         </button>
       </div>
     </div>

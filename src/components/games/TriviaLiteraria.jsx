@@ -134,7 +134,7 @@ const BANCO_TRIVIA = [
     pregunta: '¿Qué palabra contiene un prefijo que significa "hacer lo contrario o quitar"?',
     opciones: ['Deshacer', 'Submarino', 'Prehistoria', 'Rehacer'],
     correcta: 0,
-    pista: 'El prefijo "des-" indica negación o inversión de la acción (hacer ➔ deshacer).',
+    pista: 'El prefijo "des-" indica negación o inversión de la acción (hacer  deshacer).',
     explicacion: 'El prefijo "des-" aporta sentido de oposición, privación o inversión al lexema base.'
   },
   {
@@ -440,10 +440,10 @@ export default function TriviaLiteraria({ gradoNumero = 1 }) {
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-indigo-800/80 pb-5">
         <div>
           <div className="inline-flex items-center gap-2 bg-yellow-400 text-slate-950 font-black text-xs px-3.5 py-1 rounded-full uppercase tracking-wider mb-1">
-            <span>🏆</span> Gran Concurso Televisivo de Saber y Literatura
+             Gran Concurso Televisivo de Saber y Literatura
           </div>
           <h3 className="text-2xl sm:text-4xl font-black text-white mt-1 flex items-center gap-2">
-            <span>📺</span> Trivia Literaria
+             Trivia Literaria
           </h3>
           <p className="text-xs sm:text-sm text-amber-200">
             Pregunta {indicePregunta + 1} de {preguntasNivel.length} • Nivel escolar seleccionado
@@ -495,7 +495,7 @@ export default function TriviaLiteraria({ gradoNumero = 1 }) {
               Puntuación:
             </span>
             <span className="text-2xl sm:text-3xl font-black text-yellow-400">
-              ⭐ {puntaje}
+               {puntaje}
             </span>
           </div>
 
@@ -504,7 +504,7 @@ export default function TriviaLiteraria({ gradoNumero = 1 }) {
               Racha:
             </span>
             <span className="text-xl font-black text-orange-400">
-              🔥 x{racha}
+               x{racha}
             </span>
           </div>
         </div>
@@ -534,7 +534,7 @@ export default function TriviaLiteraria({ gradoNumero = 1 }) {
                 : 'bg-slate-900 text-slate-600 border-slate-800 opacity-40 cursor-not-allowed'
             }`}
           >
-            💡 Pista
+             Pista
           </button>
 
           <button
@@ -547,7 +547,7 @@ export default function TriviaLiteraria({ gradoNumero = 1 }) {
                 : 'bg-slate-900 text-slate-600 border-slate-800 opacity-40 cursor-not-allowed'
             }`}
           >
-            +15s ⏳
+            +15s 
           </button>
         </div>
       </div>
@@ -555,19 +555,19 @@ export default function TriviaLiteraria({ gradoNumero = 1 }) {
       {/* Pantalla Final o Pregunta Activa */}
       {juegoTerminado ? (
         <div className="bg-slate-900/95 border-4 border-yellow-400 rounded-3xl p-8 text-center space-y-4 animate-fade-in max-w-lg mx-auto shadow-2xl">
-          <span className="text-7xl block animate-bounce">🏆🥇</span>
+          
           <h4 className="text-3xl font-black text-yellow-400">¡GRAN CAMPEÓN DE LA TRIVIA!</h4>
           <p className="text-slate-200 text-base font-medium">
             Has respondido con maestría el banco curricular de preguntas.
           </p>
           <div className="text-4xl font-black text-emerald-400">
-            {puntaje} PUNTOS DE ORO ⭐
+            {puntaje} PUNTOS DE ORO 
           </div>
           <button
             onClick={reiniciarTrivia}
             className="px-8 py-3.5 bg-gradient-to-r from-yellow-400 to-amber-500 text-slate-950 font-black text-base rounded-2xl shadow-xl transition-all hover:scale-105 active:scale-95 cursor-pointer"
           >
-            🔄 Jugar Nueva Ronda
+             Jugar Nueva Ronda
           </button>
         </div>
       ) : (
@@ -582,7 +582,7 @@ export default function TriviaLiteraria({ gradoNumero = 1 }) {
                 onClick={escucharPregunta}
                 className="px-3.5 py-1.5 bg-indigo-900/80 hover:bg-indigo-800 text-indigo-200 border border-indigo-700 rounded-full text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer active:scale-95"
               >
-                <span>🔊</span> Leer en Voz Alta
+                 Leer en Voz Alta
               </button>
             </div>
 
@@ -592,7 +592,7 @@ export default function TriviaLiteraria({ gradoNumero = 1 }) {
 
             {mostrarPista && (
               <div className="p-3 bg-amber-400/10 border border-yellow-400/40 rounded-2xl text-xs sm:text-sm text-yellow-200 animate-slide-down">
-                <strong>💡 Pista Pedagógica:</strong> {preguntaActual.pista}
+                <strong> Pista Pedagógica:</strong> {preguntaActual.pista}
               </div>
             )}
           </div>
@@ -650,7 +650,7 @@ export default function TriviaLiteraria({ gradoNumero = 1 }) {
             >
               <div>
                 <h5 className="font-black text-base flex items-center gap-2">
-                  <span>{respuestaEstado === 'correcta' ? '🎉 ¡Respuesta Correcta!' : '⚠️ ¡Respuesta Incorrecta!'}</span>
+                  <span>{respuestaEstado === 'correcta' ? ' ¡Respuesta Correcta!' : ' ¡Respuesta Incorrecta!'}</span>
                 </h5>
                 <p className="text-xs sm:text-sm mt-1 font-semibold leading-relaxed">
                   {preguntaActual.explicacion}
@@ -661,7 +661,7 @@ export default function TriviaLiteraria({ gradoNumero = 1 }) {
                 onClick={siguientePregunta}
                 className="px-6 py-3 bg-yellow-400 hover:bg-yellow-300 text-slate-950 font-black text-sm rounded-xl shadow-md transition-all active:scale-95 cursor-pointer shrink-0"
               >
-                Siguiente Pregunta ➔
+                Siguiente Pregunta 
               </button>
             </div>
           )}

@@ -49,7 +49,7 @@ export default function SelectorEstudiante() {
     <div className="bg-white rounded-4xl p-6 sm:p-9 shadow-xl border-4 border-indigo-300 space-y-6">
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border-b-2 border-slate-100 pb-4">
         <div className="flex items-center gap-3">
-          <span className="text-4xl">🎲</span>
+          
           <div>
             <span className="text-xs font-black text-indigo-600 uppercase tracking-widest bg-indigo-50 px-3 py-1 rounded-full border border-indigo-200">
               Herramienta de Participación en Clase
@@ -65,7 +65,7 @@ export default function SelectorEstudiante() {
           disabled={animando || estudiantes.length === 0}
           className="w-full sm:w-auto px-6 py-3.5 bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 text-white font-black text-base rounded-2xl shadow-lg border-b-4 border-indigo-800 active:border-b-0 active:translate-y-1 transition-all cursor-pointer"
         >
-          {animando ? '🎲 Sorteando...' : '🎯 ¡Sortear Estudiante!'}
+          {animando ? ' Sorteando...' : ' ¡Sortear Estudiante!'}
         </button>
       </div>
 
@@ -77,7 +77,7 @@ export default function SelectorEstudiante() {
               ¡El Explorador Elegido es:!
             </span>
             <h4 className="text-4xl sm:text-5xl font-black text-indigo-950 animate-bounce">
-              🌟 {seleccionado} 🌟
+               {seleccionado} 
             </h4>
           </div>
         ) : (

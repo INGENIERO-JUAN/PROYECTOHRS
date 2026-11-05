@@ -10,29 +10,29 @@ export default function TallerNarrativo() {
   const [historiaGenerada, setHistoriaGenerada] = useState(false);
 
   const opcionesPersonajes = [
-    { label: '👦 Un valiente niño campesino', val: 'Un valiente niño campesino llamado Mateo' },
-    { label: '🐆 Un jaguar dorado y sabio', val: 'Un majestuoso jaguar dorado y sabio guardián del monte' },
-    { label: '🌿 La Madremonte protectora', val: 'La Madremonte vestida de enredaderas y musgo verde' },
-    { label: '🛶 Una anciana pescadora del río', val: 'Doña Rosa, una sabia anciana pescadora del río grande' }
+    { label: ' Un valiente niño campesino', val: 'Un valiente niño campesino llamado Mateo' },
+    { label: ' Un jaguar dorado y sabio', val: 'Un majestuoso jaguar dorado y sabio guardián del monte' },
+    { label: ' La Madremonte protectora', val: 'La Madremonte vestida de enredaderas y musgo verde' },
+    { label: ' Una anciana pescadora del río', val: 'Doña Rosa, una sabia anciana pescadora del río grande' }
   ];
 
   const opcionesLugares = [
-    { label: '🏔️ El páramo de frailejones', val: 'las alturas del páramo donde nacen las nubes y el agua' },
-    { label: '🌳 Un bosque de niebla y arrayanes', val: 'un espeso bosque de niebla lleno de orquídeas y arrayanes' },
-    { label: '🌊 Las orillas del río cristalino', val: 'la orilla de un río cristalino que bajaba cantando de la sierra' },
-    { label: '🛖 El trapiche de la vereda', val: 'un viejo trapiche campesino donde el aire olía a caña dulce' }
+    { label: '️ El páramo de frailejones', val: 'las alturas del páramo donde nacen las nubes y el agua' },
+    { label: ' Un bosque de niebla y arrayanes', val: 'un espeso bosque de niebla lleno de orquídeas y arrayanes' },
+    { label: ' Las orillas del río cristalino', val: 'la orilla de un río cristalino que bajaba cantando de la sierra' },
+    { label: ' El trapiche de la vereda', val: 'un viejo trapiche campesino donde el aire olía a caña dulce' }
   ];
 
   const opcionesConflictos = [
-    { label: '💧 Una gran sequía amenazaba la huerta', val: 'una extraña sequía que marchitaba las matas de maíz' },
-    { label: '📜 Un mapa misterioso escondido en un árbol', val: 'un antiguo pergamino con acertijos sobre tesoros de la naturaleza' },
-    { label: '🦉 El canto de un búho alertó un peligro', val: 'el silencio repentino de los animales que advertía la llegada de taladores' }
+    { label: ' Una gran sequía amenazaba la huerta', val: 'una extraña sequía que marchitaba las matas de maíz' },
+    { label: ' Un mapa misterioso escondido en un árbol', val: 'un antiguo pergamino con acertijos sobre tesoros de la naturaleza' },
+    { label: ' El canto de un búho alertó un peligro', val: 'el silencio repentino de los animales que advertía la llegada de taladores' }
   ];
 
   const opcionesSoluciones = [
-    { label: '🌱 Sembrando árboles con toda la comunidad', val: 'reuniendo a todos los vecinos de la vereda para plantar cientos de árboles nativos' },
-    { label: '🎶 Cantando una copla ancestral al manantial', val: 'entonando una vieja copla campesina que devolvió la alegría a las aguas' },
-    { label: '🤝 Compartiendo semillas con humildad', val: 'demostrando que la generosidad y el cuidado mutuo vencen cualquier dificultad' }
+    { label: ' Sembrando árboles con toda la comunidad', val: 'reuniendo a todos los vecinos de la vereda para plantar cientos de árboles nativos' },
+    { label: ' Cantando una copla ancestral al manantial', val: 'entonando una vieja copla campesina que devolvió la alegría a las aguas' },
+    { label: ' Compartiendo semillas con humildad', val: 'demostrando que la generosidad y el cuidado mutuo vencen cualquier dificultad' }
   ];
 
   const crearHistoria = () => {
@@ -45,7 +45,7 @@ export default function TallerNarrativo() {
     <div className="bg-white rounded-4xl p-6 sm:p-9 shadow-xl border-4 border-amber-300 space-y-6">
       <div className="flex items-center gap-4 border-b-2 border-slate-100 pb-4">
         <div className="w-14 h-14 bg-amber-100 rounded-2xl flex items-center justify-center text-3xl border border-amber-300">
-          ✍️
+          ️
         </div>
         <div>
           <span className="text-xs font-black text-amber-600 uppercase tracking-widest bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
@@ -128,7 +128,7 @@ export default function TallerNarrativo() {
         onClick={crearHistoria}
         className="w-full py-4 bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-600 hover:to-orange-600 text-white font-black text-lg rounded-2xl shadow-lg border-b-4 border-amber-700 active:border-b-0 active:translate-y-1 transition-all flex items-center justify-center gap-2 cursor-pointer"
       >
-        <span>✨</span> ¡Crear Cuento en Pantalla!
+        <span></span> ¡Crear Cuento en Pantalla!
       </button>
 
       {/* Relato Generado en Vivo */}
@@ -142,7 +142,7 @@ export default function TallerNarrativo() {
               onClick={() => window.print()}
               className="text-xs font-black bg-white hover:bg-slate-100 text-slate-700 px-3 py-1.5 rounded-xl border border-slate-300 shadow-sm"
             >
-              🖨️ Imprimir Ficha
+              ️ Imprimir Ficha
             </button>
           </div>
 

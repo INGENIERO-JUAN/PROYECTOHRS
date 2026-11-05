@@ -6,7 +6,7 @@
     "espanol": {
       "nombre": "Lengua Castellana y Literatura",
       "slug": "espanol",
-      "icono": "📖",
+      "icono": "",
       "color": "amber",
       "descripcion": "Explora el poder de la palabra, los mitos precolombinos y las leyendas que protegen nuestros bosques y ríos.",
       "modulos": [
@@ -60,7 +60,7 @@
     "matematicas": {
       "nombre": "Pensamiento Matemático y Lógico",
       "slug": "matematicas",
-      "icono": "📐",
+      "icono": "",
       "color": "emerald",
       "descripcion": "Resuelve desafíos cotidianos de proporciones, porcentajes y estadísticas aplicados a la protección de nuestra fauna y flora silvestre.",
       "modulos": [

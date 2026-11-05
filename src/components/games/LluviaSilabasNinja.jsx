@@ -14,7 +14,7 @@ const MISIONES_NINJA = [
     validos: ['MA', 'ME', 'MI', 'MO', 'MU'],
     falsos: ['PA', 'SO', 'LE', 'TI', 'NU', 'CA', 'RO'],
     colorBurbuja: '#f59e0b',
-    icono: '🍞'
+    icono: ''
   },
   {
     id: 'p-silabas',
@@ -25,7 +25,7 @@ const MISIONES_NINJA = [
     validos: ['PA', 'PE', 'PI', 'PO', 'PU'],
     falsos: ['MA', 'TE', 'LU', 'SA', 'DO', 'BE', 'RO'],
     colorBurbuja: '#3b82f6',
-    icono: '🦆'
+    icono: ''
   },
   {
     id: 'rimas-ninja',
@@ -36,7 +36,7 @@ const MISIONES_NINJA = [
     validos: ['BOTÓN', 'CANCIÓN', 'CORAZÓN', 'BALÓN', 'LIMÓN', 'JABÓN'],
     falsos: ['CASA', 'ÁRBOL', 'PERRO', 'MESA', 'RÍO', 'SOL', 'FLOR'],
     colorBurbuja: '#ec4899',
-    icono: '🎵'
+    icono: ''
   },
   {
     id: 'verbos-ninja',
@@ -47,7 +47,7 @@ const MISIONES_NINJA = [
     validos: ['CANTAR', 'CORRER', 'SALTAR', 'ESCRIBIR', 'BAILAR', 'LEER', 'NADAR', 'DIBUJAR'],
     falsos: ['AZUL', 'CASA', 'GRANDE', 'MESA', 'ALEGRE', 'VERDE', 'SOL', 'RÍO'],
     colorBurbuja: '#10b981',
-    icono: '⚡'
+    icono: ''
   },
   {
     id: 'esdrujulas-ninja',
@@ -58,7 +58,7 @@ const MISIONES_NINJA = [
     validos: ['MÚSICA', 'PÁJARO', 'MÉTRICA', 'BRÚJULA', 'SÍLABA', 'LÁMPARA', 'CÁNTARO', 'CRÓNICA'],
     falsos: ['CAFÉ', 'RATÓN', 'ÁRBOL', 'CÁRCEL', 'RELOJ', 'PAPEL', 'PARED', 'CANCIÓN'],
     colorBurbuja: '#8b5cf6',
-    icono: '⚔️'
+    icono: ''
   },
   {
     id: 'figuras-ninja',
@@ -69,7 +69,7 @@ const MISIONES_NINJA = [
     validos: ['METÁFORA', 'SÍMIL', 'HIPÉRBOLE', 'ANÁFORA', 'OXÍMORON', 'IRONÍA'],
     falsos: ['SUJETO', 'PÁRRAFO', 'CÓDIGO', 'CANAL', 'VERBO', 'TILDE', 'SÍLABA', 'COMA'],
     colorBurbuja: '#f43f5e',
-    icono: '🎭'
+    icono: ''
   }
 ];
 
@@ -312,7 +312,7 @@ export default function LluviaSilabasNinja({ gradoNumero = 1 }) {
               // Texto flotante
               setFlotantes((prev) => [
                 ...prev.slice(-3),
-                { id: Math.random(), texto: `+${puntosBase + bonus}! 🔥x${nuevoCombo}`, x: it.x, y: it.y }
+                { id: Math.random(), texto: `+${puntosBase + bonus}! x${nuevoCombo}`, x: it.x, y: it.y }
               ]);
 
               return nuevoCombo;
@@ -347,13 +347,13 @@ export default function LluviaSilabasNinja({ gradoNumero = 1 }) {
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-indigo-900/60 pb-5">
         <div>
           <div className="inline-flex items-center gap-2 bg-amber-400 text-slate-950 font-black text-xs px-3.5 py-1 rounded-full uppercase tracking-wider mb-1">
-            <span>⚡</span> Acción Rápida con Combos y Puntos
+             Acción Rápida con Combos y Puntos
           </div>
           <h3 className="text-2xl sm:text-4xl font-black text-white mt-1 flex items-center gap-2">
-            <span>🥷</span> Lluvia de Sílabas Ninja
+             Lluvia de Sílabas Ninja
           </h3>
           <p className="text-xs sm:text-sm text-amber-300 font-bold mt-0.5">
-            🎯 {mision.objetivo}
+             {mision.objetivo}
           </p>
         </div>
 
@@ -398,20 +398,20 @@ export default function LluviaSilabasNinja({ gradoNumero = 1 }) {
               Puntos Ninja:
             </span>
             <span className="text-2xl sm:text-3xl font-black text-amber-400">
-              ⭐ {puntos}
+               {puntos}
             </span>
           </div>
 
           {combo > 1 && (
             <div className="bg-orange-500 text-white font-black text-xs sm:text-sm px-3 py-1.5 rounded-xl animate-bounce shadow-md flex items-center gap-1">
-              <span>🔥</span>
+              
               <span>COMBO x{combo}!</span>
             </div>
           )}
 
           {feverMode && (
             <div className="bg-gradient-to-r from-red-600 to-amber-500 text-white font-black text-xs uppercase px-3 py-1.5 rounded-xl animate-pulse shadow-lg border border-yellow-200">
-              ⚡ ¡MODO FIEBRE!
+               ¡MODO FIEBRE!
             </div>
           )}
         </div>
@@ -420,7 +420,7 @@ export default function LluviaSilabasNinja({ gradoNumero = 1 }) {
           onClick={() => voiceReader.speak(mision.instruccionVoz)}
           className="px-4 py-2 bg-indigo-900/80 hover:bg-indigo-800 text-indigo-200 rounded-xl text-xs font-bold border border-indigo-700 cursor-pointer flex items-center gap-1.5 transition-all"
         >
-          <span>🔊</span> Recordar Misión
+           Recordar Misión
         </button>
       </div>
 
@@ -429,7 +429,7 @@ export default function LluviaSilabasNinja({ gradoNumero = 1 }) {
         {/* Pantalla Inicial antes de jugar */}
         {!juegoActivo && !partidaFinalizada && (
           <div className="text-center p-6 space-y-4 z-10 animate-fade-in max-w-md">
-            <span className="text-6xl block animate-bounce">🥷✨</span>
+            
             <h4 className="text-2xl sm:text-3xl font-black text-white">
               ¿Listo para cortar con tus dedos a toda velocidad?
             </h4>
@@ -440,7 +440,7 @@ export default function LluviaSilabasNinja({ gradoNumero = 1 }) {
               onClick={iniciarJuego}
               className="px-8 py-4 bg-gradient-to-r from-amber-400 via-orange-500 to-amber-500 hover:from-amber-500 hover:to-orange-600 text-slate-950 font-black text-lg rounded-2xl shadow-xl border-b-4 border-orange-800 active:border-b-0 active:translate-y-1 transition-all cursor-pointer"
             >
-              ▶️ ¡INICIAR DESAFÍO NINJA!
+              ▶ ¡INICIAR DESAFÍO NINJA!
             </button>
           </div>
         )}
@@ -448,7 +448,7 @@ export default function LluviaSilabasNinja({ gradoNumero = 1 }) {
         {/* Pantalla Final de Puntuación */}
         {partidaFinalizada && (
           <div className="text-center p-6 space-y-4 z-10 animate-fade-in max-w-md bg-slate-900/90 rounded-3xl border-3 border-amber-400 p-8 shadow-2xl">
-            <span className="text-6xl block animate-bounce">🏆</span>
+            
             <h4 className="text-3xl font-black text-amber-400">
               ¡PARTIDA NINJA COMPLETADA!
             </h4>
@@ -456,13 +456,13 @@ export default function LluviaSilabasNinja({ gradoNumero = 1 }) {
               Cosechaste una puntuación impresionante:
             </p>
             <div className="text-4xl font-black text-emerald-400">
-              {puntos} Puntos ⭐
+              {puntos} Puntos 
             </div>
             <button
               onClick={iniciarJuego}
               className="px-8 py-3.5 bg-gradient-to-r from-amber-400 to-orange-500 text-slate-950 font-black text-base rounded-2xl shadow-lg transition-transform active:scale-95 cursor-pointer"
             >
-              🔄 Jugar de Nuevo
+               Jugar de Nuevo
             </button>
           </div>
         )}

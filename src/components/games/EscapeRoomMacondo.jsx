@@ -8,7 +8,7 @@ const SALAS_ESCAPE = [
   {
     id: 1,
     nombre: 'Sala 1: El Laboratorio de Melquíades',
-    icono: '📜',
+    icono: '',
     historia: 'Has entrado al cuarto secreto del sabio gitano Melquíades. Los frascos de mercurio hierven solos y hay pergaminos flotando. Para abrir el candado de la puerta, debes descifrar el concepto cumbre del sabio que trajo los imanes y el hielo a Macondo.',
     enigma: '¿Cuál es el concepto clave de la literatura hispanoamericana que fusiona la realidad cotidiana con sucesos fantásticos tratados con total naturalidad?',
     opciones: [
@@ -17,12 +17,12 @@ const SALAS_ESCAPE = [
       { texto: 'Romanticismo Trágico', correcta: false, explicacion: 'El romanticismo exalta la nostalgia sentimental, como en María de Jorge Isaacs.' },
       { texto: 'Crónica Periodística Pura', correcta: false, explicacion: 'La crónica relata hechos reales sin elementos sobrenaturales.' }
     ],
-    objetoDesbloqueado: '🔑 La Llave de Hielo de Aureliano'
+    objetoDesbloqueado: ' La Llave de Hielo de Aureliano'
   },
   {
     id: 2,
     nombre: 'Sala 2: La Peste del Olvido y del Insomnio',
-    icono: '🏷️',
+    icono: '',
     historia: 'Una extraña peste ha caído sobre el pueblo: los habitantes no pueden dormir y han empezado a olvidar el nombre y la función de las cosas. Aureliano Buendía cuelga letreros para recordar.',
     enigma: 'Ayuda a Aureliano a etiquetar la figura retórica correcta: En la frase "Llovió durante cuatro años, once meses y dos días", ¿qué figura de exageración deliberada y descomunal se está empleando?',
     opciones: [
@@ -31,12 +31,12 @@ const SALAS_ESCAPE = [
       { texto: 'Aliteración', correcta: false, explicacion: 'La aliteración es la repetición de sonidos consonánticos.' },
       { texto: 'Metonimia', correcta: false, explicacion: 'La metonimia designa una cosa con el nombre de otra por relación de causa o procedencia.' }
     ],
-    objetoDesbloqueado: '🏷️ El Rótulo de la Memoria'
+    objetoDesbloqueado: ' El Rótulo de la Memoria'
   },
   {
     id: 3,
     nombre: 'Sala 3: El Baúl de las Mariposas Amarillas',
-    icono: '🦋',
+    icono: '',
     historia: 'El aire se llena de mariposas doradas que anuncian la llegada de Mauricio Babilonia. Un baúl colonial de madera tallada bloquea la salida hacia el río de piedras blancas pulidas.',
     enigma: 'Identifica el OXÍMORON que desbloquea la cerradura del baúl (unión de dos términos contradictorios en una sola expresión):',
     opciones: [
@@ -45,12 +45,12 @@ const SALAS_ESCAPE = [
       { texto: 'El viento silbaba en la colina', correcta: false, explicacion: 'Eso es una personificación o prosopopeya.' },
       { texto: 'Macondo era una aldea de veinte casas', correcta: false, explicacion: 'Eso es una descripción literal.' }
     ],
-    objetoDesbloqueado: '🦋 Amuleto de las Mariposas'
+    objetoDesbloqueado: ' Amuleto de las Mariposas'
   },
   {
     id: 4,
     nombre: 'Sala 4: La Ciénaga y el Mito Ancestral',
-    icono: '🌿',
+    icono: '',
     historia: 'El suelo se transforma en ciénaga y manglares milenarios. Los espíritus de los ancianos indígenas cantan una leyenda sobre el origen de la luz y de las leyes de la selva amazónica colombiana.',
     enigma: '¿Cuál es el gran relato épico y mito sagrado indígena originario del río Vaupés y la Amazonía colombiana?',
     opciones: [
@@ -59,12 +59,12 @@ const SALAS_ESCAPE = [
       { texto: 'El Mío Cid Campeador', correcta: false, explicacion: 'El Cantar de Mío Cid es un poema épico medieval español.' },
       { texto: 'Las Mil y Una Noches', correcta: false, explicacion: 'Pertenece a la tradición literaria de Oriente Medio.' }
     ],
-    objetoDesbloqueado: '🪶 La Pluma Chamánica de Yuruparí'
+    objetoDesbloqueado: ' La Pluma Chamánica de Yuruparí'
   },
   {
     id: 5,
     nombre: 'Sala 5: La Biblioteca Virreinal de Santafé',
-    icono: '📚',
+    icono: '',
     historia: 'Las paredes se cubren de anaqueles coloniales con manuscritos en tinta de nuez y candelabros de plata. Un escribano del siglo XVII te desafía a reconocer la obra cumbre de la Colonia en Colombia.',
     enigma: '¿Qué célebre crónica colonial de 1636, escrita por Juan Rodríguez Freyle, narra la conquista y los sucesos curiosos de Santafé de Bogotá?',
     opciones: [
@@ -73,37 +73,37 @@ const SALAS_ESCAPE = [
       { texto: 'La Vorágine', correcta: false, explicacion: 'José Eustasio Rivera publicó en 1924 sobre el caucho.' },
       { texto: 'Don Quijote de la Mancha', correcta: false, explicacion: 'Cervantes escribió su novela en España.' }
     ],
-    objetoDesbloqueado: '📜 El Códice de Santafé de 1636'
+    objetoDesbloqueado: ' El Códice de Santafé de 1636'
   },
   {
     id: 6,
     nombre: 'Sala 6: El Viento que Todo lo Arrastra',
-    icono: '🌪️',
+    icono: '',
     historia: 'El tiempo se pliega sobre sí mismo. Para escapar de Macondo antes de que el huracán bíblico arrastre el pueblo de la faz de la tierra, debes ordenar las cuatro grandes épocas de las letras colombianas.',
     enigma: '¿Cuál es la secuencia cronológica correcta de la literatura en Colombia y América Latina?',
     opciones: [
       {
-        texto: '1. Indígena Precolombina ➔ 2. Conquista y Colonia ➔ 3. Romanticismo e Independencia ➔ 4. Boom Latinoamericano',
+        texto: '1. Indígena Precolombina  2. Conquista y Colonia  3. Romanticismo e Independencia  4. Boom Latinoamericano',
         correcta: true,
         explicacion: '¡Extraordinario! Mitos ancestrales (Yuruparí), Crónicas de Indias (El Carnero), Romanticismo del siglo XIX (María), y el Boom del siglo XX.'
       },
       {
-        texto: '1. Boom Latinoamericano ➔ 2. Conquista ➔ 3. Precolombino ➔ 4. Modernismo',
+        texto: '1. Boom Latinoamericano  2. Conquista  3. Precolombino  4. Modernismo',
         correcta: false,
         explicacion: 'El orden está invertido; el Boom ocurrió en el siglo XX.'
       },
       {
-        texto: '1. Romanticismo ➔ 2. Vanguardias ➔ 3. Precolombino ➔ 4. Barroco',
+        texto: '1. Romanticismo  2. Vanguardias  3. Precolombino  4. Barroco',
         correcta: false,
         explicacion: 'El periodo precolombino es el origen ancestral previo a la llegada europea.'
       },
       {
-        texto: '1. Conquista ➔ 2. Poesía Contemporánea ➔ 3. Leyendas Muiscas ➔ 4. Independencia',
+        texto: '1. Conquista  2. Poesía Contemporánea  3. Leyendas Muiscas  4. Independencia',
         correcta: false,
         explicacion: 'Las leyendas indígenas precedieron por miles de años a la Conquista.'
       }
     ],
-    objetoDesbloqueado: '👑 El Pergamino Descifrado de Melquíades'
+    objetoDesbloqueado: ' El Pergamino Descifrado de Melquíades'
   }
 ];
 
@@ -208,10 +208,10 @@ export default function EscapeRoomMacondo() {
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-yellow-600/60 pb-5">
         <div>
           <div className="inline-flex items-center gap-2 bg-yellow-400 text-slate-950 font-black text-xs px-3.5 py-1 rounded-full uppercase tracking-wider mb-1">
-            <span>🚪✨</span> Aventura Literaria de Escape (6° a 9°)
+             Aventura Literaria de Escape (6° a 9°)
           </div>
           <h3 className="text-2xl sm:text-4xl font-black text-white mt-1 flex items-center gap-2">
-            <span>🦋</span> Escape Room Macondo: El Laberinto
+             Escape Room Macondo: El Laberinto
           </h3>
           <p className="text-xs sm:text-sm text-yellow-200 font-semibold">
             Cámara {salaIndex + 1} de {SALAS_ESCAPE.length} • Resuelve los enigmas de la literatura viva antes de que el huracán lo borre todo
@@ -222,7 +222,7 @@ export default function EscapeRoomMacondo() {
         <div className="flex items-center gap-3">
           <div className="bg-slate-950 px-4 py-2 rounded-2xl border-2 border-yellow-400 text-center">
             <span className="text-[10px] font-black text-yellow-400 uppercase tracking-widest block">Puntos</span>
-            <span className="text-xl sm:text-2xl font-black text-white">⭐ {puntos}</span>
+            <span className="text-xl sm:text-2xl font-black text-white"> {puntos}</span>
           </div>
 
           <div
@@ -232,7 +232,7 @@ export default function EscapeRoomMacondo() {
                 : 'bg-indigo-950 text-yellow-300 border-yellow-500'
             }`}
           >
-            ⏳ {formatTiempo(tiempo)}
+             {formatTiempo(tiempo)}
           </div>
         </div>
       </div>
@@ -240,7 +240,7 @@ export default function EscapeRoomMacondo() {
       {/* Inventario de Objetos Mágicos Desbloqueados */}
       <div className="bg-slate-950/80 p-3.5 rounded-2xl border border-yellow-500/40 flex flex-wrap items-center gap-3">
         <span className="text-xs font-black uppercase tracking-wider text-yellow-400 shrink-0">
-          🎒 Reliquias Desbloqueadas:
+           Reliquias Desbloqueadas:
         </span>
         {inventario.length === 0 ? (
           <span className="text-xs text-slate-400 italic">Tu mochila está vacía. ¡Abre la primera cámara!</span>
@@ -256,24 +256,24 @@ export default function EscapeRoomMacondo() {
       {/* Pantalla Final de Escape Exitoso */}
       {escapado ? (
         <div className="bg-slate-900/95 border-4 border-yellow-400 rounded-3xl p-8 text-center space-y-5 animate-fade-in max-w-xl mx-auto shadow-2xl">
-          <span className="text-7xl block animate-bounce">🦋👑🚪</span>
+          
           <h4 className="text-3xl font-black text-yellow-400">¡ESCAPASTE DE MACONDO!</h4>
           <p className="text-slate-200 font-semibold text-base">
             Has descifrado los pergaminos de Melquíades y salvado la memoria de la literatura colombiana.
           </p>
           <div className="text-4xl font-black text-emerald-400">
-            {puntos} PUNTOS DE GLORIA ⭐
+            {puntos} PUNTOS DE GLORIA 
           </div>
           <button
             onClick={reiniciarEscape}
             className="px-8 py-4 bg-gradient-to-r from-yellow-400 to-amber-500 text-slate-950 font-black text-base rounded-2xl shadow-xl hover:scale-105 active:scale-95 transition-all cursor-pointer"
           >
-            🔄 Jugar el Laberinto Otra Vez
+             Jugar el Laberinto Otra Vez
           </button>
         </div>
       ) : tiempoAgotado ? (
         <div className="bg-rose-950/90 border-4 border-rose-500 rounded-3xl p-8 text-center space-y-4 animate-fade-in max-w-xl mx-auto shadow-2xl">
-          <span className="text-7xl block">🌪️⏳</span>
+          <span className="text-7xl block"></span>
           <h4 className="text-3xl font-black text-white">¡EL HURACÁN BORRÓ EL CAMINO!</h4>
           <p className="text-rose-200 font-semibold text-sm">
             Se agotó el tiempo de escape. ¡No te rindas y vuelve a intentarlo!
@@ -282,7 +282,7 @@ export default function EscapeRoomMacondo() {
             onClick={reiniciarEscape}
             className="px-8 py-3.5 bg-rose-500 hover:bg-rose-400 text-white font-black text-base rounded-2xl shadow-lg transition-transform active:scale-95 cursor-pointer"
           >
-            🔄 Reintentar Escape
+             Reintentar Escape
           </button>
         </div>
       ) : (
@@ -304,7 +304,7 @@ export default function EscapeRoomMacondo() {
                 onClick={narrarSala}
                 className="px-3.5 py-1.5 bg-yellow-400/20 hover:bg-yellow-400/30 text-yellow-300 border border-yellow-400/50 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer active:scale-95"
               >
-                <span>🔊</span> Escuchar Historia
+                 Escuchar Historia
               </button>
             </div>
 
@@ -316,7 +316,7 @@ export default function EscapeRoomMacondo() {
             {/* El Enigma de la Cerradura */}
             <div className="p-4 sm:p-5 bg-yellow-950/40 rounded-2xl border-2 border-yellow-500/60">
               <span className="text-xs font-black text-yellow-400 uppercase tracking-wider block mb-1">
-                🔐 Enigma de la Cerradura Mágica:
+                 Enigma de la Cerradura Mágica:
               </span>
               <p className="text-base sm:text-lg font-black text-white">{sala.enigma}</p>
             </div>
@@ -331,7 +331,7 @@ export default function EscapeRoomMacondo() {
                 }`}
               >
                 <div className="flex items-center gap-3">
-                  <span className="text-3xl">{acierto ? '✨🔓' : '🔒❌'}</span>
+                  <span className="text-3xl">{acierto ? '' : ''}</span>
                   <div>
                     <h5 className="font-black text-base">
                       {acierto ? '¡CERRADURA DESBLOQUEADA!' : '¡MECANISMO TRABADO! (-20 segundos)'}
@@ -347,7 +347,7 @@ export default function EscapeRoomMacondo() {
                     onClick={avanzarSala}
                     className="px-5 py-2.5 bg-yellow-400 hover:bg-yellow-300 text-slate-950 font-black text-xs sm:text-sm rounded-xl shadow-md transition-all active:scale-95 cursor-pointer shrink-0"
                   >
-                    Cruzar a la Siguiente Cámara ➔
+                    Cruzar a la Siguiente Cámara 
                   </button>
                 )}
               </div>
@@ -382,7 +382,7 @@ export default function EscapeRoomMacondo() {
                     onClick={() => intentarDesbloqueo(op)}
                     className={`p-4 rounded-2xl border-3 text-left transition-all duration-150 flex items-start gap-3 select-none active:scale-98 cursor-pointer ${estilo}`}
                   >
-                    <span className="text-2xl mt-0.5">🔑</span>
+                    
                     <span className="font-bold text-sm sm:text-base leading-snug">{op.texto}</span>
                   </button>
                 );

@@ -8,14 +8,14 @@ const BANCOS_RULETA = {
     colorHeader: 'text-violet-600',
     bgBadge: 'bg-violet-50 text-violet-700 border-violet-200',
     retos: [
-      { texto: '🎤 ¡Improvisa un discurso de 30 segundos defendiendo la lectura frente a las redes sociales!', icono: '🎙️', color: '#6366f1' },
-      { texto: '✨ ¡Crea una metáfora poética original para describir una noche tormentosa!', icono: '⚡', color: '#8b5cf6' },
-      { texto: '⚔️ ¡Duelo de oratoria: explica la diferencia entre mito y leyenda con tus propias palabras!', icono: '📜', color: '#ec4899' },
-      { texto: '🎭 ¡Interpreta a un personaje histórico colombiano argumentando su causa con pasión!', icono: '🏛️', color: '#f59e0b' },
-      { texto: '🧩 ¡Define qué es una hipérbole y di dos ejemplos exagerados frente a la clase!', icono: '💥', color: '#10b981' },
-      { texto: '🔍 ¡Menciona 3 obras o autores fundamentales de la literatura latinoamericana!', icono: '📚', color: '#3b82f6' },
-      { texto: '⏱️ ¡En 15 segundos di 4 palabras esdrújulas con su tilde bien pronunciada!', icono: '✍️', color: '#ef4444' },
-      { texto: '🤝 ¡Convence a un compañero de clase de una idea disparatada usando argumentos lógicos!', icono: '🧠', color: '#14b8a6' }
+      { texto: ' ¡Improvisa un discurso de 30 segundos defendiendo la lectura frente a las redes sociales!', icono: '', color: '#6366f1' },
+      { texto: ' ¡Crea una metáfora poética original para describir una noche tormentosa!', icono: '', color: '#8b5cf6' },
+      { texto: ' ¡Duelo de oratoria: explica la diferencia entre mito y leyenda con tus propias palabras!', icono: '', color: '#ec4899' },
+      { texto: ' ¡Interpreta a un personaje histórico colombiano argumentando su causa con pasión!', icono: '', color: '#f59e0b' },
+      { texto: ' ¡Define qué es una hipérbole y di dos ejemplos exagerados frente a la clase!', icono: '', color: '#10b981' },
+      { texto: ' ¡Menciona 3 obras o autores fundamentales de la literatura latinoamericana!', icono: '', color: '#3b82f6' },
+      { texto: ' ¡En 15 segundos di 4 palabras esdrújulas con su tilde bien pronunciada!', icono: '', color: '#ef4444' },
+      { texto: ' ¡Convence a un compañero de clase de una idea disparatada usando argumentos lógicos!', icono: '', color: '#14b8a6' }
     ]
   },
   primaria: {
@@ -23,14 +23,14 @@ const BANCOS_RULETA = {
     colorHeader: 'text-emerald-600',
     bgBadge: 'bg-emerald-50 text-emerald-700 border-emerald-200',
     retos: [
-      { texto: '🐾 ¡Imita la voz y rugido de un jaguar protegiendo la selva!', icono: '🌿', color: '#10b981' },
-      { texto: '🎵 ¡Di 3 palabras que rimen con "corazón" en menos de 10 segundos!', icono: '🎤', color: '#3b82f6' },
-      { texto: '🌽 ¡Nombra 3 alimentos tradicionales hechos con maíz en Colombia!', icono: '🌽', color: '#f59e0b' },
-      { texto: '👅 ¡Repite el trabalenguas: "Tres tristes tigres tragaban trigo en un trigal"!', icono: '🐯', color: '#ec4899' },
-      { texto: '🖍️ ¡Pasa al tablero y dibuja al personaje principal de la lectura en 20 segundos!', icono: '🦉', color: '#8b5cf6' },
-      { texto: '🎸 ¡Crea una copla o rima divertida de dos versos con tu compañero de al lado!', icono: '🎶', color: '#ef4444' },
-      { texto: '🐸 ¡Haz la mímica de un animal de la fábula para que el salón adivine cuál es!', icono: '🎭', color: '#14b8a6' },
-      { texto: '⭐ ¡Di las 5 vocales bailando o haciendo un gesto distinto para cada una!', icono: '🔤', color: '#6366f1' }
+      { texto: ' ¡Imita la voz y rugido de un jaguar protegiendo la selva!', icono: '', color: '#10b981' },
+      { texto: ' ¡Di 3 palabras que rimen con "corazón" en menos de 10 segundos!', icono: '', color: '#3b82f6' },
+      { texto: ' ¡Nombra 3 alimentos tradicionales hechos con maíz en Colombia!', icono: '', color: '#f59e0b' },
+      { texto: ' ¡Repite el trabalenguas: "Tres tristes tigres tragaban trigo en un trigal"!', icono: '', color: '#ec4899' },
+      { texto: ' ¡Pasa al tablero y dibuja al personaje principal de la lectura en 20 segundos!', icono: '', color: '#8b5cf6' },
+      { texto: ' ¡Crea una copla o rima divertida de dos versos con tu compañero de al lado!', icono: '', color: '#ef4444' },
+      { texto: ' ¡Haz la mímica de un animal de la fábula para que el salón adivine cuál es!', icono: '', color: '#14b8a6' },
+      { texto: ' ¡Di las 5 vocales bailando o haciendo un gesto distinto para cada una!', icono: '', color: '#6366f1' }
     ]
   }
 };
@@ -84,7 +84,7 @@ export default function RuletaRetos() {
             Dinámica de Aula y Participación Oral
           </span>
           <h3 className="text-2xl font-black text-slate-800 mt-1 flex items-center gap-2">
-            <span>🎡</span> Ruleta de Desafíos
+             Ruleta de Desafíos
           </h3>
           <p className="text-xs text-slate-500 font-semibold mt-0.5">
             Gira la ruleta para seleccionar retos de oratoria, creatividad o expresión oral.
@@ -101,7 +101,7 @@ export default function RuletaRetos() {
                 : 'text-slate-600 hover:bg-white'
             }`}
           >
-            🎒 Primaria (1°-5°)
+             Primaria (1°-5°)
           </button>
           <button
             onClick={() => cambiarCategoria('secundaria')}
@@ -111,7 +111,7 @@ export default function RuletaRetos() {
                 : 'text-slate-600 hover:bg-white'
             }`}
           >
-            🏛️ Secundaria (6°-9°)
+             Secundaria (6°-9°)
           </button>
         </div>
       </div>
@@ -158,7 +158,7 @@ export default function RuletaRetos() {
           disabled={girando}
           className="absolute z-10 w-20 h-20 sm:w-22 sm:h-22 bg-white hover:bg-amber-50 text-slate-800 rounded-full font-black text-xs uppercase tracking-wider shadow-xl border-4 border-amber-400 flex flex-col items-center justify-center cursor-pointer active:scale-95 transition-all select-none"
         >
-          <span className="text-xl sm:text-2xl">⚡</span>
+          
           <span className="text-[11px] font-black">{girando ? 'GIRANDO' : '¡GIRAR!'}</span>
         </button>
       </div>

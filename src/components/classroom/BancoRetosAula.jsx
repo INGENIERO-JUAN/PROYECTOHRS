@@ -7,7 +7,7 @@ export default function BancoRetosAula() {
       id: 1,
       titulo: 'El Noticiero Radial de la Vereda',
       duracion: '40 Minutos',
-      icono: '🎙️',
+      icono: '',
       color: 'border-sky-400 bg-sky-50/70',
       objetivo: 'Desarrollar la expresión oral, redacción de noticias locales y trabajo en equipo.',
       roles: ['Presentador en Cabina', 'Reportero en el Río', 'Testigo Campesino', 'Sonidista de Efectos Vocales'],
@@ -22,7 +22,7 @@ export default function BancoRetosAula() {
       id: 2,
       titulo: 'El Gran Duelo de Copleros y Trovadores',
       duracion: '30 Minutos',
-      icono: '🎸',
+      icono: '',
       color: 'border-amber-400 bg-amber-50/70',
       objetivo: 'Entrenar el ritmo poético, la rima consonante y la agilidad mental.',
       roles: ['Equipo 1: Los Pumas del Cerro', 'Equipo 2: Las Águilas del Valle', 'Jurado del Salón'],
@@ -37,7 +37,7 @@ export default function BancoRetosAula() {
       id: 3,
       titulo: 'El Juicio Ético a los Personajes de la Fábula',
       duracion: '45 Minutos',
-      icono: '⚖️',
+      icono: '',
       color: 'border-emerald-400 bg-emerald-50/70',
       objetivo: 'Fomentar el pensamiento crítico, la argumentación oral y la resolución de dilemas.',
       roles: ['El Juez del Tribunal', 'Fiscal Acusador', 'Abogado Defensor', 'Personaje Acusado', 'Jurado Popular'],
@@ -52,7 +52,7 @@ export default function BancoRetosAula() {
       id: 4,
       titulo: 'Teatro de Sombras y Relatos Ancestrales',
       duracion: '45 Minutos',
-      icono: '🏮',
+      icono: '',
       color: 'border-purple-400 bg-purple-50/70',
       objetivo: 'Explorar la comunicación no verbal, la tradición oral y la expresión plástica.',
       roles: ['Narrador Oral', 'Manipuladores de Siluetas', 'Efectos de Luces y Sombras'],
@@ -71,7 +71,7 @@ export default function BancoRetosAula() {
     <div className="bg-white rounded-4xl p-6 sm:p-10 shadow-xl border-4 border-indigo-300 space-y-6">
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border-b-2 border-slate-100 pb-5">
         <div className="flex items-center gap-3">
-          <span className="text-4xl">📚</span>
+          
           <div>
             <span className="text-xs font-black text-indigo-600 uppercase tracking-widest bg-indigo-50 px-3 py-1 rounded-full border border-indigo-200">
               Banco de Dinámicas Extensas de Clase (30 a 45 Minutos)
@@ -103,7 +103,7 @@ export default function BancoRetosAula() {
               <span className={`text-[10px] font-black px-2 py-0.5 rounded-full ${
                 tallerSeleccionado.id === taller.id ? 'bg-white/20 text-white' : 'bg-indigo-100 text-indigo-800'
               }`}>
-                ⏱️ {taller.duracion}
+                 {taller.duracion}
               </span>
             </div>
             <h4 className="text-sm sm:text-base leading-snug">{taller.titulo}</h4>
@@ -123,7 +123,7 @@ export default function BancoRetosAula() {
             </h4>
           </div>
           <span className="px-4 py-2 bg-white rounded-2xl text-xs font-black text-slate-800 border border-slate-300 shadow-sm">
-            🎯 Objetivo: {tallerSeleccionado.objetivo}
+             Objetivo: {tallerSeleccionado.objetivo}
           </span>
         </div>
 
@@ -135,7 +135,7 @@ export default function BancoRetosAula() {
           <div className="flex flex-wrap gap-2">
             {tallerSeleccionado.roles.map((rol, i) => (
               <span key={i} className="bg-white border-2 border-slate-300 text-slate-800 px-3.5 py-1.5 rounded-xl text-xs font-extrabold shadow-sm">
-                👤 {rol}
+                 {rol}
               </span>
             ))}
           </div>

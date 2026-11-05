@@ -7,7 +7,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'Metáfora',
     categoria: 'Figuras Literarias',
-    icono: '✨',
+    icono: '',
     definicion: 'Figura retórica que consiste en identificar un término real con uno imaginario, diciendo que una cosa "es" otra debido a su parecido.',
     ejemplo: 'Las gotas de rocío en el pasto son perlas brillantes del amanecer.',
     pistaSalón: '¿Qué dos cosas se comparan sin usar la palabra "como"?'
@@ -15,7 +15,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'Símil o Comparación',
     categoria: 'Figuras Literarias',
-    icono: '🔍',
+    icono: '',
     definicion: 'Figura que compara de forma directa dos elementos utilizando conectores como "como", "tal cual" o "parece".',
     ejemplo: 'El caballo corría tan veloz como el viento de la montaña.',
     pistaSalón: 'Busca la palabra mágica "como" para encontrar el símil.'
@@ -23,7 +23,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'Personificación',
     categoria: 'Figuras Literarias',
-    icono: '🦊',
+    icono: '',
     definicion: 'Recurso que atribuye cualidades o acciones humanas a animales, plantas o cosas inanimadas.',
     ejemplo: 'El río cantaba alegremente al chocar con las piedras del camino.',
     pistaSalón: '¿Puede un río cantar como una persona? ¡Eso es personificar!'
@@ -31,7 +31,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'Hipérbole',
     categoria: 'Figuras Literarias',
-    icono: '💥',
+    icono: '',
     definicion: 'Exageración intencional de la realidad para aumentar el impacto emocional o el humor en la narración.',
     ejemplo: 'Tengo tanta hambre que me comería una vaca entera al almuerzo.',
     pistaSalón: '¿Es posible en la realidad o es una gran exageración divertida?'
@@ -39,7 +39,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'Aliteración',
     categoria: 'Figuras Literarias',
-    icono: '🎶',
+    icono: '',
     definicion: 'Repetición intencionada de sonidos similares en un verso o frase para producir un efecto sonoro y rítmico.',
     ejemplo: 'En el silencio solo se escuchaba el susurro de las abejas que sonaban.',
     pistaSalón: 'Nota cómo se repite el sonido "s-s-s" como un zumbido.'
@@ -47,7 +47,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'Onomatopeya',
     categoria: 'Figuras Literarias',
-    icono: '🔔',
+    icono: '',
     definicion: 'Palabra que imita o recrea el sonido de una acción, un animal o un objeto.',
     ejemplo: '¡Quiquiriquí! cantaba el gallo, y el reloj hacía ¡tic, tac, tic, tac!',
     pistaSalón: 'Imiten en voz alta el sonido que hace el objeto.'
@@ -57,7 +57,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'La Madremonte',
     categoria: 'Tradición Oral y Campo',
-    icono: '🌿',
+    icono: '',
     definicion: 'Personaje mítico de las montañas colombianas, guardiana celosa de los bosques, las selvas y los nacimientos de agua.',
     ejemplo: 'Los leñadores cuidan de no talar árboles verdes para no despertar la furia de la Madremonte.',
     pistaSalón: '¿Por qué nuestros abuelos inventaban mitos para cuidar los ríos y árboles?'
@@ -65,7 +65,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'El Mohán',
     categoria: 'Tradición Oral y Campo',
-    icono: '🌊',
+    icono: '',
     definicion: 'Ser mitológico que habita en las profundidades de los grandes ríos, lagunas y charcos, amante de la pesca y el tabaco.',
     ejemplo: 'Los pescadores ribereños le dejan tabaco y café al Mohán para tener buena pesca.',
     pistaSalón: '¿Qué leyendas del río o de la quebrada conocen en su vereda?'
@@ -73,7 +73,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'La Patasola',
     categoria: 'Tradición Oral y Campo',
-    icono: '🌲',
+    icono: '',
     definicion: 'Espíritu de la selva con una sola pierna que protege la fauna silvestre y castiga a los cazadores furtivos.',
     ejemplo: 'La Patasola avisa a los ciervos y pavas para que huyan de las trampas de los cazadores.',
     pistaSalón: 'Este relato tradicional enseña el respeto hacia los animales del bosque.'
@@ -81,7 +81,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'Minga / Ayni',
     categoria: 'Tradición Oral y Campo',
-    icono: '🤝',
+    icono: '',
     definicion: 'Antigua tradición comunitaria campesina e indígena donde todos los vecinos se unen para trabajar la tierra o construir sin cobrar dinero, recibiendo a cambio comida y ayuda recíproca.',
     ejemplo: 'Toda la vereda se reunió en minga el sábado para arreglar el camino hacia la escuela.',
     pistaSalón: 'La minga demuestra que la unión y la solidaridad hacen grande a una comunidad.'
@@ -89,7 +89,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'Trapiche',
     categoria: 'Tradición Oral y Campo',
-    icono: '🪵',
+    icono: '',
     definicion: 'Molino tradicional movido por bestias o motor donde se extrae el jugo dulce de la caña para fabricar panela en paila.',
     ejemplo: 'Del trapiche sale un aroma delicioso a melao caliente que perfuma toda la vereda.',
     pistaSalón: '¿Quién ha visto cómo se muele la caña de azúcar para hacer la panela?'
@@ -97,7 +97,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'Copla Popular',
     categoria: 'Tradición Oral y Campo',
-    icono: '🪕',
+    icono: '',
     definicion: 'Composición poética popular de cuatro versos de arte menor (octosílabos), con rima en el segundo y cuarto verso, típica de fiestas campesinas.',
     ejemplo: 'Ayer pasé por tu casa / y me tiraste un limón, / el limón cayó en el suelo / y el jugo en mi corazón.',
     pistaSalón: '¡Canten esta copla marcando el ritmo con las palmas!'
@@ -105,7 +105,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'Trova',
     categoria: 'Tradición Oral y Campo',
-    icono: '🎙️',
+    icono: '',
     definicion: 'Canto improvisado en rima entre dos o más trovadores que se responden mutuamente con humor, picardía e ingenio.',
     ejemplo: 'Los troveros compiten frente al público inventando versos en menos de diez segundos.',
     pistaSalón: '¿Quién en el salón se anima a improvisar un verso para un compañero?'
@@ -115,7 +115,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'Sustantivo Propio',
     categoria: 'Gramática y Palabras',
-    icono: '🏷️',
+    icono: '',
     definicion: 'Palabra que nombra de manera individual y única a una persona, animal, pueblo o río. Siempre se escribe con mayúscula inicial.',
     ejemplo: 'Colombia, Magdalena, María, San Isidro, Bogotá.',
     pistaSalón: 'Tu propio nombre y el nombre de tu vereda son sustantivos propios.'
@@ -123,7 +123,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'Sustantivo Común',
     categoria: 'Gramática y Palabras',
-    icono: '📦',
+    icono: '',
     definicion: 'Palabra que nombra a cualquier ser, animal, planta o cosa de la misma especie sin distinguirlo de los demás.',
     ejemplo: 'perro, montaña, lápiz, árbol, casa, río.',
     pistaSalón: 'Mira a tu alrededor: casi todo lo que puedes tocar es un sustantivo común.'
@@ -131,7 +131,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'Adjetivo Calificativo',
     categoria: 'Gramática y Palabras',
-    icono: '🎨',
+    icono: '',
     definicion: 'Palabra que acompaña al sustantivo para indicar cómo es o qué cualidad tiene (color, tamaño, forma, sabor).',
     ejemplo: 'café caliente, flor aromática, cerro imponente, niño inteligente.',
     pistaSalón: 'Haz la pregunta: ¿Cómo es? La respuesta es el adjetivo.'
@@ -139,7 +139,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'Verbo',
     categoria: 'Gramática y Palabras',
-    icono: '🏃',
+    icono: '',
     definicion: 'Palabra que expresa acciones, estados o procesos que realiza el sujeto en un tiempo determinado (presente, pasado o futuro).',
     ejemplo: 'sembrar, cosechó, cantará, leemos, corrieron.',
     pistaSalón: 'Todo lo que implique movimiento o pensamiento es un verbo.'
@@ -147,7 +147,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'Palabra Polisémica',
     categoria: 'Gramática y Palabras',
-    icono: '💎',
+    icono: '',
     definicion: 'Palabra que tiene dos o más significados distintos según el contexto de la oración.',
     ejemplo: 'Banco (asiento para descansar en el parque) y Banco (entidad donde se guarda dinero).',
     pistaSalón: '¿Qué significa la palabra "hoja"? ¡Hoja de árbol y hoja de cuaderno!'
@@ -155,7 +155,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'Sinónimos',
     categoria: 'Gramática y Palabras',
-    icono: '👯',
+    icono: '',
     definicion: 'Palabras distintas que tienen un significado igual o muy semejante.',
     ejemplo: 'alegre / contento, veloz / rápido, sendero / camino.',
     pistaSalón: 'Usar sinónimos hace que tus escritos no repitan la misma palabra.'
@@ -163,7 +163,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'Antónimos',
     categoria: 'Gramática y Palabras',
-    icono: '⚖️',
+    icono: '',
     definicion: 'Palabras que tienen significados opuestos o contrarios entre sí.',
     ejemplo: 'alto / bajo, claro / oscuro, subir / bajar, paz / guerra.',
     pistaSalón: 'Piensa en lo exactamente opuesto para encontrar el antónimo.'
@@ -171,7 +171,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'Sílaba Tónica',
     categoria: 'Gramática y Palabras',
-    icono: '🔊',
+    icono: '',
     definicion: 'La sílaba que se pronuncia con mayor fuerza de voz dentro de una palabra.',
     ejemplo: 'En ca-mi-NO, la sílaba tónica es "NO". En ÁR-bol, la sílaba tónica es "ÁR".',
     pistaSalón: 'Da un aplauso fuerte en la sílaba que suena con más poder.'
@@ -179,7 +179,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'Sujeto y Predicado',
     categoria: 'Gramática y Palabras',
-    icono: '🧩',
+    icono: '',
     definicion: 'Las dos partes fundamentales de una oración. El sujeto indica quién realiza la acción; el predicado dice qué hace o qué se dice del sujeto.',
     ejemplo: '[Los campesinos madrugadores] (sujeto) [cosechan el café maduro] (predicado).',
     pistaSalón: 'Pregunta: ¿Quién realiza la acción? Eso es el Sujeto.'
@@ -189,7 +189,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'Fábula',
     categoria: 'Géneros Literarios',
-    icono: '🐢',
+    icono: '',
     definicion: 'Relato breve ficticio, generalmente protagonizado por animales que hablan, que culmina con una enseñanza moral llamada moraleja.',
     ejemplo: 'La liebre y la tortuga, donde la constancia venció a la vanidad.',
     pistaSalón: 'Toda fábula busca enseñarnos una lección de vida y convivencia.'
@@ -197,7 +197,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'Moraleja',
     categoria: 'Géneros Literarios',
-    icono: '💡',
+    icono: '',
     definicion: 'Enseñanza moral, ética o consejo práctico que se extrae al final de una fábula o relato pedagógico.',
     ejemplo: 'Moraleja: "Quien mucho abarca, poco aprieta".',
     pistaSalón: '¿Qué lección podemos aplicar en el salón después de escuchar la fábula?'
@@ -205,7 +205,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'Mito',
     categoria: 'Géneros Literarios',
-    icono: '☀️',
+    icono: '',
     definicion: 'Relato sagrado tradicional de los pueblos antiguos que intenta explicar el origen del universo, los astros, los fenómenos naturales o los seres humanos.',
     ejemplo: 'El mito chibcha de Bachué y el origen de los seres humanos desde la laguna de Iguaque.',
     pistaSalón: 'Los mitos explican los grandes misterios del mundo con dioses y héroes.'
@@ -213,7 +213,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'Leyenda',
     categoria: 'Géneros Literarios',
-    icono: '🕯️',
+    icono: '',
     definicion: 'Narración de hechos con base histórica o verídica que con el paso de los años se ha transformado con elementos fantásticos y sobrenaturales.',
     ejemplo: 'La leyenda de El Dorado y la balsa muisca de oro.',
     pistaSalón: 'La leyenda ocurre en un lugar real y conocido por la comunidad.'
@@ -221,7 +221,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'Realismo Mágico',
     categoria: 'Géneros Literarios',
-    icono: '🦋',
+    icono: '',
     definicion: 'Movimiento literario latinoamericano (creado por Gabriel García Márquez) donde elementos fantásticos o insólitos se presentan como parte normal de la vida cotidiana.',
     ejemplo: 'Las mariposas amarillas que revolotean anunciando la llegada de Mauricio Babilonia en Cien años de soledad.',
     pistaSalón: 'Es mágico para el lector, pero completamente natural para los personajes.'
@@ -229,7 +229,7 @@ export const TERMINOS_GLOSARIO = [
   {
     termino: 'El Ensayo',
     categoria: 'Géneros Literarios',
-    icono: '📝',
+    icono: '',
     definicion: 'Texto en prosa donde el autor reflexiona, analiza y expone sus propios argumentos y opiniones sobre un tema específico, respaldado con razones.',
     ejemplo: 'Un ensayo sobre el cuidado del agua en las veredas cafeteras de Colombia.',
     pistaSalón: 'En el ensayo no solo informas: ¡defiendes tu punto de vista con razones sólidas!'
@@ -271,7 +271,7 @@ export default function GlosarioInteractivo() {
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b-2 border-slate-100 pb-6">
         <div className="flex items-center gap-4">
           <div className="w-16 h-16 bg-amber-100 rounded-3xl flex items-center justify-center text-4xl border-2 border-amber-300 shadow-inner">
-            📚
+            
           </div>
           <div>
             <span className="text-xs font-black text-indigo-700 uppercase tracking-widest bg-indigo-50 px-3 py-1 rounded-full border border-indigo-200">
@@ -295,13 +295,13 @@ export default function GlosarioInteractivo() {
             placeholder="Buscar término o ejemplo..."
             className="w-full pl-10 pr-4 py-2.5 rounded-2xl bg-slate-50 border-2 border-slate-200 focus:border-amber-400 focus:bg-white text-xs sm:text-sm font-bold text-slate-800 outline-none transition-all"
           />
-          <span className="absolute left-3.5 top-2.5 text-slate-400 text-sm">🔍</span>
+          
           {busqueda && (
             <button
               onClick={() => setBusqueda('')}
               className="absolute right-3 top-2 text-slate-400 hover:text-slate-600 font-black text-sm"
             >
-              ✕
+              
             </button>
           )}
         </div>
@@ -312,13 +312,13 @@ export default function GlosarioInteractivo() {
         <div className="relative z-10 space-y-3">
           <div className="flex items-center justify-between">
             <span className="bg-yellow-300 text-yellow-950 font-black text-xs px-3 py-1 rounded-full uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
-              <span>⭐</span> Término Destacado de la Clase
+              <span></span> Término Destacado de la Clase
             </span>
             <button
               onClick={() => escucharPronunciacion(terminoDelDia)}
               className="px-3 py-1.5 bg-white/20 hover:bg-white/30 backdrop-blur-md rounded-xl text-xs font-black border border-white/40 flex items-center gap-1.5 transition-all cursor-pointer"
             >
-              <span>{palabraAudio === terminoDelDia.termino ? '⏹️' : '🔊'}</span>
+              <span>{palabraAudio === terminoDelDia.termino ? '' : ''}</span>
               <span>{palabraAudio === terminoDelDia.termino ? 'Escuchando...' : 'Escuchar Voz'}</span>
             </button>
           </div>
@@ -336,7 +336,7 @@ export default function GlosarioInteractivo() {
 
           <div className="bg-black/20 backdrop-blur-sm p-4 rounded-2xl border border-white/20">
             <p className="text-xs sm:text-sm font-bold text-yellow-200">
-              📌 <strong>Ejemplo en clase:</strong> "{terminoDelDia.ejemplo}"
+               <strong>Ejemplo en clase:</strong> "{terminoDelDia.ejemplo}"
             </p>
           </div>
         </div>
@@ -391,7 +391,7 @@ export default function GlosarioInteractivo() {
 
                 {item.pistaSalón && (
                   <div className="bg-emerald-50/60 p-2.5 rounded-xl border border-emerald-200 text-[11px] font-bold text-emerald-900 flex items-start gap-1.5">
-                    <span>💡</span>
+                    
                     <span>{item.pistaSalón}</span>
                   </div>
                 )}
@@ -406,7 +406,7 @@ export default function GlosarioInteractivo() {
                       : 'bg-slate-200 hover:bg-amber-500 hover:text-white text-slate-700'
                   }`}
                 >
-                  <span>{reproduciendo ? '⏹️' : '🔊'}</span>
+                  <span>{reproduciendo ? '' : ''}</span>
                   <span>{reproduciendo ? 'Detener Voz' : 'Escuchar Voz'}</span>
                 </button>
               </div>
@@ -417,7 +417,7 @@ export default function GlosarioInteractivo() {
 
       {terminosFiltrados.length === 0 && (
         <div className="text-center py-12 bg-slate-50 rounded-3xl border-2 border-dashed border-slate-300">
-          <span className="text-4xl block mb-2">🔍</span>
+          
           <p className="font-black text-slate-700 text-base">No se encontraron términos con ese filtro.</p>
           <p className="text-xs text-slate-500 font-bold mt-1">Prueba escribiendo otra palabra o selecciona "Todos".</p>
         </div>

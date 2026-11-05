@@ -8,79 +8,79 @@ const MAZOS_PAREJAS = {
   rimas: {
     nombre: 'Rimas y Sonidos',
     descripcion: 'Encuentra las palabras que riman con la misma musicalidad',
-    icono: '🎵',
+    icono: '',
     parejas: [
-      { id: 'p1', a: { texto: 'RATÓN', icono: '🐭' }, b: { texto: 'BOTÓN', icono: '🔘' } },
-      { id: 'p2', a: { texto: 'CAMPANA', icono: '🔔' }, b: { texto: 'MANZANA', icono: '🍎' } },
-      { id: 'p3', a: { texto: 'ESTRELLA', icono: '⭐' }, b: { texto: 'BOTELLA', icono: '🍾' } },
-      { id: 'p4', a: { texto: 'VENTANA', icono: '🪟' }, b: { texto: 'RANA', icono: '🐸' } },
-      { id: 'p5', a: { texto: 'CANCION', icono: '🎶' }, b: { texto: 'CORAZÓN', icono: '❤️' } },
-      { id: 'p6', a: { texto: 'PINTOR', icono: '🎨' }, b: { texto: 'FLOR', icono: '🌸' } }
+      { id: 'p1', a: { texto: 'RATÓN', icono: '' }, b: { texto: 'BOTÓN', icono: '' } },
+      { id: 'p2', a: { texto: 'CAMPANA', icono: '' }, b: { texto: 'MANZANA', icono: '' } },
+      { id: 'p3', a: { texto: 'ESTRELLA', icono: '' }, b: { texto: 'BOTELLA', icono: '' } },
+      { id: 'p4', a: { texto: 'VENTANA', icono: '' }, b: { texto: 'RANA', icono: '' } },
+      { id: 'p5', a: { texto: 'CANCION', icono: '' }, b: { texto: 'CORAZÓN', icono: '' } },
+      { id: 'p6', a: { texto: 'PINTOR', icono: '' }, b: { texto: 'FLOR', icono: '' } }
     ]
   },
   sinonimos: {
     nombre: 'Sinónimos Expresivos',
     descripcion: 'Empareja términos que tienen significados semejantes',
-    icono: '📚',
+    icono: '',
     parejas: [
-      { id: 'p1', a: { texto: 'ALEGRE', icono: '😃' }, b: { texto: 'FELIZ', icono: '🎉' } },
-      { id: 'p2', a: { texto: 'VELOZ', icono: '⚡' }, b: { texto: 'RÁPIDO', icono: '🐆' } },
-      { id: 'p3', a: { texto: 'ENORME', icono: '🐘' }, b: { texto: 'GIGANTE', icono: '🏔️' } },
-      { id: 'p4', a: { texto: 'DULCE', icono: '🍯' }, b: { texto: 'MELOSO', icono: '🍬' } },
-      { id: 'p5', a: { texto: 'ANTIGUO', icono: '🏺' }, b: { texto: 'VETUSTO', icono: '📜' } },
-      { id: 'p6', a: { texto: 'CALMA', icono: '🌊' }, b: { texto: 'SERENIDAD', icono: '🕊️' } }
+      { id: 'p1', a: { texto: 'ALEGRE', icono: '' }, b: { texto: 'FELIZ', icono: '' } },
+      { id: 'p2', a: { texto: 'VELOZ', icono: '' }, b: { texto: 'RÁPIDO', icono: '' } },
+      { id: 'p3', a: { texto: 'ENORME', icono: '' }, b: { texto: 'GIGANTE', icono: '' } },
+      { id: 'p4', a: { texto: 'DULCE', icono: '' }, b: { texto: 'MELOSO', icono: '' } },
+      { id: 'p5', a: { texto: 'ANTIGUO', icono: '' }, b: { texto: 'VETUSTO', icono: '' } },
+      { id: 'p6', a: { texto: 'CALMA', icono: '' }, b: { texto: 'SERENIDAD', icono: '' } }
     ]
   },
   antonimos: {
     nombre: 'Antónimos Opuestos',
     descripcion: 'Empareja palabras con significados contrarios',
-    icono: '⚖️',
+    icono: '',
     parejas: [
-      { id: 'p1', a: { texto: 'LUZ', icono: '☀️' }, b: { texto: 'OSCURIDAD', icono: '🌑' } },
-      { id: 'p2', a: { texto: 'VALIENTE', icono: '🦁' }, b: { texto: 'TEMEROSO', icono: '🙈' } },
-      { id: 'p3', a: { texto: 'SUBIR', icono: '⬆️' }, b: { texto: 'BAJAR', icono: '⬇️' } },
-      { id: 'p4', a: { texto: 'ANCHO', icono: '↔️' }, b: { texto: 'ESTRECHO', icono: '↕️' } },
-      { id: 'p5', a: { texto: 'INICIO', icono: '🟢' }, b: { texto: 'DESENLACE', icono: '🏁' } },
-      { id: 'p6', a: { texto: 'EFÍMERO', icono: '⏳' }, b: { texto: 'ETERNO', icono: '♾️' } }
+      { id: 'p1', a: { texto: 'LUZ', icono: '' }, b: { texto: 'OSCURIDAD', icono: '' } },
+      { id: 'p2', a: { texto: 'VALIENTE', icono: '' }, b: { texto: 'TEMEROSO', icono: '' } },
+      { id: 'p3', a: { texto: 'SUBIR', icono: '⬆' }, b: { texto: 'BAJAR', icono: '⬇' } },
+      { id: 'p4', a: { texto: 'ANCHO', icono: '↔' }, b: { texto: 'ESTRECHO', icono: '↕' } },
+      { id: 'p5', a: { texto: 'INICIO', icono: '' }, b: { texto: 'DESENLACE', icono: '' } },
+      { id: 'p6', a: { texto: 'EFÍMERO', icono: '' }, b: { texto: 'ETERNO', icono: '' } }
     ]
   },
   figuras: {
     nombre: 'Figuras Literarias',
     descripcion: 'Conceptos retóricos emparejados con su definición clave',
-    icono: '✨',
+    icono: '',
     parejas: [
-      { id: 'p1', a: { texto: 'METÁFORA', icono: '🎭' }, b: { texto: 'Comparar sin "como"', icono: '💡' } },
-      { id: 'p2', a: { texto: 'SÍMIL', icono: '🔍' }, b: { texto: 'Comparar con "como"', icono: '🤝' } },
-      { id: 'p3', a: { texto: 'HIPÉRBOLE', icono: '🌋' }, b: { texto: 'Exageración extrema', icono: '💥' } },
-      { id: 'p4', a: { texto: 'PERSONIFICACIÓN', icono: '🦊' }, b: { texto: 'Cualidad humana a cosas', icono: '🗣️' } },
-      { id: 'p5', a: { texto: 'ONOMATOPEYA', icono: '💥' }, b: { texto: 'Imitar sonido real', icono: '🔔' } },
-      { id: 'p6', a: { texto: 'MORALEJA', icono: '📜' }, b: { texto: 'Enseñanza ética final', icono: '🌟' } }
+      { id: 'p1', a: { texto: 'METÁFORA', icono: '' }, b: { texto: 'Comparar sin "como"', icono: '' } },
+      { id: 'p2', a: { texto: 'SÍMIL', icono: '' }, b: { texto: 'Comparar con "como"', icono: '' } },
+      { id: 'p3', a: { texto: 'HIPÉRBOLE', icono: '' }, b: { texto: 'Exageración extrema', icono: '' } },
+      { id: 'p4', a: { texto: 'PERSONIFICACIÓN', icono: '' }, b: { texto: 'Cualidad humana a cosas', icono: '' } },
+      { id: 'p5', a: { texto: 'ONOMATOPEYA', icono: '' }, b: { texto: 'Imitar sonido real', icono: '' } },
+      { id: 'p6', a: { texto: 'MORALEJA', icono: '' }, b: { texto: 'Enseñanza ética final', icono: '' } }
     ]
   },
   fauna: {
     nombre: 'Fauna Colombiana',
     descripcion: 'Animales emblemáticos de nuestros páramos, selvas y llanos',
-    icono: '🐾',
+    icono: '',
     parejas: [
-      { id: 'p1', a: { texto: 'CHIGÜIRO', icono: '🦫' }, b: { texto: 'Roedor gigante de los Llanos', icono: '🌾' } },
-      { id: 'p2', a: { texto: 'CÓNDOR', icono: '🦅' }, b: { texto: 'Rey de las alturas andinas', icono: '🏔️' } },
-      { id: 'p3', a: { texto: 'JAGUAR', icono: '🐆' }, b: { texto: 'Guardián de la selva', icono: '🌿' } },
-      { id: 'p4', a: { texto: 'OSO ANDINO', icono: '🐻' }, b: { texto: 'Cuidador de los páramos', icono: '🌱' } },
-      { id: 'p5', a: { texto: 'RANA DORADA', icono: '🐸' }, b: { texto: 'Joya del Chocó', icono: '💎' } },
-      { id: 'p6', a: { texto: 'GUACAMAYA', icono: '🦜' }, b: { texto: 'Alas tricolores del aire', icono: '🌈' } }
+      { id: 'p1', a: { texto: 'CHIGÜIRO', icono: '' }, b: { texto: 'Roedor gigante de los Llanos', icono: '' } },
+      { id: 'p2', a: { texto: 'CÓNDOR', icono: '' }, b: { texto: 'Rey de las alturas andinas', icono: '' } },
+      { id: 'p3', a: { texto: 'JAGUAR', icono: '' }, b: { texto: 'Guardián de la selva', icono: '' } },
+      { id: 'p4', a: { texto: 'OSO ANDINO', icono: '' }, b: { texto: 'Cuidador de los páramos', icono: '' } },
+      { id: 'p5', a: { texto: 'RANA DORADA', icono: '' }, b: { texto: 'Joya del Chocó', icono: '' } },
+      { id: 'p6', a: { texto: 'GUACAMAYA', icono: '' }, b: { texto: 'Alas tricolores del aire', icono: '' } }
     ]
   },
   fabulas: {
     nombre: 'Fábulas y Moralejas',
     descripcion: 'Asocia cada historia clásica o colombiana con su enseñanza',
-    icono: '📜',
+    icono: '',
     parejas: [
-      { id: 'p1', a: { texto: 'LA LIEBRE Y LA TORTUGA', icono: '🐢' }, b: { texto: 'Constancia y humildad', icono: '🏆' } },
-      { id: 'p2', a: { texto: 'EL PASTOR MENTIROSO', icono: '🐺' }, b: { texto: 'La verdad es oro', icono: '⭐' } },
-      { id: 'p3', a: { texto: 'CIGARRA Y HORMIGA', icono: '🐜' }, b: { texto: 'El esfuerzo previene el frío', icono: '🥖' } },
-      { id: 'p4', a: { texto: 'SIMÓN EL BOBITO', icono: '🎣' }, b: { texto: 'Pensar antes de actuar', icono: '💡' } },
-      { id: 'p5', a: { texto: 'LEÓN Y EL RATÓN', icono: '🦁' }, b: { texto: 'Todos podemos ayudar', icono: '🤝' } },
-      { id: 'p6', a: { texto: 'CUERVO Y LA ZORRA', icono: '🦊' }, b: { texto: 'Cuidado con la adulación', icono: '🧀' } }
+      { id: 'p1', a: { texto: 'LA LIEBRE Y LA TORTUGA', icono: '' }, b: { texto: 'Constancia y humildad', icono: '' } },
+      { id: 'p2', a: { texto: 'EL PASTOR MENTIROSO', icono: '' }, b: { texto: 'La verdad es oro', icono: '' } },
+      { id: 'p3', a: { texto: 'CIGARRA Y HORMIGA', icono: '' }, b: { texto: 'El esfuerzo previene el frío', icono: '' } },
+      { id: 'p4', a: { texto: 'SIMÓN EL BOBITO', icono: '' }, b: { texto: 'Pensar antes de actuar', icono: '' } },
+      { id: 'p5', a: { texto: 'LEÓN Y EL RATÓN', icono: '' }, b: { texto: 'Todos podemos ayudar', icono: '' } },
+      { id: 'p6', a: { texto: 'CUERVO Y LA ZORRA', icono: '' }, b: { texto: 'Cuidado con la adulación', icono: '' } }
     ]
   }
 };
@@ -228,13 +228,13 @@ export default function JuegoMemoriaParejas({ tema = 'rimas' }) {
       <div className="flex flex-wrap items-center justify-between gap-3 bg-slate-50 p-4 rounded-2xl border border-slate-200 text-xs sm:text-sm font-bold text-slate-700">
         <div className="flex items-center gap-4">
           <span className="flex items-center gap-1.5">
-            <span>⏱️</span> Tiempo: <strong className="text-indigo-600 font-black">{formatearTiempo(tiempo)}</strong>
+            <span></span> Tiempo: <strong className="text-indigo-600 font-black">{formatearTiempo(tiempo)}</strong>
           </span>
           <span className="flex items-center gap-1.5">
-            <span>🎯</span> Intentos: <strong className="text-slate-900 font-black">{intentos}</strong>
+             Intentos: <strong className="text-slate-900 font-black">{intentos}</strong>
           </span>
           <span className="flex items-center gap-1.5">
-            <span>⭐</span> Puntos: <strong className="text-amber-600 font-black">{puntaje}</strong>
+            <span></span> Puntos: <strong className="text-amber-600 font-black">{puntaje}</strong>
           </span>
         </div>
 
@@ -242,7 +242,7 @@ export default function JuegoMemoriaParejas({ tema = 'rimas' }) {
           onClick={() => inicializarJuego(mazoActual)}
           className="px-3.5 py-1.5 bg-white hover:bg-slate-100 text-slate-700 rounded-xl text-xs font-black border border-slate-300 transition-all cursor-pointer shadow-sm active:scale-95"
         >
-          🔄 Barajar de nuevo
+           Barajar de nuevo
         </button>
       </div>
 
@@ -274,7 +274,7 @@ export default function JuegoMemoriaParejas({ tema = 'rimas' }) {
                 </>
               ) : (
                 <>
-                  <span className="text-2xl sm:text-3xl mb-1 opacity-80">🎴</span>
+                  
                   <span className="text-[10px] font-black uppercase tracking-widest text-indigo-100">
                     Descubrir
                   </span>
@@ -288,7 +288,7 @@ export default function JuegoMemoriaParejas({ tema = 'rimas' }) {
       {/* Pantalla de Victoria */}
       {completado && (
         <div className="bg-emerald-50 border-2 border-emerald-300 p-6 sm:p-8 rounded-3xl text-center animate-fade-in space-y-3">
-          <span className="text-5xl block animate-bounce">🏆</span>
+          
           <h4 className="text-2xl font-black text-emerald-950">
             ¡Felicitaciones! ¡Todas las parejas encontradas!
           </h4>
@@ -300,7 +300,7 @@ export default function JuegoMemoriaParejas({ tema = 'rimas' }) {
               onClick={() => inicializarJuego(mazoActual)}
               className="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-sm rounded-xl shadow-md transition-all active:scale-95 cursor-pointer"
             >
-              Jugar otra ronda ➔
+              Jugar otra ronda 
             </button>
           </div>
         </div>

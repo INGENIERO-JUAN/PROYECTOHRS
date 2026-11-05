@@ -71,7 +71,7 @@ export default function ComprensionLectora({ lecturaTitulo = "Lectura de Clase",
     <div className="bg-white rounded-4xl p-6 sm:p-10 shadow-xl border-4 border-teal-300 space-y-6">
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border-b-2 border-slate-100 pb-5">
         <div className="flex items-center gap-3">
-          <span className="text-4xl">🧠</span>
+          
           <div>
             <span className="text-xs font-black text-teal-700 uppercase tracking-widest bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
               Taller de Análisis Profundo de Lectura (20-30 Minutos)
@@ -95,7 +95,7 @@ export default function ComprensionLectora({ lecturaTitulo = "Lectura de Clase",
                 : 'text-slate-600 hover:text-slate-900'
             }`}
           >
-            🟢 Literal
+             Literal
           </button>
           <button
             onClick={() => { sounds.playClick(); setNivelActivo('inferencial'); }}
@@ -105,7 +105,7 @@ export default function ComprensionLectora({ lecturaTitulo = "Lectura de Clase",
                 : 'text-slate-600 hover:text-slate-900'
             }`}
           >
-            🟡 Inferencial
+             Inferencial
           </button>
           <button
             onClick={() => { sounds.playClick(); setNivelActivo('critico'); }}
@@ -115,7 +115,7 @@ export default function ComprensionLectora({ lecturaTitulo = "Lectura de Clase",
                 : 'text-slate-600 hover:text-slate-900'
             }`}
           >
-            🔴 Crítico
+             Crítico
           </button>
         </div>
       </div>
@@ -129,7 +129,7 @@ export default function ComprensionLectora({ lecturaTitulo = "Lectura de Clase",
           : 'bg-rose-50 border-rose-300 text-rose-900'
       }`}>
         <span className="text-2xl">
-          {nivelActivo === 'literal' ? '🔍' : nivelActivo === 'inferencial' ? '💡' : '⚖️'}
+          {nivelActivo === 'literal' ? '' : nivelActivo === 'inferencial' ? '' : ''}
         </span>
         <div>
           <span className="font-black uppercase tracking-wider block text-xs">
@@ -166,7 +166,7 @@ export default function ComprensionLectora({ lecturaTitulo = "Lectura de Clase",
                 onClick={() => toggleRespuesta(item.id)}
                 className="text-xs font-black bg-white hover:bg-slate-100 text-slate-700 px-3 py-1.5 rounded-xl border border-slate-300 shadow-sm shrink-0 cursor-pointer"
               >
-                {respuestasVisibles[item.id] ? 'Ocultar Guía' : '💡 Guía Docente'}
+                {respuestasVisibles[item.id] ? 'Ocultar Guía' : ' Guía Docente'}
               </button>
             </div>
 
@@ -183,7 +183,7 @@ export default function ComprensionLectora({ lecturaTitulo = "Lectura de Clase",
       <div className="bg-slate-900 text-white p-6 rounded-3xl space-y-3 shadow-inner">
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-2">
-            <span className="text-xl">📝</span>
+            
             <h4 className="font-black text-amber-300 text-sm sm:text-base">
               Conclusiones Colectivas del Salón (Para copiar en el cuaderno)
             </h4>

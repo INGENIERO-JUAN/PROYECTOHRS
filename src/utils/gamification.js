@@ -2,28 +2,28 @@
 // Diseñado para generar satisfacción de progreso (XP, rangos, insignias y logros)
 
 export const RANGOS_JUGADOR = [
-  { nivel: 1, titulo: 'Aprendiz de Trazos', icono: '🌱', xpMin: 0, desc: 'Tus primeros pasos en el universo de las letras' },
-  { nivel: 2, titulo: 'Cazador de Sílabas', icono: '🔤', xpMin: 300, desc: 'Domina los sonidos del abecedario y la fonética' },
-  { nivel: 3, titulo: 'Domador de Rimas', icono: '🎵', xpMin: 800, desc: 'Reconoce el ritmo y la musicalidad de las coplas' },
-  { nivel: 4, titulo: 'Narrador de Fogata', icono: '🦊', xpMin: 1600, desc: 'Conoce las fábulas y sus sabias moralejas' },
-  { nivel: 5, titulo: 'Guardián de los Mitos', icono: '🌿', xpMin: 2800, desc: 'Descifra leyendas ancestrales de Colombia' },
-  { nivel: 6, titulo: 'Poeta de Páramo', icono: '🦅', xpMin: 4500, desc: 'Crea versos, estrofas y figuras retóricas' },
-  { nivel: 7, titulo: 'Orador de Asambleas', icono: '🎙️', xpMin: 6800, desc: 'Defiende argumentos y detecta falacias' },
-  { nivel: 8, titulo: 'Maestro de Crónicas', icono: '📜', xpMin: 9500, desc: 'Experto en ortografía, tildes y redacción' },
-  { nivel: 9, titulo: 'Sabio de Macondo', icono: '👑', xpMin: 13000, desc: 'Leyenda suprema de la literatura castellana' }
+  { nivel: 1, titulo: 'Aprendiz de Trazos', icono: '', xpMin: 0, desc: 'Tus primeros pasos en el universo de las letras' },
+  { nivel: 2, titulo: 'Cazador de Sílabas', icono: '', xpMin: 300, desc: 'Domina los sonidos del abecedario y la fonética' },
+  { nivel: 3, titulo: 'Domador de Rimas', icono: '', xpMin: 800, desc: 'Reconoce el ritmo y la musicalidad de las coplas' },
+  { nivel: 4, titulo: 'Narrador de Fogata', icono: '', xpMin: 1600, desc: 'Conoce las fábulas y sus sabias moralejas' },
+  { nivel: 5, titulo: 'Guardián de los Mitos', icono: '', xpMin: 2800, desc: 'Descifra leyendas ancestrales de Colombia' },
+  { nivel: 6, titulo: 'Poeta de Páramo', icono: '', xpMin: 4500, desc: 'Crea versos, estrofas y figuras retóricas' },
+  { nivel: 7, titulo: 'Orador de Asambleas', icono: '', xpMin: 6800, desc: 'Defiende argumentos y detecta falacias' },
+  { nivel: 8, titulo: 'Maestro de Crónicas', icono: '', xpMin: 9500, desc: 'Experto en ortografía, tildes y redacción' },
+  { nivel: 9, titulo: 'Sabio de Macondo', icono: '', xpMin: 13000, desc: 'Leyenda suprema de la literatura castellana' }
 ];
 
 export const INSIGNIAS_LOGROS = [
-  { id: 'ninja_master', titulo: 'Filo Ninja', icono: '🥷', desc: 'Consigue cortar sílabas a toda velocidad' },
-  { id: 'rimas_flow', titulo: 'Flow Poético', icono: '🎤', desc: 'Clava rimas tradicionales con ritmo perfecto' },
-  { id: 'oido_oro', titulo: 'Oído de Oro', icono: '👂', desc: 'Identifica letras y fonemas con voz real' },
-  { id: 'detective_placa', titulo: 'Placa de Detective', icono: '🔍', desc: 'Caza errores de tilde y ortografía en los textos' },
-  { id: 'crucigrama_as', titulo: 'Mente Cruzada', icono: '🧩', desc: 'Descifra todas las palabras de un crucigrama' },
-  { id: 'tribunal_falacia', titulo: 'Juez de la Razón', icono: '⚖️', desc: 'Destruye falacias argumentativas con objeciones' },
-  { id: 'escape_macondo', titulo: 'Héroe de Macondo', icono: '🦋', desc: 'Supera los enigmas del Realismo Mágico' },
-  { id: 'racha_fuego', titulo: 'Racha de Fuego', icono: '🔥', desc: 'Alcanza una racha o combo superior a 5' },
-  { id: 'trivia_oro', titulo: 'Podio de Honor', icono: '🏆', desc: 'Responde correctamente en la Trivia Literaria' },
-  { id: 'sabio_supremo', titulo: 'Corona de Gabo', icono: '👑', desc: 'Alcanza el rango máximo de Sabio de Macondo' }
+  { id: 'ninja_master', titulo: 'Filo Ninja', nombre: 'Filo Ninja', icono: '', desc: 'Consigue cortar sílabas a toda velocidad' },
+  { id: 'rimas_flow', titulo: 'Flow Poético', nombre: 'Flow Poético', icono: '', desc: 'Clava rimas tradicionales con ritmo perfecto' },
+  { id: 'oido_oro', titulo: 'Oído de Oro', nombre: 'Oído de Oro', icono: '', desc: 'Identifica letras y fonemas con voz real' },
+  { id: 'detective_placa', titulo: 'Placa de Detective', nombre: 'Placa de Detective', icono: '', desc: 'Caza errores de tilde y ortografía en los textos' },
+  { id: 'crucigrama_as', titulo: 'Mente Cruzada', nombre: 'Mente Cruzada', icono: '', desc: 'Descifra todas las palabras de un crucigrama' },
+  { id: 'tribunal_falacia', titulo: 'Juez de la Razón', nombre: 'Juez de la Razón', icono: '', desc: 'Destruye falacias argumentativas con objeciones' },
+  { id: 'escape_macondo', titulo: 'Héroe de Macondo', nombre: 'Héroe de Macondo', icono: '', desc: 'Supera los enigmas del Realismo Mágico' },
+  { id: 'racha_fuego', titulo: 'Racha Continua', nombre: 'Racha Continua', icono: '', desc: 'Alcanza una racha o combo superior a 5' },
+  { id: 'trivia_oro', titulo: 'Podio de Honor', nombre: 'Podio de Honor', icono: '', desc: 'Responde correctamente en la Trivia Literaria' },
+  { id: 'sabio_supremo', titulo: 'Corona de Gabo', nombre: 'Corona de Gabo', icono: '', desc: 'Alcanza el rango máximo de Sabio de Macondo' }
 ];
 
 export class GameProgress {

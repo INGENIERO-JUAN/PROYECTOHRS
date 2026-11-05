@@ -296,7 +296,7 @@ export default function CrucigramaLiterario({ gradoNumero = 7 }) {
             </span>
           </div>
           <h3 className="text-2xl sm:text-3xl font-black text-white mt-1.5 flex items-center gap-2.5">
-            <span>🧩</span> {puzzle.nombre}
+             {puzzle.nombre}
           </h3>
           <p className="text-xs sm:text-sm text-slate-400 mt-0.5">
             Crucigrama estilístico para explorar vocabulario avanzado, figuras y teoría literaria.
@@ -306,7 +306,7 @@ export default function CrucigramaLiterario({ gradoNumero = 7 }) {
         {/* Indicadores de Tiempo y Acciones */}
         <div className="flex items-center gap-3">
           <div className="bg-slate-900 border border-indigo-800/80 px-3.5 py-2 rounded-2xl flex items-center gap-2 text-sm font-black text-indigo-300">
-            <span>⏱️</span>
+            <span></span>
             <span>{formatearTiempo(tiempo)}</span>
           </div>
 
@@ -315,7 +315,7 @@ export default function CrucigramaLiterario({ gradoNumero = 7 }) {
             title="Revela una letra al azar"
             className="px-3.5 py-2 bg-indigo-950 hover:bg-indigo-900 text-indigo-300 border border-indigo-700/60 rounded-2xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer active:scale-95"
           >
-            <span>💡 Pista</span>
+            <span> Pista</span>
             {hintsUsed > 0 && <span className="text-[10px] bg-indigo-800 px-1.5 rounded-full">{hintsUsed}</span>}
           </button>
 
@@ -324,7 +324,7 @@ export default function CrucigramaLiterario({ gradoNumero = 7 }) {
             className="px-3.5 py-2 bg-gradient-to-r from-indigo-600 to-violet-600 hover:from-indigo-500 hover:to-violet-500 text-white rounded-2xl text-xs font-black shadow-md transition-all cursor-pointer active:scale-95 flex items-center gap-1.5"
           >
             <span>Siguiente</span>
-            <span>➔</span>
+            
           </button>
         </div>
       </div>
@@ -416,7 +416,7 @@ export default function CrucigramaLiterario({ gradoNumero = 7 }) {
         <div className="lg:col-span-5 space-y-4">
           <div className="bg-slate-900/90 rounded-2xl p-4 sm:p-5 border border-indigo-900/60 shadow-lg space-y-4">
             <h4 className="text-xs font-black uppercase tracking-wider text-indigo-400 flex items-center gap-2 border-b border-indigo-900/50 pb-2">
-              <span>📖</span> Pistas Horizontales
+               Pistas Horizontales
             </h4>
             <div className="space-y-2">
               {puzzle.palabras
@@ -445,7 +445,7 @@ export default function CrucigramaLiterario({ gradoNumero = 7 }) {
                         <span className={complete ? 'text-emerald-400' : 'text-indigo-300'}>
                           #{p.numero} Horizontal ({p.palabra.length} letras)
                         </span>
-                        {complete && <span className="text-emerald-400 text-xs">✓ Resuelto</span>}
+                        {complete && <span className="text-emerald-400 text-xs"> Resuelto</span>}
                       </div>
                       <p className="text-slate-300 font-medium leading-relaxed">{p.pista}</p>
                     </div>
@@ -454,7 +454,7 @@ export default function CrucigramaLiterario({ gradoNumero = 7 }) {
             </div>
 
             <h4 className="text-xs font-black uppercase tracking-wider text-violet-400 flex items-center gap-2 border-b border-indigo-900/50 pb-2 pt-2">
-              <span>📐</span> Pistas Verticales
+               Pistas Verticales
             </h4>
             <div className="space-y-2">
               {puzzle.palabras
@@ -483,7 +483,7 @@ export default function CrucigramaLiterario({ gradoNumero = 7 }) {
                         <span className={complete ? 'text-emerald-400' : 'text-violet-300'}>
                           #{p.numero} Vertical ({p.palabra.length} letras)
                         </span>
-                        {complete && <span className="text-emerald-400 text-xs">✓ Resuelto</span>}
+                        {complete && <span className="text-emerald-400 text-xs"> Resuelto</span>}
                       </div>
                       <p className="text-slate-300 font-medium leading-relaxed">{p.pista}</p>
                     </div>
@@ -512,7 +512,7 @@ export default function CrucigramaLiterario({ gradoNumero = 7 }) {
                 onClick={handleBackspace}
                 className="px-3 sm:px-4 h-10 sm:h-12 bg-rose-900/70 hover:bg-rose-800 text-white font-black text-xs sm:text-sm rounded-xl border-b-2 border-rose-950 active:border-b-0 active:translate-y-0.5 transition-all cursor-pointer flex items-center justify-center gap-1 shadow"
               >
-                <span>⌫</span> Borrar
+                <span>Borrar</span> Borrar
               </button>
             )}
           </div>
@@ -522,7 +522,7 @@ export default function CrucigramaLiterario({ gradoNumero = 7 }) {
       {/* Pantalla de Victoria */}
       {isCompleted && (
         <div className="bg-gradient-to-r from-emerald-950 via-teal-950 to-indigo-950 border-2 border-emerald-400 p-6 sm:p-8 rounded-3xl text-center animate-fade-in space-y-4 shadow-2xl">
-          <span className="text-6xl block animate-bounce">🏆</span>
+          
           <h4 className="text-2xl sm:text-3xl font-black text-emerald-300">
             ¡Crucigrama Literario Completado con Éxito!
           </h4>
@@ -531,7 +531,7 @@ export default function CrucigramaLiterario({ gradoNumero = 7 }) {
             <strong className="text-emerald-300">{formatearTiempo(tiempo)}</strong>.
           </p>
           <div className="inline-flex items-center gap-2 bg-emerald-900/60 border border-emerald-500/50 px-5 py-2.5 rounded-2xl text-emerald-200 font-black text-lg">
-            <span>⭐ Puntaje:</span>
+            <span> Puntaje:</span>
             <span>{score} puntos</span>
           </div>
           <div>
@@ -539,7 +539,7 @@ export default function CrucigramaLiterario({ gradoNumero = 7 }) {
               onClick={() => setPuzzleIndex((idx) => idx + 1)}
               className="px-8 py-3.5 bg-gradient-to-r from-emerald-500 to-teal-500 hover:from-emerald-400 hover:to-teal-400 text-slate-950 font-black text-base rounded-2xl shadow-xl transition-all cursor-pointer active:scale-95"
             >
-              Jugar Siguiente Crucigrama ➔
+              Jugar Siguiente Crucigrama 
             </button>
           </div>
         </div>

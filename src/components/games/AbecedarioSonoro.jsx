@@ -4,51 +4,51 @@ import { voiceReader } from '../../utils/speech';
 import { lanzarConfeti } from '../../utils/confetti';
 import { GameProgress } from '../../utils/gamification';
 
-const ABECEDARIO = [
-  { letra: 'A', min: 'a', palabra: 'Árbol', icono: '🌳', color: 'from-amber-400 to-orange-500', tipo: 'vocal' },
-  { letra: 'B', min: 'b', palabra: 'Barco', icono: '⛵', color: 'from-sky-400 to-blue-600', tipo: 'consonante' },
-  { letra: 'C', min: 'c', palabra: 'Casa', icono: '🏠', color: 'from-emerald-400 to-teal-600', tipo: 'consonante' },
-  { letra: 'D', min: 'd', palabra: 'Delfín', icono: '🐬', color: 'from-cyan-400 to-blue-500', tipo: 'consonante' },
-  { letra: 'E', min: 'e', palabra: 'Estrella', icono: '⭐', color: 'from-yellow-400 to-amber-500', tipo: 'vocal' },
-  { letra: 'F', min: 'f', palabra: 'Flor', icono: '🌸', color: 'from-pink-400 to-rose-500', tipo: 'consonante' },
-  { letra: 'G', min: 'g', palabra: 'Gato', icono: '🐱', color: 'from-amber-500 to-orange-600', tipo: 'consonante' },
-  { letra: 'H', min: 'h', palabra: 'Hoja', icono: '🍃', color: 'from-lime-400 to-green-600', tipo: 'consonante' },
-  { letra: 'I', min: 'i', palabra: 'Isla', icono: '🏝️', color: 'from-teal-400 to-emerald-600', tipo: 'vocal' },
-  { letra: 'J', min: 'j', palabra: 'Jirafa', icono: '🦒', color: 'from-yellow-500 to-amber-600', tipo: 'consonante' },
-  { letra: 'K', min: 'k', palabra: 'Koala', icono: '🐨', color: 'from-slate-400 to-slate-600', tipo: 'consonante' },
-  { letra: 'L', min: 'l', palabra: 'Luna', icono: '🌙', color: 'from-indigo-400 to-violet-600', tipo: 'consonante' },
-  { letra: 'M', min: 'm', palabra: 'Mariposa', icono: '🦋', color: 'from-purple-400 to-fuchsia-600', tipo: 'consonante' },
-  { letra: 'N', min: 'n', palabra: 'Nido', icono: '🪺', color: 'from-amber-600 to-yellow-700', tipo: 'consonante' },
-  { letra: 'Ñ', min: 'ñ', palabra: 'Ñandú', icono: '🦤', color: 'from-rose-400 to-red-600', tipo: 'consonante' },
-  { letra: 'O', min: 'o', palabra: 'Oso', icono: '🐻', color: 'from-orange-400 to-amber-600', tipo: 'vocal' },
-  { letra: 'P', min: 'p', palabra: 'Perro', icono: '🐶', color: 'from-blue-400 to-indigo-600', tipo: 'consonante' },
-  { letra: 'Q', min: 'q', palabra: 'Queso', icono: '🧀', color: 'from-yellow-400 to-amber-500', tipo: 'consonante' },
-  { letra: 'R', min: 'r', palabra: 'Rana', icono: '🐸', color: 'from-emerald-400 to-green-600', tipo: 'consonante' },
-  { letra: 'S', min: 's', palabra: 'Sol', icono: '☀️', color: 'from-amber-400 to-orange-500', tipo: 'consonante' },
-  { letra: 'T', min: 't', palabra: 'Tortuga', icono: '🐢', color: 'from-teal-500 to-emerald-700', tipo: 'consonante' },
-  { letra: 'U', min: 'u', palabra: 'Uva', icono: '🍇', color: 'from-violet-500 to-purple-700', tipo: 'vocal' },
-  { letra: 'V', min: 'v', palabra: 'Vaca', icono: '🐄', color: 'from-sky-500 to-blue-700', tipo: 'consonante' },
-  { letra: 'W', min: 'w', palabra: 'Wafle', icono: '🧇', color: 'from-amber-500 to-yellow-600', tipo: 'consonante' },
-  { letra: 'X', min: 'x', palabra: 'Xilófono', icono: '🎵', color: 'from-fuchsia-400 to-pink-600', tipo: 'consonante' },
-  { letra: 'Y', min: 'y', palabra: 'Yoyó', icono: '🪀', color: 'from-red-400 to-rose-600', tipo: 'consonante' },
-  { letra: 'Z', min: 'z', palabra: 'Zanahoria', icono: '🥕', color: 'from-orange-500 to-amber-600', tipo: 'consonante' }
+export const ABECEDARIO = [
+  { letra: 'A', min: 'a', palabra: 'Árbol', icono: '', color: 'from-amber-400 to-orange-500', tipo: 'vocal' },
+  { letra: 'B', min: 'b', palabra: 'Barco', icono: '', color: 'from-sky-400 to-blue-600', tipo: 'consonante' },
+  { letra: 'C', min: 'c', palabra: 'Casa', icono: '', color: 'from-emerald-400 to-teal-600', tipo: 'consonante' },
+  { letra: 'D', min: 'd', palabra: 'Delfín', icono: '', color: 'from-cyan-400 to-blue-500', tipo: 'consonante' },
+  { letra: 'E', min: 'e', palabra: 'Estrella', icono: '', color: 'from-yellow-400 to-amber-500', tipo: 'vocal' },
+  { letra: 'F', min: 'f', palabra: 'Flor', icono: '', color: 'from-pink-400 to-rose-500', tipo: 'consonante' },
+  { letra: 'G', min: 'g', palabra: 'Gato', icono: '', color: 'from-amber-500 to-orange-600', tipo: 'consonante' },
+  { letra: 'H', min: 'h', palabra: 'Hoja', icono: '', color: 'from-lime-400 to-green-600', tipo: 'consonante' },
+  { letra: 'I', min: 'i', palabra: 'Isla', icono: '', color: 'from-teal-400 to-emerald-600', tipo: 'vocal' },
+  { letra: 'J', min: 'j', palabra: 'Jirafa', icono: '', color: 'from-yellow-500 to-amber-600', tipo: 'consonante' },
+  { letra: 'K', min: 'k', palabra: 'Koala', icono: '', color: 'from-slate-400 to-slate-600', tipo: 'consonante' },
+  { letra: 'L', min: 'l', palabra: 'Luna', icono: '', color: 'from-indigo-400 to-violet-600', tipo: 'consonante' },
+  { letra: 'M', min: 'm', palabra: 'Mariposa', icono: '', color: 'from-purple-400 to-fuchsia-600', tipo: 'consonante' },
+  { letra: 'N', min: 'n', palabra: 'Nido', icono: '', color: 'from-amber-600 to-yellow-700', tipo: 'consonante' },
+  { letra: 'Ñ', min: 'ñ', palabra: 'Ñandú', icono: '', color: 'from-rose-400 to-red-600', tipo: 'consonante' },
+  { letra: 'O', min: 'o', palabra: 'Oso', icono: '', color: 'from-orange-400 to-amber-600', tipo: 'vocal' },
+  { letra: 'P', min: 'p', palabra: 'Perro', icono: '', color: 'from-blue-400 to-indigo-600', tipo: 'consonante' },
+  { letra: 'Q', min: 'q', palabra: 'Queso', icono: '', color: 'from-yellow-400 to-amber-500', tipo: 'consonante' },
+  { letra: 'R', min: 'r', palabra: 'Rana', icono: '', color: 'from-emerald-400 to-green-600', tipo: 'consonante' },
+  { letra: 'S', min: 's', palabra: 'Sol', icono: '', color: 'from-amber-400 to-orange-500', tipo: 'consonante' },
+  { letra: 'T', min: 't', palabra: 'Tortuga', icono: '', color: 'from-teal-500 to-emerald-700', tipo: 'consonante' },
+  { letra: 'U', min: 'u', palabra: 'Uva', icono: '', color: 'from-violet-500 to-purple-700', tipo: 'vocal' },
+  { letra: 'V', min: 'v', palabra: 'Vaca', icono: '', color: 'from-sky-500 to-blue-700', tipo: 'consonante' },
+  { letra: 'W', min: 'w', palabra: 'Wafle', icono: '', color: 'from-amber-500 to-yellow-600', tipo: 'consonante' },
+  { letra: 'X', min: 'x', palabra: 'Xilófono', icono: '', color: 'from-fuchsia-400 to-pink-600', tipo: 'consonante' },
+  { letra: 'Y', min: 'y', palabra: 'Yoyó', icono: '', color: 'from-red-400 to-rose-600', tipo: 'consonante' },
+  { letra: 'Z', min: 'z', palabra: 'Zanahoria', icono: '', color: 'from-orange-500 to-amber-600', tipo: 'consonante' }
 ];
 
-const FAMILIAS_SILABAS = [
-  { consonante: 'M', nombre: 'Familia M', silabas: ['MA', 'ME', 'MI', 'MO', 'MU'], icono: '🍞', palabras: ['Mamá', 'Mesa', 'Miel', 'Mono', 'Mula'] },
-  { consonante: 'P', nombre: 'Familia P', silabas: ['PA', 'PE', 'PI', 'PO', 'PU'], icono: '🦆', palabras: ['Papá', 'Pelota', 'Pipa', 'Pollo', 'Puente'] },
-  { consonante: 'S', nombre: 'Familia S', silabas: ['SA', 'SE', 'SI', 'SO', 'SU'], icono: '🐸', palabras: ['Sapo', 'Semilla', 'Silla', 'Sopa', 'Suma'] },
-  { consonante: 'L', nombre: 'Familia L', silabas: ['LA', 'LE', 'LI', 'LO', 'LU'], icono: '🌙', palabras: ['Lápiz', 'Leche', 'Limón', 'Loro', 'Luna'] },
-  { consonante: 'T', nombre: 'Familia T', silabas: ['TA', 'TE', 'TI', 'TO', 'TU'], icono: '🍅', palabras: ['Taza', 'Tenedor', 'Tigre', 'Tomate', 'Tucán'] },
-  { consonante: 'N', nombre: 'Familia N', silabas: ['NA', 'NE', 'NI', 'NO', 'NU'], icono: '🪺', palabras: ['Naranja', 'Nene', 'Nido', 'Noche', 'Nube'] },
-  { consonante: 'D', nombre: 'Familia D', silabas: ['DA', 'DE', 'DI', 'DO', 'DU'], icono: '🎲', palabras: ['Dado', 'Dedo', 'Diente', 'Dona', 'Duende'] },
-  { consonante: 'B', nombre: 'Familia B', silabas: ['BA', 'BE', 'BI', 'BO', 'BU'], icono: '⛵', palabras: ['Barco', 'Bebé', 'Bicicleta', 'Bota', 'Burro'] },
-  { consonante: 'C', nombre: 'Familia C', silabas: ['CA', 'CE', 'CI', 'CO', 'CU'], icono: '🏠', palabras: ['Casa', 'Cereal', 'Circo', 'Conejo', 'Cuna'] },
-  { consonante: 'R', nombre: 'Familia R', silabas: ['RA', 'RE', 'RI', 'RO', 'RU'], icono: '🐸', palabras: ['Ratón', 'Regalo', 'Risa', 'Rosa', 'Rueda'] },
-  { consonante: 'G', nombre: 'Familia G', silabas: ['GA', 'GE', 'GI', 'GO', 'GU'], icono: '🐱', palabras: ['Gato', 'Gelatina', 'Girasol', 'Gota', 'Gusano'] },
-  { consonante: 'F', nombre: 'Familia F', silabas: ['FA', 'FE', 'FI', 'FO', 'FU'], icono: '🌸', palabras: ['Familia', 'Feliz', 'Fiesta', 'Foca', 'Fuego'] },
-  { consonante: 'J', nombre: 'Familia J', silabas: ['JA', 'JE', 'JI', 'JO', 'JU'], icono: '🦒', palabras: ['Jabón', 'Jefe', 'Jirafa', 'Joya', 'Jugo'] },
-  { consonante: 'V', nombre: 'Familia V', silabas: ['VA', 'VE', 'VI', 'VO', 'VU'], icono: '🐄', palabras: ['Vaca', 'Vela', 'Viento', 'Volcán', 'Vuelo'] }
+export const FAMILIAS_SILABAS = [
+  { consonante: 'M', nombre: 'Familia M', silabas: ['MA', 'ME', 'MI', 'MO', 'MU'], icono: '', palabras: ['Mamá', 'Mesa', 'Miel', 'Mono', 'Mula'] },
+  { consonante: 'P', nombre: 'Familia P', silabas: ['PA', 'PE', 'PI', 'PO', 'PU'], icono: '', palabras: ['Papá', 'Pelota', 'Pipa', 'Pollo', 'Puente'] },
+  { consonante: 'S', nombre: 'Familia S', silabas: ['SA', 'SE', 'SI', 'SO', 'SU'], icono: '', palabras: ['Sapo', 'Semilla', 'Silla', 'Sopa', 'Suma'] },
+  { consonante: 'L', nombre: 'Familia L', silabas: ['LA', 'LE', 'LI', 'LO', 'LU'], icono: '', palabras: ['Lápiz', 'Leche', 'Limón', 'Loro', 'Luna'] },
+  { consonante: 'T', nombre: 'Familia T', silabas: ['TA', 'TE', 'TI', 'TO', 'TU'], icono: '', palabras: ['Taza', 'Tenedor', 'Tigre', 'Tomate', 'Tucán'] },
+  { consonante: 'N', nombre: 'Familia N', silabas: ['NA', 'NE', 'NI', 'NO', 'NU'], icono: '', palabras: ['Naranja', 'Nene', 'Nido', 'Noche', 'Nube'] },
+  { consonante: 'D', nombre: 'Familia D', silabas: ['DA', 'DE', 'DI', 'DO', 'DU'], icono: '', palabras: ['Dado', 'Dedo', 'Diente', 'Dona', 'Duende'] },
+  { consonante: 'B', nombre: 'Familia B', silabas: ['BA', 'BE', 'BI', 'BO', 'BU'], icono: '', palabras: ['Barco', 'Bebé', 'Bicicleta', 'Bota', 'Burro'] },
+  { consonante: 'C', nombre: 'Familia C', silabas: ['CA', 'CE', 'CI', 'CO', 'CU'], icono: '', palabras: ['Casa', 'Cereal', 'Circo', 'Conejo', 'Cuna'] },
+  { consonante: 'R', nombre: 'Familia R', silabas: ['RA', 'RE', 'RI', 'RO', 'RU'], icono: '', palabras: ['Ratón', 'Regalo', 'Risa', 'Rosa', 'Rueda'] },
+  { consonante: 'G', nombre: 'Familia G', silabas: ['GA', 'GE', 'GI', 'GO', 'GU'], icono: '', palabras: ['Gato', 'Gelatina', 'Girasol', 'Gota', 'Gusano'] },
+  { consonante: 'F', nombre: 'Familia F', silabas: ['FA', 'FE', 'FI', 'FO', 'FU'], icono: '', palabras: ['Familia', 'Feliz', 'Fiesta', 'Foca', 'Fuego'] },
+  { consonante: 'J', nombre: 'Familia J', silabas: ['JA', 'JE', 'JI', 'JO', 'JU'], icono: '', palabras: ['Jabón', 'Jefe', 'Jirafa', 'Joya', 'Jugo'] },
+  { consonante: 'V', nombre: 'Familia V', silabas: ['VA', 'VE', 'VI', 'VO', 'VU'], icono: '', palabras: ['Vaca', 'Vela', 'Viento', 'Volcán', 'Vuelo'] }
 ];
 
 export default function AbecedarioSonoro() {
@@ -101,7 +101,7 @@ export default function AbecedarioSonoro() {
 
   const tocarSilaba = (silaba, palabraEjemplo) => {
     sounds.playPop();
-    voiceReader.speak(`${silaba}... como en ${palabraEjemplo}`, () => {}, 0.88, 1.0);
+    voiceReader.speak(`${silaba}... como en ${palabraEjemplo}`);
   };
 
   const responderAuditivo = (opcion) => {
@@ -140,10 +140,10 @@ export default function AbecedarioSonoro() {
       <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 border-b-2 border-amber-200 pb-5">
         <div>
           <div className="inline-flex items-center gap-2 bg-amber-200 text-amber-950 font-black text-xs px-3.5 py-1 rounded-full uppercase tracking-wider mb-1.5 shadow-sm">
-            <span>🗣️</span> Fonética y Sonidos Reales con Voz
+             Fonética y Sonidos Reales con Voz
           </div>
           <h3 className="text-2xl sm:text-4xl font-black text-slate-800 tracking-tight flex items-center gap-2">
-            <span>🔤</span> El Abecedario Parlante
+             El Abecedario Parlante
           </h3>
           <p className="text-xs sm:text-sm font-bold text-amber-800">
             ¡Toca cualquier letra o sílaba para escuchar cómo suena con voz humana!
@@ -163,7 +163,7 @@ export default function AbecedarioSonoro() {
                 : 'bg-white text-slate-700 border-slate-300 hover:bg-amber-100'
             }`}
           >
-            <span>🔠</span> Letras y Vocales
+             Letras y Vocales
           </button>
 
           <button
@@ -177,7 +177,7 @@ export default function AbecedarioSonoro() {
                 : 'bg-white text-slate-700 border-slate-300 hover:bg-emerald-100'
             }`}
           >
-            <span>🧩</span> Sílabas Parlantes
+             Sílabas Parlantes
           </button>
 
           <button
@@ -191,7 +191,7 @@ export default function AbecedarioSonoro() {
                 : 'bg-white text-slate-700 border-slate-300 hover:bg-rose-100'
             }`}
           >
-            <span>👂</span> ¡Juego: Escucha y Toca!
+             ¡Juego: Escucha y Toca!
           </button>
         </div>
       </div>
@@ -207,7 +207,7 @@ export default function AbecedarioSonoro() {
               </div>
               <div>
                 <span className="text-xs font-black uppercase tracking-widest text-amber-700 bg-amber-100 px-3 py-1 rounded-full">
-                  {letraSeleccionada.tipo === 'vocal' ? '🌟 Vocal Sagrada' : '🔷 Consonante'}
+                  {letraSeleccionada.tipo === 'vocal' ? ' Vocal Sagrada' : ' Consonante'}
                 </span>
                 <h4 className="text-3xl sm:text-4xl font-black text-slate-800 mt-1">
                   {letraSeleccionada.letra} {letraSeleccionada.min} • {letraSeleccionada.palabra}
@@ -222,7 +222,7 @@ export default function AbecedarioSonoro() {
               onClick={() => voiceReader.speakLetter(letraSeleccionada.letra, letraSeleccionada.palabra)}
               className="px-6 py-4 rounded-2xl bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-600 hover:to-orange-700 text-white font-black text-base sm:text-lg shadow-xl border-b-4 border-orange-800 active:border-b-0 active:translate-y-1 transition-all flex items-center gap-3 cursor-pointer shrink-0"
             >
-              <span className="text-3xl">🔊</span>
+              
               <span>¡Escuchar {letraSeleccionada.letra}!</span>
             </button>
           </div>
@@ -319,7 +319,7 @@ export default function AbecedarioSonoro() {
                     <span className="text-4xl sm:text-5xl font-black tracking-tight mb-2">
                       {silaba}
                     </span>
-                    <span className="text-2xl mb-1">🔊</span>
+                    
                     <span className="text-xs font-black bg-white/20 px-2.5 py-1 rounded-full uppercase tracking-wider">
                       Como en {palabra}
                     </span>
@@ -336,7 +336,7 @@ export default function AbecedarioSonoro() {
         <div className="bg-white rounded-4xl p-6 sm:p-10 shadow-2xl border-4 border-rose-300 space-y-6 text-center animate-fade-in">
           <div className="flex items-center justify-between border-b-2 border-slate-100 pb-4">
             <div className="flex items-center gap-3 text-left">
-              <span className="text-4xl">👂</span>
+              
               <div>
                 <span className="text-xs font-black text-rose-600 uppercase tracking-widest bg-rose-50 px-3 py-1 rounded-full border border-rose-200">
                   Desafío Auditivo para Quienes Están Aprendiendo a Leer
@@ -348,7 +348,7 @@ export default function AbecedarioSonoro() {
             </div>
 
             <div className="bg-amber-100 border-2 border-amber-300 px-4 py-2 rounded-2xl flex items-center gap-2">
-              <span className="text-xl">⭐</span>
+              <span className="text-xl"></span>
               <span className="font-black text-amber-950 text-base">{puntosOido} pts</span>
             </div>
           </div>
@@ -359,7 +359,7 @@ export default function AbecedarioSonoro() {
               onClick={repetirInstruccionAudio}
               className="px-6 py-3.5 rounded-2xl bg-rose-500 hover:bg-rose-600 text-white font-black text-base shadow-lg transition-all flex items-center gap-2 cursor-pointer active:scale-95 animate-pulse"
             >
-              <span>🔊</span> ¡Volver a Escuchar la Pregunta!
+               ¡Volver a Escuchar la Pregunta!
             </button>
             <p className="text-base font-extrabold text-slate-700">{mensajeAudicion}</p>
           </div>

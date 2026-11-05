@@ -7,54 +7,54 @@ import { GameProgress } from '../../utils/gamification';
 const NIVELES_PALABRAS = {
   basico: {
     nombre: 'Nivel 1: Palabras de 2 Sílabas',
-    icono: '🌱',
+    icono: '',
     palabras: [
-      { palabra: 'MAPA', silabas: ['MA', 'PA'], pista: 'Nos guía y muestra senderos, ríos y montañas.', icono: '🗺️' },
-      { palabra: 'SAPO', silabas: ['SA', 'PO'], pista: 'Animal anfibio que salta alegre en las charcas.', icono: '🐸' },
-      { palabra: 'LUNA', silabas: ['LU', 'NA'], pista: 'Ilumina las noches estrelladas en el campo.', icono: '🌙' },
-      { palabra: 'CASA', silabas: ['CA', 'SA'], pista: 'Lugar cálido donde descansamos en familia.', icono: '🏠' },
-      { palabra: 'PATO', silabas: ['PA', 'TO'], pista: 'Ave nadadora que nada en las lagunas.', icono: '🦆' },
-      { palabra: 'MESA', silabas: ['ME', 'SA'], pista: 'Mueble donde apoyamos los libros y el almuerzo.', icono: '🪑' },
-      { palabra: 'MAIZ', silabas: ['MA', 'ÍZ'], pista: 'Grano sagrado para deliciosas arepas y mazorcas.', icono: '🌽' },
-      { palabra: 'GATO', silabas: ['GA', 'TO'], pista: 'Felino cariñoso y buen cazador del tejado.', icono: '🐱' },
-      { palabra: 'RANA', silabas: ['RA', 'NA'], pista: 'Salta en los charcos y rima con campana.', icono: '🐸' },
-      { palabra: 'ROSA', silabas: ['RO', 'SA'], pista: 'Flor hermosa y aromática de suaves pétalos.', icono: '🌹' },
-      { palabra: 'NUBE', silabas: ['NU', 'BE'], pista: 'Algodón blanco en el cielo que trae la lluvia.', icono: '☁️' },
-      { palabra: 'PESZ', silabas: ['PE', 'CEZ'], pista: 'Nadan en cardumen en las aguas limpias del río.', icono: '🐟' }
+      { palabra: 'MAPA', silabas: ['MA', 'PA'], pista: 'Nos guía y muestra senderos, ríos y montañas.', icono: '' },
+      { palabra: 'SAPO', silabas: ['SA', 'PO'], pista: 'Animal anfibio que salta alegre en las charcas.', icono: '' },
+      { palabra: 'LUNA', silabas: ['LU', 'NA'], pista: 'Ilumina las noches estrelladas en el campo.', icono: '' },
+      { palabra: 'CASA', silabas: ['CA', 'SA'], pista: 'Lugar cálido donde descansamos en familia.', icono: '' },
+      { palabra: 'PATO', silabas: ['PA', 'TO'], pista: 'Ave nadadora que nada en las lagunas.', icono: '' },
+      { palabra: 'MESA', silabas: ['ME', 'SA'], pista: 'Mueble donde apoyamos los libros y el almuerzo.', icono: '' },
+      { palabra: 'MAIZ', silabas: ['MA', 'ÍZ'], pista: 'Grano sagrado para deliciosas arepas y mazorcas.', icono: '' },
+      { palabra: 'GATO', silabas: ['GA', 'TO'], pista: 'Felino cariñoso y buen cazador del tejado.', icono: '' },
+      { palabra: 'RANA', silabas: ['RA', 'NA'], pista: 'Salta en los charcos y rima con campana.', icono: '' },
+      { palabra: 'ROSA', silabas: ['RO', 'SA'], pista: 'Flor hermosa y aromática de suaves pétalos.', icono: '' },
+      { palabra: 'NUBE', silabas: ['NU', 'BE'], pista: 'Algodón blanco en el cielo que trae la lluvia.', icono: '' },
+      { palabra: 'PECES', silabas: ['PE', 'CES'], pista: 'Nadan en cardumen en las aguas limpias del río.', icono: '' }
     ]
   },
   intermedio: {
     nombre: 'Nivel 2: Palabras de 3 Sílabas',
-    icono: '🌿',
+    icono: '',
     palabras: [
-      { palabra: 'FABULA', silabas: ['FÁ', 'BU', 'LA'], pista: 'Cuento de animales que deja una hermosa moraleja.', icono: '📜' },
-      { palabra: 'POEMA', silabas: ['PO', 'E', 'MA'], pista: 'Composición llena de verso, rima y sentimientos.', icono: '🎶' },
-      { palabra: 'CAMINO', silabas: ['CA', 'MI', 'NO'], pista: 'Sendero que recorremos para llegar a la escuela.', icono: '🛤️' },
-      { palabra: 'ESTRELLA', silabas: ['ES', 'TRE', 'LLA'], pista: 'Punto luminoso que brilla en el cielo nocturno.', icono: '⭐' },
-      { palabra: 'COLOMBIA', silabas: ['CO', 'LOM', 'BIA'], pista: 'País de hermosas montañas, café y dos océanos.', icono: '🇨🇴' },
-      { palabra: 'CUADERNO', silabas: ['CUA', 'DER', 'NO'], pista: 'Hojas en blanco donde anotamos nuestras ideas.', icono: '📓' },
-      { palabra: 'ARDILLA', silabas: ['AR', 'DI', 'LLA'], pista: 'Animal inquieto que trepa comiendo frutos secos.', icono: '🐿️' },
-      { palabra: 'LEYENDA', silabas: ['LE', 'YEN', 'DA'], pista: 'Relato tradicional popular transmitido de abuelos a nietos.', icono: '🏔️' },
-      { palabra: 'SEMILLA', silabas: ['SE', 'MI', 'LLA'], pista: 'Pequeño grano que germina para dar frutos en la huerta.', icono: '🌱' },
-      { palabra: 'BANDERA', silabas: ['BAN', 'DE', 'RA'], pista: 'Símbolo patrio tricolor que flamea con el viento.', icono: '🇨🇴' },
-      { palabra: 'PAJARO', silabas: ['PÁ', 'JA', 'RO'], pista: 'Ave libre que trina al amanecer con sus plumas.', icono: '🐦' },
-      { palabra: 'CANTO', silabas: ['CAN', 'TO'], pista: 'Melodía que entonan las aves al amanecer.', icono: '🎶' }
+      { palabra: 'FABULA', silabas: ['FÁ', 'BU', 'LA'], pista: 'Cuento de animales que deja una hermosa moraleja.', icono: '' },
+      { palabra: 'POEMA', silabas: ['PO', 'E', 'MA'], pista: 'Composición llena de verso, rima y sentimientos.', icono: '' },
+      { palabra: 'CAMINO', silabas: ['CA', 'MI', 'NO'], pista: 'Sendero que recorremos para llegar a la escuela.', icono: '' },
+      { palabra: 'ESTRELLA', silabas: ['ES', 'TRE', 'LLA'], pista: 'Punto luminoso que brilla en el cielo nocturno.', icono: '' },
+      { palabra: 'COLOMBIA', silabas: ['CO', 'LOM', 'BIA'], pista: 'País de hermosas montañas, café y dos océanos.', icono: '' },
+      { palabra: 'CUADERNO', silabas: ['CUA', 'DER', 'NO'], pista: 'Hojas en blanco donde anotamos nuestras ideas.', icono: '' },
+      { palabra: 'ARDILLA', silabas: ['AR', 'DI', 'LLA'], pista: 'Animal inquieto que trepa comiendo frutos secos.', icono: '' },
+      { palabra: 'LEYENDA', silabas: ['LE', 'YEN', 'DA'], pista: 'Relato tradicional popular transmitido de abuelos a nietos.', icono: '' },
+      { palabra: 'SEMILLA', silabas: ['SE', 'MI', 'LLA'], pista: 'Pequeño grano que germina para dar frutos en la huerta.', icono: '' },
+      { palabra: 'BANDERA', silabas: ['BAN', 'DE', 'RA'], pista: 'Símbolo patrio tricolor que flamea con el viento.', icono: '' },
+      { palabra: 'PAJARO', silabas: ['PÁ', 'JA', 'RO'], pista: 'Ave libre que trina al amanecer con sus plumas.', icono: '' },
+      { palabra: 'CANTO', silabas: ['CAN', 'TO'], pista: 'Melodía que entonan las aves al amanecer.', icono: '' }
     ]
   },
   avanzado: {
     nombre: 'Nivel 3: Palabras Literarias de 4 Sílabas',
-    icono: '🌳',
+    icono: '',
     palabras: [
-      { palabra: 'METAFORA', silabas: ['ME', 'TÁ', 'FO', 'RA'], pista: 'Figura que compara dos realidades sin usar "como".', icono: '🎭' },
-      { palabra: 'PERSONAJE', silabas: ['PER', 'SO', 'NA', 'JE'], pista: 'Ser real o ficticio que actúa dentro de una historia.', icono: '🧙' },
-      { palabra: 'DICCIONARIO', silabas: ['DIC', 'CIO', 'NA', 'RIO'], pista: 'Libro maestro que reúne las definiciones del idioma.', icono: '📖' },
-      { palabra: 'LITERATURA', silabas: ['LI', 'TE', 'RA', 'TU', 'RA'], pista: 'Arte de la expresión verbal escrita y hablada.', icono: '✒️' },
-      { palabra: 'ORTOGRAFIA', silabas: ['OR', 'TO', 'GRA', 'FÍA'], pista: 'Reglas para escribir correctamente cada letra y tilde.', icono: '✍️' },
-      { palabra: 'NARRADOR', silabas: ['NA', 'RRA', 'DOR'], pista: 'Voz que relata los acontecimientos en una novela.', icono: '🗣️' },
-      { palabra: 'CRONOLOGIA', silabas: ['CRO', 'NO', 'LO', 'GÍA'], pista: 'Orden temporal en que ocurren los sucesos históricos.', icono: '⏳' },
-      { palabra: 'ARGUMENTO', silabas: ['AR', 'GU', 'MEN', 'TO'], pista: 'Razonamiento que demuestra o refuta una proposición.', icono: '💡' },
-      { palabra: 'HIPERBOLE', silabas: ['HI', 'PÉR', 'BO', 'LE'], pista: 'Exageración mayúscula para engrandecer una idea.', icono: '💥' },
-      { palabra: 'CALIGRAFIA', silabas: ['CA', 'LI', 'GRA', 'FÍA'], pista: 'Arte de trazar letras bellas y legibles a mano.', icono: '✒️' }
+      { palabra: 'METAFORA', silabas: ['ME', 'TÁ', 'FO', 'RA'], pista: 'Figura que compara dos realidades sin usar "como".', icono: '' },
+      { palabra: 'PERSONAJE', silabas: ['PER', 'SO', 'NA', 'JE'], pista: 'Ser real o ficticio que actúa dentro de una historia.', icono: '' },
+      { palabra: 'DICCIONARIO', silabas: ['DIC', 'CIO', 'NA', 'RIO'], pista: 'Libro maestro que reúne las definiciones del idioma.', icono: '' },
+      { palabra: 'LITERATURA', silabas: ['LI', 'TE', 'RA', 'TU', 'RA'], pista: 'Arte de la expresión verbal escrita y hablada.', icono: '' },
+      { palabra: 'ORTOGRAFIA', silabas: ['OR', 'TO', 'GRA', 'FÍA'], pista: 'Reglas para escribir correctamente cada letra y tilde.', icono: '' },
+      { palabra: 'NARRADOR', silabas: ['NA', 'RRA', 'DOR'], pista: 'Voz que relata los acontecimientos en una novela.', icono: '' },
+      { palabra: 'CRONOLOGIA', silabas: ['CRO', 'NO', 'LO', 'GÍA'], pista: 'Orden temporal en que ocurren los sucesos históricos.', icono: '' },
+      { palabra: 'ARGUMENTO', silabas: ['AR', 'GU', 'MEN', 'TO'], pista: 'Razonamiento que demuestra o refuta una proposición.', icono: '' },
+      { palabra: 'HIPERBOLE', silabas: ['HI', 'PÉR', 'BO', 'LE'], pista: 'Exageración mayúscula para engrandecer una idea.', icono: '' },
+      { palabra: 'CALIGRAFIA', silabas: ['CA', 'LI', 'GRA', 'FÍA'], pista: 'Arte de trazar letras bellas y legibles a mano.', icono: '' }
     ]
   }
 };
@@ -160,7 +160,7 @@ export default function ConstructorPalabras() {
             Arma-Palabras por Sílabas
           </span>
           <h3 className="text-2xl font-black text-slate-800 mt-1 flex items-center gap-2">
-            <span>🧩</span> Construcción Morfológica
+             Construcción Morfológica
           </h3>
           <p className="text-xs text-slate-500 font-semibold mt-0.5">
             Palabra {indiceReto + 1} de {retos.length} en este nivel
@@ -198,7 +198,7 @@ export default function ConstructorPalabras() {
                 onClick={escucharPista}
                 className="inline-flex items-center gap-1 text-[11px] font-black text-amber-900 bg-amber-200/90 hover:bg-amber-300 px-2.5 py-0.5 rounded-full cursor-pointer transition-transform active:scale-95 shadow-sm"
               >
-                <span>🔊</span> Escuchar en voz alta
+                 Escuchar en voz alta
               </button>
             </div>
             <p className="text-slate-800 font-bold text-sm sm:text-base leading-snug mt-0.5">
@@ -210,11 +210,11 @@ export default function ConstructorPalabras() {
         <div className="flex items-center gap-2 shrink-0">
           {streak > 1 && (
             <span className="bg-orange-500 text-white text-xs font-black px-2.5 py-1 rounded-xl animate-pulse">
-              🔥 Racha x{streak}
+               Racha x{streak}
             </span>
           )}
           <div className="bg-white border border-amber-300 px-3 py-1.5 rounded-xl text-sm font-black text-amber-900 shadow-sm">
-            ⭐ {puntaje} pts
+             {puntaje} pts
           </div>
         </div>
       </div>
@@ -278,7 +278,7 @@ export default function ConstructorPalabras() {
               : 'bg-rose-100 border-rose-400 text-rose-950'
           }`}
         >
-          <span>{estadoAcierto ? '🎉 ¡CORRECTO! ¡Formaste la palabra exacta!' : '❌ El orden no coincide. Toca las sílabas para reorganizarlas.'}</span>
+          <span>{estadoAcierto ? ' ¡CORRECTO! ¡Formaste la palabra exacta!' : ' El orden no coincide. Toca las sílabas para reorganizarlas.'}</span>
         </div>
       )}
 
@@ -289,7 +289,7 @@ export default function ConstructorPalabras() {
             onClick={() => cargarReto(indiceReto)}
             className="flex-1 py-3 bg-slate-800 hover:bg-slate-900 text-white font-bold text-sm rounded-xl transition-all cursor-pointer shadow-sm"
           >
-            🔄 Reintentar
+             Reintentar
           </button>
         )}
 
@@ -298,7 +298,7 @@ export default function ConstructorPalabras() {
             onClick={siguienteReto}
             className="flex-1 py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-base rounded-xl shadow-md transition-all active:scale-95 cursor-pointer animate-pulse"
           >
-            Siguiente Palabra ➔
+            Siguiente Palabra 
           </button>
         )}
       </div>

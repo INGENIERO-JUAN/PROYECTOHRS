@@ -6,15 +6,15 @@ export default function CofreTesoros() {
   const [abierto, setAbierto] = useState(false);
 
   const medallas = [
-    { nombre: 'Guardián de las Vocales', icono: '🅰️', grado: '1°', desc: 'Maestría en letras mágicas', desbloqueada: true },
-    { nombre: 'Detective de Rimas', icono: '🎵', grado: '2°', desc: 'Ritmo y rima campesina', desbloqueada: true },
-    { nombre: 'Sabio de las Fábulas', icono: '🦊', grado: '3°', desc: 'Descifró la moraleja', desbloqueada: true },
-    { nombre: 'Protector de Mitos', icono: '🌿', grado: '4°', desc: 'Respeto a la Madremonte', desbloqueada: true },
-    { nombre: 'Maestro Cuentacuentos', icono: '🏰', grado: '5°', desc: 'Inicio, nudo y desenlace', desbloqueada: true },
-    { nombre: 'Cronista de la Tradición', icono: '🔥', grado: '6°', desc: 'Voz viva de los abuelos', desbloqueada: true },
-    { nombre: 'Héroe de la Palabra', icono: '🦅', grado: '7°', desc: 'Polisemia y argumentos', desbloqueada: true },
-    { nombre: 'Arqueólogo Precolombino', icono: '🏺', grado: '8°', desc: 'Raíces muiscas y taironas', desbloqueada: true },
-    { nombre: 'Hijo del Maíz y Macondo', icono: '🦋', grado: '9°', desc: 'Popol Vuh y Gabo', desbloqueada: true }
+    { nombre: 'Guardián de las Vocales', icono: 'A', grado: '1°', desc: 'Maestría en letras mágicas', desbloqueada: true },
+    { nombre: 'Detective de Rimas', icono: '', grado: '2°', desc: 'Ritmo y rima campesina', desbloqueada: true },
+    { nombre: 'Sabio de las Fábulas', icono: '', grado: '3°', desc: 'Descifró la moraleja', desbloqueada: true },
+    { nombre: 'Protector de Mitos', icono: '', grado: '4°', desc: 'Respeto a la Madremonte', desbloqueada: true },
+    { nombre: 'Maestro Cuentacuentos', icono: '', grado: '5°', desc: 'Inicio, nudo y desenlace', desbloqueada: true },
+    { nombre: 'Cronista de la Tradición', icono: '', grado: '6°', desc: 'Voz viva de los abuelos', desbloqueada: true },
+    { nombre: 'Héroe de la Palabra', icono: '', grado: '7°', desc: 'Polisemia y argumentos', desbloqueada: true },
+    { nombre: 'Arqueólogo Precolombino', icono: '', grado: '8°', desc: 'Raíces muiscas y taironas', desbloqueada: true },
+    { nombre: 'Hijo del Maíz y Macondo', icono: '', grado: '9°', desc: 'Popol Vuh y Gabo', desbloqueada: true }
   ];
 
   const interactuarCofre = () => {
@@ -49,10 +49,10 @@ export default function CofreTesoros() {
           className="text-8xl sm:text-9xl transform hover:scale-110 active:scale-95 transition-transform cursor-pointer drop-shadow-2xl"
           title="Toca para abrir o cerrar"
         >
-          {abierto ? '👑' : '📦'}
+          {abierto ? '' : ''}
         </button>
         <span className="block text-xs font-black text-amber-900 mt-2 uppercase tracking-wider">
-          {abierto ? '✨ ¡Cofre Abierto! ✨' : '🔒 Toca el cofre para desbloquear'}
+          {abierto ? ' ¡Cofre Abierto! ' : ' Toca el cofre para desbloquear'}
         </span>
       </div>
 
@@ -60,7 +60,7 @@ export default function CofreTesoros() {
       {abierto && (
         <div className="animate-fade-in space-y-4 pt-4 border-t-2 border-amber-300">
           <h4 className="text-lg font-black text-amber-950">
-            🏅 Medallas Desbloqueadas por los Estudiantes:
+             Medallas Desbloqueadas por los Estudiantes:
           </h4>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
             {medallas.map((m, i) => (

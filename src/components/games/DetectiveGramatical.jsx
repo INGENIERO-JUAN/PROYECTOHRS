@@ -492,7 +492,7 @@ export default function DetectiveGramatical({ gradoNumero = 6 }) {
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
         <div>
           <h2 className="text-2xl sm:text-3xl font-black text-slate-800 flex items-center gap-2">
-            <span>🕵️</span> Detective Gramatical
+             Detective Gramatical
           </h2>
           <p className="text-slate-500 text-sm mt-1">
             Encuentra los errores ocultos en el texto — Grado {grado}°
@@ -505,12 +505,8 @@ export default function DetectiveGramatical({ gradoNumero = 6 }) {
             {Array.from({ length: 5 }).map((_, i) => (
               <span
                 key={i}
-                className={`text-xl transition-all duration-300 ${
-                  i < vidas ? 'opacity-100 scale-100' : 'opacity-20 scale-75'
-                }`}
-              >
-                🔍
-              </span>
+                className={"w-3.5 h-3.5 rounded-full border " + (i < vidas ? "bg-rose-500 border-rose-400" : "bg-slate-200 border-slate-300")}
+              />
             ))}
           </div>
 
@@ -545,7 +541,7 @@ export default function DetectiveGramatical({ gradoNumero = 6 }) {
       {/* Juego terminado — victoria */}
       {juegoTerminado && (
         <div className="text-center py-12">
-          <p className="text-6xl mb-4">🏆</p>
+          <p className="text-6xl mb-4"></p>
           <h3 className="text-2xl font-black text-slate-800 mb-2">
             ¡Caso resuelto, detective!
           </h3>
@@ -567,7 +563,7 @@ export default function DetectiveGramatical({ gradoNumero = 6 }) {
       {/* Game over */}
       {gameOver && !juegoTerminado && (
         <div className="text-center py-12">
-          <p className="text-6xl mb-4">📋</p>
+          <p className="text-6xl mb-4"></p>
           <h3 className="text-2xl font-black text-slate-800 mb-2">
             Caso cerrado
           </h3>
@@ -593,7 +589,7 @@ export default function DetectiveGramatical({ gradoNumero = 6 }) {
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-4">
             <div>
               <h3 className="font-bold text-slate-700 text-lg flex items-center gap-2">
-                <span className="text-indigo-500">📄</span>
+                
                 {pasajeActual.titulo}
               </h3>
               <p className="text-sm text-slate-500">
@@ -615,7 +611,7 @@ export default function DetectiveGramatical({ gradoNumero = 6 }) {
               }`}
               title="Resalta un error sin encontrar (cuesta 50 puntos)"
             >
-              💡 Pista
+               Pista
               <span className="text-xs opacity-70">(-50 pts)</span>
             </button>
           </div>
@@ -657,7 +653,7 @@ export default function DetectiveGramatical({ gradoNumero = 6 }) {
                     title={encontrada ? pasajeActual.errores[idx]?.correcto : ''}
                   >
                     {encontrada && erroresDelPasaje.includes(idx)
-                      ? `${palabra} ✓`
+                      ? `${palabra} `
                       : palabra}
                   </span>
                 );
@@ -680,7 +676,7 @@ export default function DetectiveGramatical({ gradoNumero = 6 }) {
             >
               {mensajeError.tipo === 'correcto' ? (
                 <>
-                  <span className="font-bold">✓ ¡Correcto!</span>{' '}
+                  <span className="font-bold"> ¡Correcto!</span>{' '}
                   {mensajeError.texto} → <em>{mensajeError.correccion}</em>
                 </>
               ) : (
@@ -693,7 +689,7 @@ export default function DetectiveGramatical({ gradoNumero = 6 }) {
           {celebrando && (
             <div className="text-center py-4 animate-pulse">
               <p className="text-2xl font-black text-indigo-600">
-                🎉 ¡Pasaje completado!
+                 ¡Pasaje completado!
               </p>
               <p className="text-slate-500 text-sm">
                 Preparando el siguiente caso...

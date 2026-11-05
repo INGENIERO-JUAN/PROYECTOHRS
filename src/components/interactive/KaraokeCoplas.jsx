@@ -12,7 +12,7 @@ export default function KaraokeCoplas() {
         ['despertando', 'los', 'senderos'],
         ['con', 'su', 'canto', 'tan', 'bonito']
       ],
-      icono: '🦜'
+      icono: ''
     },
     {
       titulo: 'Copla del Café y la Tierra',
@@ -22,7 +22,7 @@ export default function KaraokeCoplas() {
         ['se', 'trabaja', 'con', 'cariño'],
         ['con', 'respeto', 'y', 'mucha', 'fe']
       ],
-      icono: '☕'
+      icono: ''
     }
   ];
 
@@ -98,12 +98,12 @@ export default function KaraokeCoplas() {
           }}
           className="px-3.5 py-1.5 bg-slate-100 hover:bg-slate-200 text-slate-700 text-xs font-black rounded-xl border border-slate-300 cursor-pointer"
         >
-          🔄 Cambiar Copla
+           Cambiar Copla
         </button>
       </div>
 
       <p className="text-slate-600 font-bold text-sm">
-        Sigue la estrella saltarina ⭐ cantando y aplaudiendo al ritmo del verso con todo el salón:
+        Sigue la estrella saltarina  cantando y aplaudiendo al ritmo del verso con todo el salón:
       </p>
 
       {/* Pantalla de Karaoke con Versos Rítmicos */}
@@ -123,7 +123,7 @@ export default function KaraokeCoplas() {
                 >
                   {estaActiva && (
                     <span className="absolute -top-6 left-1/2 transform -translate-x-1/2 text-lg">
-                      ⭐
+                      
                     </span>
                   )}
                   {palabra}
@@ -141,14 +141,14 @@ export default function KaraokeCoplas() {
             onClick={iniciarKaraoke}
             className="px-8 py-4 bg-gradient-to-r from-rose-500 to-pink-600 hover:from-rose-600 hover:to-pink-700 text-white font-black text-lg sm:text-xl rounded-2xl shadow-xl border-b-6 border-rose-800 active:border-b-0 active:translate-y-1 transition-all flex items-center justify-center gap-2 mx-auto cursor-pointer"
           >
-            <span>🎤</span> ¡Cantar con el Salón!
+             ¡Cantar con el Salón!
           </button>
         ) : (
           <button
             onClick={detenerKaraoke}
             className="px-8 py-4 bg-slate-800 hover:bg-slate-900 text-white font-black text-lg rounded-2xl shadow-md transition-all cursor-pointer mx-auto"
           >
-            ⏹️ Detener Karaoke
+             Detener Karaoke
           </button>
         )}
       </div>

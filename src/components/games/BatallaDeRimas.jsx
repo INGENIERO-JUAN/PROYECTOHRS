@@ -17,7 +17,7 @@ const COPLAS_BATALLA = [
       { texto: 'el camino estaba solo y me fui para la escuela.', correcta: false, explicacion: 'Termina en -ela, métrica no coincidente.' }
     ],
     tema: 'Copla Tradicional',
-    icono: '🍋'
+    icono: ''
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ const COPLAS_BATALLA = [
       { texto: 'los árboles de la sierra que tocan el cielo azul.', correcta: false, explicacion: 'Termina en -ul.' }
     ],
     tema: 'Mitos y Leyendas',
-    icono: '🌿'
+    icono: ''
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const COPLAS_BATALLA = [
       { texto: 'los pollitos se acostaron a dormir en el granero.', correcta: false, explicacion: 'Termina en -ero.' }
     ],
     tema: 'Tradición Rural',
-    icono: '🐔'
+    icono: ''
   },
   {
     id: 4,
@@ -59,7 +59,7 @@ const COPLAS_BATALLA = [
       { texto: 'las historias de los abuelos se quedan en la memoria.', correcta: false, explicacion: 'Termina en -oria.' }
     ],
     tema: 'Realismo Mágico',
-    icono: '🦋'
+    icono: ''
   },
   {
     id: 5,
@@ -73,7 +73,7 @@ const COPLAS_BATALLA = [
       { texto: 'comparte con sus amigos en el patio de recreo.', correcta: false, explicacion: 'Termina en -eo.' }
     ],
     tema: 'El Valor del Lenguaje',
-    icono: '📚'
+    icono: ''
   },
   {
     id: 6,
@@ -87,7 +87,7 @@ const COPLAS_BATALLA = [
       { texto: 'los terneros van corriendo alegremente en la sabana.', correcta: false, explicacion: 'Termina en -ana.' }
     ],
     tema: 'Joropo Llanero',
-    icono: '🐎'
+    icono: ''
   },
   {
     id: 7,
@@ -101,7 +101,7 @@ const COPLAS_BATALLA = [
       { texto: 'los caimanes descansan tomando el sol caliente.', correcta: false, explicacion: 'Termina en -ente.' }
     ],
     tema: 'Río Magdalena',
-    icono: '🛶'
+    icono: ''
   },
   {
     id: 8,
@@ -115,7 +115,7 @@ const COPLAS_BATALLA = [
       { texto: 'el cielo se viste de nubes grises al atardecer.', correcta: false, explicacion: 'Termina en -er.' }
     ],
     tema: 'Pacífico Colombiano',
-    icono: '🥁'
+    icono: ''
   },
   {
     id: 9,
@@ -129,7 +129,7 @@ const COPLAS_BATALLA = [
       { texto: 'los bueyes van arando la tierra para la siembra.', correcta: false, explicacion: 'Termina en -embra.' }
     ],
     tema: 'Trova Andina',
-    icono: '🧶'
+    icono: ''
   },
   {
     id: 10,
@@ -143,7 +143,7 @@ const COPLAS_BATALLA = [
       { texto: 'escribiendo en su libreta con letra redondita.', correcta: false, explicacion: 'Termina en -ita.' }
     ],
     tema: 'Lectura y Creación',
-    icono: '⛵'
+    icono: ''
   },
   {
     id: 11,
@@ -157,7 +157,7 @@ const COPLAS_BATALLA = [
       { texto: 'cuenta las sílabas con los dedos de la mano.', correcta: false, explicacion: 'Termina en -ano.' }
     ],
     tema: 'Regla Ortográfica',
-    icono: '✍️'
+    icono: ''
   },
   {
     id: 12,
@@ -171,7 +171,7 @@ const COPLAS_BATALLA = [
       { texto: 'las mariposas lo miran desde la hierba fresca.', correcta: false, explicacion: 'Termina en -esca.' }
     ],
     tema: 'Canto a la Naturaleza',
-    icono: '🐦'
+    icono: ''
   }
 ];
 
@@ -280,10 +280,10 @@ export default function BatallaDeRimas() {
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-fuchsia-800/60 pb-5">
         <div>
           <div className="inline-flex items-center gap-2 bg-fuchsia-500/20 text-fuchsia-300 border border-fuchsia-400/40 text-xs font-black px-3.5 py-1 rounded-full uppercase tracking-wider mb-1">
-            <span>🎤</span> Duelo Musical de Métrica y Tradición Oral
+             Duelo Musical de Métrica y Tradición Oral
           </div>
           <h3 className="text-2xl sm:text-4xl font-black text-white mt-1 flex items-center gap-2">
-            <span>🔥</span> Batalla de Rimas y Coplas
+             Batalla de Rimas y Coplas
           </h3>
           <p className="text-xs sm:text-sm text-fuchsia-200">
             Coplas colombianas • Ronda {indiceRonda + 1} de {COPLAS_BATALLA.length} • Sigue el compás y clava la rima
@@ -302,7 +302,7 @@ export default function BatallaDeRimas() {
               : 'bg-slate-900 text-slate-400 border-slate-700'
           }`}
         >
-          <span>{ritmoActivo ? '🔊' : '🔇'}</span>
+          <span>{ritmoActivo ? '' : ''}</span>
           <span>{ritmoActivo ? 'Beatbox: ACTIVO' : 'Beatbox: PAUSA'}</span>
         </button>
       </div>
@@ -310,7 +310,7 @@ export default function BatallaDeRimas() {
       {/* Marcadores: Puntos, Flow Combo y Aplausómetro */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
         <div className="bg-slate-950/80 p-4 rounded-3xl border-2 border-fuchsia-900/80 flex items-center gap-3">
-          <span className="text-3xl">⭐</span>
+          <span className="text-3xl"></span>
           <div>
             <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest block">
               Puntos de Rima:
@@ -322,7 +322,7 @@ export default function BatallaDeRimas() {
         </div>
 
         <div className="bg-slate-950/80 p-4 rounded-3xl border-2 border-fuchsia-900/80 flex items-center gap-3">
-          <span className="text-3xl animate-bounce">🔥</span>
+          
           <div>
             <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest block">
               Combo de Flow:
@@ -335,7 +335,7 @@ export default function BatallaDeRimas() {
 
         <div className="bg-slate-950/80 p-4 rounded-3xl border-2 border-fuchsia-900/80 space-y-1">
           <div className="flex justify-between text-xs font-bold">
-            <span className="text-fuchsia-300">👏 Aplausómetro del Público:</span>
+            <span className="text-fuchsia-300"> Aplausómetro del Público:</span>
             <span className="text-amber-400">{aplausometro}%</span>
           </div>
           <div className="w-full bg-slate-900 rounded-full h-3.5 overflow-hidden p-0.5 border border-fuchsia-800">
@@ -350,19 +350,19 @@ export default function BatallaDeRimas() {
       {/* Pantalla Final o Verso Activo */}
       {juegoTerminado ? (
         <div className="bg-slate-900/90 border-4 border-fuchsia-500 rounded-3xl p-8 text-center space-y-4 animate-fade-in max-w-lg mx-auto shadow-2xl">
-          <span className="text-7xl block animate-bounce">👑🎤✨</span>
+          
           <h4 className="text-3xl font-black text-fuchsia-400">¡GRAN MAESTRO DE LA RIMA!</h4>
           <p className="text-slate-200 text-sm font-semibold">
             Te consagraste como el coplero supremo de la tradición oral colombiana.
           </p>
           <div className="text-4xl font-black text-amber-400">
-            {puntaje} PUNTOS DE FLOW ⭐
+            {puntaje} PUNTOS DE FLOW 
           </div>
           <button
             onClick={reiniciar}
             className="px-8 py-3.5 bg-gradient-to-r from-fuchsia-500 to-purple-600 text-white font-black text-base rounded-2xl shadow-xl hover:scale-105 active:scale-95 transition-all cursor-pointer"
           >
-            🔄 Iniciar Nueva Batalla
+             Iniciar Nueva Batalla
           </button>
         </div>
       ) : (
@@ -384,7 +384,7 @@ export default function BatallaDeRimas() {
             </div>
 
             <p className="text-xs text-slate-400 font-semibold pt-1">
-              👇 ¿Cuál de los siguientes versos completa la copla con la métrica y rima exacta?
+               ¿Cuál de los siguientes versos completa la copla con la métrica y rima exacta?
             </p>
           </div>
 
@@ -411,7 +411,7 @@ export default function BatallaDeRimas() {
                   onClick={() => elegirRima(op)}
                   className={`p-4 rounded-2xl border-3 text-left transition-all duration-150 flex items-start gap-3 select-none active:scale-98 cursor-pointer ${estiloBoton}`}
                 >
-                  <span className="text-xl mt-0.5">🎵</span>
+                  
                   <div>
                     <span className="font-bold text-sm sm:text-base leading-snug block">
                       "{op.texto}"
@@ -433,7 +433,7 @@ export default function BatallaDeRimas() {
             >
               <div>
                 <h5 className="font-black text-base flex items-center gap-2">
-                  <span>{esAcierto ? '🔥 ¡RIMÓ CON FLOW PERFECTO!' : '⚠️ ¡RIMA DESAFINADA!'}</span>
+                  <span>{esAcierto ? ' ¡RIMÓ CON FLOW PERFECTO!' : ' ¡RIMA DESAFINADA!'}</span>
                 </h5>
                 <p className="text-xs sm:text-sm mt-1 font-semibold leading-relaxed">
                   {coplaActual.opciones.find((o) => o.texto === seleccionada)?.explicacion}
@@ -444,7 +444,7 @@ export default function BatallaDeRimas() {
                 onClick={siguienteRonda}
                 className="px-6 py-3 bg-fuchsia-500 hover:bg-fuchsia-400 text-white font-black text-sm rounded-xl shadow-md transition-all active:scale-95 cursor-pointer shrink-0"
               >
-                Siguiente Copla ➔
+                Siguiente Copla 
               </button>
             </div>
           )}

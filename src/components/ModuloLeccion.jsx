@@ -58,28 +58,28 @@ export default function ModuloLeccion({ guia, gradoNombre, gradoNumero = 1, masc
     {
       id: 'leccion',
       label: '1. Lectura y Lección',
-      icono: '📖',
+      icono: '',
       desc: 'Lectura oficial, conceptos y teatro',
       color: esSecundaria ? 'bg-violet-600 border-violet-700' : 'bg-emerald-600 border-emerald-700'
     },
     {
       id: 'comprension',
       label: '2. Comprensión y Cuaderno',
-      icono: '🧠',
+      icono: '',
       desc: 'Preguntas en 3 niveles, cuaderno y glosario',
       color: 'bg-indigo-600 border-indigo-700'
     },
     {
       id: 'juegos',
       label: '3. Sala de Juegos Didácticos',
-      icono: '🎮',
+      icono: '',
       desc: 'Arcade adaptado con 15 juegos',
       color: 'bg-amber-500 border-amber-600'
     },
     {
       id: 'herramientas',
       label: '4. Taller y Herramientas',
-      icono: '🛠️',
+      icono: '️',
       desc: 'Pizarra, fichas imprimibles y retos',
       color: 'bg-slate-800 border-slate-900'
     }
@@ -90,7 +90,7 @@ export default function ModuloLeccion({ guia, gradoNombre, gradoNumero = 1, masc
       {/* ══════════ MENÚ SUPERIOR DE LOS 4 PILARES PEDAGÓGICOS ══════════ */}
       <div className="bg-white rounded-3xl p-3 shadow-md border-2 border-slate-200">
         <span className="text-[11px] font-black uppercase tracking-wider text-slate-400 block px-2 mb-2 text-center sm:text-left">
-          Pasos de la Guía: Aprende ➔ Comprende ➔ Juega ➔ Aplica
+          Pasos de la Guía: Aprende  Comprende  Juega  Aplica
         </span>
 
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-2">
@@ -135,7 +135,7 @@ export default function ModuloLeccion({ guia, gradoNombre, gradoNumero = 1, masc
                     : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
-                📖 Texto de la Lección
+                 Texto de la Lección
               </button>
 
               <button
@@ -146,7 +146,7 @@ export default function ModuloLeccion({ guia, gradoNombre, gradoNumero = 1, masc
                     : 'text-slate-600 hover:text-slate-900'
                 }`}
               >
-                🎭 Teatro Ilustrado / Oratoria
+                 Teatro Ilustrado / Oratoria
               </button>
             </div>
 
@@ -201,7 +201,7 @@ export default function ModuloLeccion({ guia, gradoNombre, gradoNumero = 1, masc
                         : 'bg-indigo-50 hover:bg-indigo-100 text-indigo-900 border border-indigo-200'
                     }`}
                   >
-                    <span>{leyendoVoz ? '⏹️ Detener Voz' : '🔊 Escuchar Lección'}</span>
+                    <span>{leyendoVoz ? '⏹️ Detener Voz' : ' Escuchar Lección'}</span>
                   </button>
                 </div>
               </div>
@@ -228,7 +228,7 @@ export default function ModuloLeccion({ guia, gradoNombre, gradoNumero = 1, masc
               {/* ¿Sabías que...? */}
               {guia.leccion?.sabiasQue && (
                 <div className="bg-amber-50 border-2 border-amber-200 p-5 rounded-2xl flex items-start gap-4">
-                  <span className="text-3xl p-2 bg-white rounded-xl shadow-xs shrink-0">💡</span>
+                  <span className="text-3xl p-2 bg-white rounded-xl shadow-xs shrink-0"></span>
                   <div>
                     <h4 className="font-extrabold text-amber-900 text-xs uppercase tracking-wider mb-1">
                       ¿Sabías que...?
@@ -244,12 +244,12 @@ export default function ModuloLeccion({ guia, gradoNombre, gradoNumero = 1, masc
               {guia.leccion?.conceptosClave && (
                 <div className="space-y-3 pt-2">
                   <h4 className="text-base font-black text-slate-800 flex items-center gap-2">
-                    <span>🧠</span> Conceptos Clave que Debes Aprender:
+                    <span></span> Conceptos Clave que Debes Aprender:
                   </h4>
                   <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
                     {guia.leccion.conceptosClave.map((c, i) => (
                       <div key={i} className="bg-slate-50 border border-slate-200 p-4 rounded-2xl">
-                        <span className="text-2xl block mb-1">{c.dibujo || '📌'}</span>
+                        <span className="text-2xl block mb-1">{c.dibujo || ''}</span>
                         <h5 className="font-extrabold text-slate-800 text-sm">{c.concepto}</h5>
                         <p className="text-slate-600 text-xs mt-1 leading-relaxed">{c.ejemplo}</p>
                       </div>
@@ -265,7 +265,7 @@ export default function ModuloLeccion({ guia, gradoNombre, gradoNumero = 1, masc
                   className="px-6 py-3.5 bg-gradient-to-r from-indigo-600 to-violet-600 text-white font-black text-sm rounded-2xl shadow-lg hover:scale-105 active:scale-95 transition-all flex items-center gap-2 cursor-pointer"
                 >
                   <span>Paso 2: Taller de Comprensión y Cuaderno</span>
-                  <span>➔</span>
+                  <span></span>
                 </button>
               </div>
             </div>
@@ -288,7 +288,7 @@ export default function ModuloLeccion({ guia, gradoNombre, gradoNumero = 1, masc
                 subSeccion === 'principal' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-600'
               }`}
             >
-              🧠 Taller en 3 Niveles
+               Taller en 3 Niveles
             </button>
             <button
               onClick={() => setSubSeccion('cuaderno')}
@@ -296,7 +296,7 @@ export default function ModuloLeccion({ guia, gradoNombre, gradoNumero = 1, masc
                 subSeccion === 'cuaderno' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-600'
               }`}
             >
-              📓 Actividades al Cuaderno
+               Actividades al Cuaderno
             </button>
             <button
               onClick={() => setSubSeccion('glosario')}
@@ -304,7 +304,7 @@ export default function ModuloLeccion({ guia, gradoNombre, gradoNumero = 1, masc
                 subSeccion === 'glosario' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-600'
               }`}
             >
-              📚 Glosario de Términos
+               Glosario de Términos
             </button>
           </div>
 
@@ -320,7 +320,7 @@ export default function ModuloLeccion({ guia, gradoNombre, gradoNumero = 1, masc
                   className="px-6 py-3.5 bg-gradient-to-r from-amber-400 to-orange-500 text-slate-950 font-black text-sm rounded-2xl shadow-lg hover:scale-105 active:scale-95 transition-all flex items-center gap-2 cursor-pointer"
                 >
                   <span>Paso 3: ¡Jugar en el Arcade de esta Guía!</span>
-                  <span>➔</span>
+                  <span></span>
                 </button>
               </div>
             </div>
@@ -332,7 +332,7 @@ export default function ModuloLeccion({ guia, gradoNombre, gradoNumero = 1, masc
               <div className="bg-white rounded-3xl p-6 sm:p-10 shadow-sm border border-slate-200/80 space-y-6">
                 <div className="flex items-center gap-4 border-b border-slate-100 pb-5">
                   <div className="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center text-2xl border border-indigo-200">
-                    📓
+                    
                   </div>
                   <div>
                     <span className="text-[10px] font-black uppercase tracking-widest bg-indigo-50 text-indigo-700 px-3 py-0.5 rounded-full border border-indigo-200">
@@ -385,7 +385,7 @@ export default function ModuloLeccion({ guia, gradoNombre, gradoNumero = 1, masc
                 subSeccion === 'principal' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-600'
               }`}
             >
-              🎮 Arcade Didáctico Completo ({gradoNumero}° Grado)
+               Arcade Didáctico Completo ({gradoNumero}° Grado)
             </button>
             {!esSecundaria && (
               <>
@@ -403,7 +403,7 @@ export default function ModuloLeccion({ guia, gradoNombre, gradoNumero = 1, masc
                     subSeccion === 'karaoke' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-600'
                   }`}
                 >
-                  🎤 Karaoke de Coplas
+                   Karaoke de Coplas
                 </button>
               </>
             )}
@@ -434,7 +434,7 @@ export default function ModuloLeccion({ guia, gradoNombre, gradoNumero = 1, masc
                 subSeccion === 'principal' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-600'
               }`}
             >
-              🖨️ Ficha Imprimible
+              ️ Ficha Imprimible
             </button>
             <button
               onClick={() => setSubSeccion('pizarra')}
@@ -442,7 +442,7 @@ export default function ModuloLeccion({ guia, gradoNombre, gradoNumero = 1, masc
                 subSeccion === 'pizarra' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-600'
               }`}
             >
-              🖍️ Pizarra Táctil
+              ️ Pizarra Táctil
             </button>
             <button
               onClick={() => setSubSeccion('retos')}
@@ -450,7 +450,7 @@ export default function ModuloLeccion({ guia, gradoNombre, gradoNumero = 1, masc
                 subSeccion === 'retos' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-600'
               }`}
             >
-              🎭 Retos de Clase (45m)
+               Retos de Clase (45m)
             </button>
             <button
               onClick={() => setSubSeccion('sorteo')}
@@ -458,7 +458,7 @@ export default function ModuloLeccion({ guia, gradoNombre, gradoNumero = 1, masc
                 subSeccion === 'sorteo' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-600'
               }`}
             >
-              🎲 ¿Quién Pasa?
+               ¿Quién Pasa?
             </button>
             <button
               onClick={() => setSubSeccion('cuentos')}
@@ -466,7 +466,7 @@ export default function ModuloLeccion({ guia, gradoNombre, gradoNumero = 1, masc
                 subSeccion === 'cuentos' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-600'
               }`}
             >
-              ✍️ Taller de Cuentos
+              ️ Taller de Cuentos
             </button>
             <button
               onClick={() => setSubSeccion('tesoros')}
@@ -474,7 +474,7 @@ export default function ModuloLeccion({ guia, gradoNombre, gradoNumero = 1, masc
                 subSeccion === 'tesoros' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-600'
               }`}
             >
-              👑 Medallero
+               Medallero
             </button>
           </div>
 

@@ -8,7 +8,7 @@ const CASOS_TRIBUNAL = [
   {
     id: 1,
     acusador: 'Fiscal Retórico',
-    avatar: '👨‍⚖️',
+    avatar: '',
     caso: 'Debate Escolar sobre Reciclaje',
     argumento: '"No debemos escuchar la propuesta de Mateo sobre reciclar en el colegio; ¡todos sabemos que a Mateo le va mal en matemáticas y no se peina bien!"',
     tipoCorrecto: 'Ad Hominem',
@@ -23,7 +23,7 @@ const CASOS_TRIBUNAL = [
   {
     id: 2,
     acusador: 'Senador de la Hipérbole',
-    avatar: '🧐',
+    avatar: '',
     caso: 'Presupuesto de la Biblioteca',
     argumento: '"Los estudiantes que piden comprar más novelas y poemas para la biblioteca quieren que cerremos la cancha deportiva para siempre y que nadie vuelva a hacer ejercicio."',
     tipoCorrecto: 'Hombre de Paja',
@@ -38,7 +38,7 @@ const CASOS_TRIBUNAL = [
   {
     id: 3,
     acusador: 'Testigo Supersticioso',
-    avatar: '🧙‍♂️',
+    avatar: '',
     caso: 'El Clima de la Vereda',
     argumento: '"Ayer cantó un gallo negro a medianoche en la loma y hoy cayó una tormenta terrible. Por lo tanto, el canto del gallo desató la tempestad."',
     tipoCorrecto: 'Falsa Causa',
@@ -53,7 +53,7 @@ const CASOS_TRIBUNAL = [
   {
     id: 4,
     acusador: 'Influencer Publicitario',
-    avatar: '📱',
+    avatar: '',
     caso: 'Salud y Remedios Mágicos',
     argumento: '"Este jarabe de hierbas cura todas las enfermedades pulmonares sin excepción, porque lo recomendó en un video un cantante famosísimo de reguetón."',
     tipoCorrecto: 'Apelacion Autoridad',
@@ -68,7 +68,7 @@ const CASOS_TRIBUNAL = [
   {
     id: 5,
     acusador: 'Capitán del Absolutismo',
-    avatar: '💂',
+    avatar: '',
     caso: 'Convivencia Ciudadana',
     argumento: '"O estás 100% de acuerdo con todas y cada una de mis reglas de convivencia, o estás a favor del desorden total y la anarquía en la escuela."',
     tipoCorrecto: 'Falso Dilema',
@@ -83,7 +83,7 @@ const CASOS_TRIBUNAL = [
   {
     id: 6,
     acusador: 'Estudiante Dramático',
-    avatar: '🥺',
+    avatar: '',
     caso: 'Evaluación de Ortografía',
     argumento: '"Profesor, usted no puede calificarme mal por no poner tildes ni comas, porque si repruebo mi perrito se va a poner muy triste y llorará toda la tarde."',
     tipoCorrecto: 'Apelacion Emocion',
@@ -98,7 +98,7 @@ const CASOS_TRIBUNAL = [
   {
     id: 7,
     acusador: 'Turista Acelerado',
-    avatar: '🤠',
+    avatar: '',
     caso: 'Caracterización de Pueblos',
     argumento: '"Ayer llegué al pueblo vecino y el primer vendedor que vi me cobró de más. ¡Por lo tanto, todos los habitantes de ese departamento son tramposos!"',
     tipoCorrecto: 'Generalizacion Apresurada',
@@ -113,7 +113,7 @@ const CASOS_TRIBUNAL = [
   {
     id: 8,
     acusador: 'Profesor de Lógica',
-    avatar: '👩‍🏫',
+    avatar: '',
     caso: 'Estructura del Texto Argumentativo',
     argumento: '"Todos los textos de opinión rigurosos presentan una tesis clara apoyada en evidencias empíricas. Este editorial presenta una tesis clara y tres fuentes de investigación empírica. Por lo tanto, cumple con la estructura requerida."',
     tipoCorrecto: 'Valido',
@@ -128,7 +128,7 @@ const CASOS_TRIBUNAL = [
   {
     id: 9,
     acusador: 'Compañero Evasivo',
-    avatar: '😏',
+    avatar: '',
     caso: 'Puntualidad en la Asamblea',
     argumento: '"Tú me dices que no llegue tarde a la reunión de personería escolar, pero tú llegaste tarde al recreo el martes pasado, así que no tienes derecho a decirme nada."',
     tipoCorrecto: 'Tu Quoque',
@@ -143,7 +143,7 @@ const CASOS_TRIBUNAL = [
   {
     id: 10,
     acusador: 'Profeta Catastrófico',
-    avatar: '😱',
+    avatar: '',
     caso: 'Uso de Cuadernos con Dibujos',
     argumento: '"Si permitimos que los estudiantes dibujen en las márgenes de su cuaderno hoy, mañana nadie tomará apuntes, el próximo año reprobarán el colegio y el país terminará en la ruina absoluta."',
     tipoCorrecto: 'Pendiente Resbaladiza',
@@ -158,7 +158,7 @@ const CASOS_TRIBUNAL = [
   {
     id: 11,
     acusador: 'Voz de la Muchedumbre',
-    avatar: '🗣️',
+    avatar: '',
     caso: 'Copia en Exámenes',
     argumento: '"Copiar las respuestas de la evaluación no puede estar mal, porque todos los estudiantes de los tres salones lo están haciendo hoy."',
     tipoCorrecto: 'Ad Populum',
@@ -173,7 +173,7 @@ const CASOS_TRIBUNAL = [
   {
     id: 12,
     acusador: 'Capitán Intimidador',
-    avatar: '🥊',
+    avatar: '',
     caso: 'Elección del Representante',
     argumento: '"Mi propuesta de torneo de fútbol debe ganar la votación del curso, porque el que vote en contra se las verá conmigo a la salida."',
     tipoCorrecto: 'Ad Baculum',
@@ -188,7 +188,7 @@ const CASOS_TRIBUNAL = [
   {
     id: 13,
     acusador: 'Filósofo Circular',
-    avatar: '🔄',
+    avatar: '',
     caso: 'Autoridad de un Manuscrito',
     argumento: '"Este libro histórico dice la verdad absoluta porque fue dictado por el sabio supremo, y sabemos que es el sabio supremo porque este mismo libro lo afirma en su prólogo."',
     tipoCorrecto: 'Circular',
@@ -203,7 +203,7 @@ const CASOS_TRIBUNAL = [
   {
     id: 14,
     acusador: 'Investigadora Científica',
-    avatar: '🔬',
+    avatar: '',
     caso: 'Hábito de Lectura Diaria',
     argumento: '"Dedicar 20 minutos diarios a la lectura incrementa el vocabulario activo y la comprensión en estudiantes, según evidenció un estudio longitudinal de tres años con más de mil alumnos en Colombia."',
     tipoCorrecto: 'Valido',
@@ -322,10 +322,10 @@ export default function JuicioFalacias() {
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 border-b border-amber-700/60 pb-5">
         <div>
           <div className="inline-flex items-center gap-2 bg-amber-500/20 text-amber-300 border border-amber-400/50 text-xs font-black px-3.5 py-1 rounded-full uppercase tracking-wider mb-1">
-            <span>⚖️</span> Sala de Debate, Oratoria y Falacias (6° a 9°)
+             Sala de Debate, Oratoria y Falacias (6° a 9°)
           </div>
           <h3 className="text-2xl sm:text-4xl font-black text-white mt-1 flex items-center gap-2">
-            <span>🔨</span> El Tribunal de las Falacias
+             El Tribunal de las Falacias
           </h3>
           <p className="text-xs sm:text-sm text-amber-200/90 font-medium">
             Caso {indiceCaso + 1} de {CASOS_TRIBUNAL.length} • Analiza el discurso y ¡estampa tu objeción antes de que caiga el martillo!
@@ -336,12 +336,12 @@ export default function JuicioFalacias() {
         <div className="flex items-center gap-3">
           <div className="bg-slate-950 px-4 py-2 rounded-2xl border-2 border-amber-400 text-center">
             <span className="text-[10px] font-black text-amber-400 uppercase tracking-widest block">Puntos</span>
-            <span className="text-xl sm:text-2xl font-black text-white">⭐ {puntaje}</span>
+            <span className="text-xl sm:text-2xl font-black text-white"> {puntaje}</span>
           </div>
 
           <div className="bg-slate-950 px-3 py-2 rounded-2xl border-2 border-orange-500 text-center">
             <span className="text-[10px] font-black text-orange-400 uppercase tracking-widest block">Racha</span>
-            <span className="text-xl font-black text-orange-300">🔥 x{racha}</span>
+            <span className="text-xl font-black text-orange-300"> x{racha}</span>
           </div>
 
           <div
@@ -359,19 +359,19 @@ export default function JuicioFalacias() {
       {/* Pantalla Final de Sentencia */}
       {juegoTerminado ? (
         <div className="bg-slate-900/90 border-4 border-amber-400 rounded-3xl p-8 text-center space-y-5 animate-fade-in max-w-xl mx-auto shadow-2xl">
-          <span className="text-7xl block animate-bounce">⚖️👑</span>
+          
           <h4 className="text-3xl font-black text-amber-400">¡VEREDICTO FINAL DICTADO!</h4>
           <p className="text-slate-200 font-semibold text-base">
             Has desenmascarado las falacias argumentativas con la destreza de un gran jurista y orador.
           </p>
           <div className="text-4xl font-black text-emerald-400">
-            {puntaje} PUNTOS DE HONOR ⭐
+            {puntaje} PUNTOS DE HONOR 
           </div>
           <button
             onClick={reiniciarTribunal}
             className="px-8 py-4 bg-gradient-to-r from-amber-400 to-orange-500 text-slate-950 font-black text-base rounded-2xl shadow-xl hover:scale-105 active:scale-95 transition-all cursor-pointer"
           >
-            🔄 Iniciar Nuevo Juicio
+             Iniciar Nuevo Juicio
           </button>
         </div>
       ) : (
@@ -395,7 +395,7 @@ export default function JuicioFalacias() {
                 onClick={leerCasoVoz}
                 className="px-3.5 py-1.5 bg-amber-500/20 hover:bg-amber-500/40 text-amber-200 border border-amber-400/50 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer active:scale-95"
               >
-                <span>🔊</span> Leer Argumento
+                 Leer Argumento
               </button>
             </div>
 
@@ -414,7 +414,7 @@ export default function JuicioFalacias() {
                 }`}
               >
                 <div className="flex items-center gap-3">
-                  <span className="text-3xl">{estadoVeredicto === 'acierto' ? '✅' : '❌'}</span>
+                  <span className="text-3xl">{estadoVeredicto === 'acierto' ? '' : ''}</span>
                   <div>
                     <h5 className="font-black text-base">
                       {estadoVeredicto === 'acierto' ? '¡OBJECIÓN A LUGAR! (+180 XP)' : '¡OBJECIÓN DENEGADA!'}
@@ -427,7 +427,7 @@ export default function JuicioFalacias() {
                   onClick={siguienteCaso}
                   className="px-5 py-2.5 bg-amber-400 hover:bg-amber-300 text-slate-950 font-black text-xs sm:text-sm rounded-xl shadow-md transition-all active:scale-95 cursor-pointer shrink-0"
                 >
-                  Siguiente Caso ➔
+                  Siguiente Caso 
                 </button>
               </div>
             )}
@@ -461,7 +461,7 @@ export default function JuicioFalacias() {
                     onClick={() => dictarVeredicto(op)}
                     className={`p-4 rounded-2xl border-3 text-left transition-all duration-150 flex items-start gap-3 select-none active:scale-98 cursor-pointer ${estiloBoton}`}
                   >
-                    <span className="text-2xl mt-0.5">🔨</span>
+                    
                     <div>
                       <span className="font-black text-sm sm:text-base block">{op.label}</span>
                       <p className="text-xs opacity-80 mt-0.5 font-medium leading-tight">{op.desc}</p>

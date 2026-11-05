@@ -6,40 +6,40 @@ import { GameProgress } from '../../utils/gamification';
 
 const PALABRAS_AHORCADO = [
   // Nivel 1: Grados 1° a 3° (Lectoescritura y tradición oral)
-  { palabra: 'FABULA', pista: 'Historia con animales que nos enseña una moraleja.', icono: '🦊', nivel: 'Primaria' },
-  { palabra: 'POEMA', pista: 'Texto con música, versos y rimas que conmueve el alma.', icono: '📜', nivel: 'Primaria' },
-  { palabra: 'CUENTO', pista: 'Narración breve con inicio, nudo y desenlace.', icono: '📖', nivel: 'Primaria' },
-  { palabra: 'MONTAÑA', pista: 'Elevación natural de la tierra donde nacen los ríos.', icono: '🏔️', nivel: 'Primaria' },
-  { palabra: 'CANTO', pista: 'Melodía que hacen las aves y las personas con la voz.', icono: '🎶', nivel: 'Primaria' },
-  { palabra: 'ESCUELA', pista: 'Lugar mágico donde aprendemos a leer, escribir y convivir.', icono: '🎒', nivel: 'Primaria' },
-  { palabra: 'MADREMONTE', pista: 'Guardián mítico de los bosques y ríos en Colombia.', icono: '🌿', nivel: 'Primaria' },
-  { palabra: 'COLIBRI', pista: 'Ave diminuta y veloz que liba el néctar de las flores.', icono: '🌸', nivel: 'Primaria' },
-  { palabra: 'MARIPOSA', pista: 'Insecto alado de alas amarillas que revolotea en el jardín.', icono: '🦋', nivel: 'Primaria' },
-  { palabra: 'BOCHICA', pista: 'Dios civilizador muisca que creó el Salto del Tequendama.', icono: '⚡', nivel: 'Primaria' },
+  { palabra: 'FABULA', pista: 'Historia con animales que nos enseña una moraleja.', icono: '', nivel: 'Primaria' },
+  { palabra: 'POEMA', pista: 'Texto con música, versos y rimas que conmueve el alma.', icono: '', nivel: 'Primaria' },
+  { palabra: 'CUENTO', pista: 'Narración breve con inicio, nudo y desenlace.', icono: '', nivel: 'Primaria' },
+  { palabra: 'MONTAÑA', pista: 'Elevación natural de la tierra donde nacen los ríos.', icono: '', nivel: 'Primaria' },
+  { palabra: 'CANTO', pista: 'Melodía que hacen las aves y las personas con la voz.', icono: '', nivel: 'Primaria' },
+  { palabra: 'ESCUELA', pista: 'Lugar mágico donde aprendemos a leer, escribir y convivir.', icono: '', nivel: 'Primaria' },
+  { palabra: 'MADREMONTE', pista: 'Guardián mítico de los bosques y ríos en Colombia.', icono: '', nivel: 'Primaria' },
+  { palabra: 'COLIBRI', pista: 'Ave diminuta y veloz que liba el néctar de las flores.', icono: '', nivel: 'Primaria' },
+  { palabra: 'MARIPOSA', pista: 'Insecto alado de alas amarillas que revolotea en el jardín.', icono: '', nivel: 'Primaria' },
+  { palabra: 'BOCHICA', pista: 'Dios civilizador muisca que creó el Salto del Tequendama.', icono: '', nivel: 'Primaria' },
 
   // Nivel 2: Grados 4° a 6° (Figuras retóricas y géneros literarios)
-  { palabra: 'METAFORA', pista: 'Comparación poética directa entre dos realidades sin usar "como".', icono: '🎭', nivel: 'Intermedio' },
-  { palabra: 'SIMIL', pista: 'Comparación explícita que usa palabras como "parece" o "como".', icono: '🔍', nivel: 'Intermedio' },
-  { palabra: 'LEYENDA', pista: 'Relato tradicional que mezcla hechos históricos con fantasía popular.', icono: '✨', nivel: 'Intermedio' },
-  { palabra: 'NARRADOR', pista: 'Voz que cuenta la historia en una novela o crónica.', icono: '🗣️', nivel: 'Intermedio' },
-  { palabra: 'MORALEJA', pista: 'Lección o enseñanza moral al final de una fábula.', icono: '💡', nivel: 'Intermedio' },
-  { palabra: 'ESTROFA', pista: 'Conjunto de versos agrupados en un poema.', icono: '📑', nivel: 'Intermedio' },
-  { palabra: 'PROTAGONISTA', pista: 'Personaje principal alrededor del cual gira la trama.', icono: '🦸', nivel: 'Intermedio' },
-  { palabra: 'ONOMATOPEYA', pista: 'Palabra que imita un sonido real (ej: ¡tic-tac!, ¡guau!).', icono: '💥', nivel: 'Intermedio' },
-  { palabra: 'ANTITESIS', pista: 'Contraposición de dos ideas opuestas para enfatizar un sentido.', icono: '⚖️', nivel: 'Intermedio' },
-  { palabra: 'DICCIONARIO', pista: 'Libro maestro que compila y define el vocabulario del idioma.', icono: '📚', nivel: 'Intermedio' },
+  { palabra: 'METAFORA', pista: 'Comparación poética directa entre dos realidades sin usar "como".', icono: '', nivel: 'Intermedio' },
+  { palabra: 'SIMIL', pista: 'Comparación explícita que usa palabras como "parece" o "como".', icono: '', nivel: 'Intermedio' },
+  { palabra: 'LEYENDA', pista: 'Relato tradicional que mezcla hechos históricos con fantasía popular.', icono: '', nivel: 'Intermedio' },
+  { palabra: 'NARRADOR', pista: 'Voz que cuenta la historia en una novela o crónica.', icono: '', nivel: 'Intermedio' },
+  { palabra: 'MORALEJA', pista: 'Lección o enseñanza moral al final de una fábula.', icono: '', nivel: 'Intermedio' },
+  { palabra: 'ESTROFA', pista: 'Conjunto de versos agrupados en un poema.', icono: '', nivel: 'Intermedio' },
+  { palabra: 'PROTAGONISTA', pista: 'Personaje principal alrededor del cual gira la trama.', icono: '', nivel: 'Intermedio' },
+  { palabra: 'ONOMATOPEYA', pista: 'Palabra que imita un sonido real (ej: ¡tic-tac!, ¡guau!).', icono: '', nivel: 'Intermedio' },
+  { palabra: 'ANTITESIS', pista: 'Contraposición de dos ideas opuestas para enfatizar un sentido.', icono: '', nivel: 'Intermedio' },
+  { palabra: 'DICCIONARIO', pista: 'Libro maestro que compila y define el vocabulario del idioma.', icono: '', nivel: 'Intermedio' },
 
   // Nivel 3: Grados 7° a 9° (Crítica, oratoria, Boom y ensayo)
-  { palabra: 'HIPERBOLE', pista: 'Exageración intencional de la realidad para dar fuerza expresiva.', icono: '💥', nivel: 'Avanzado' },
-  { palabra: 'MACONDO', pista: 'Pueblo mítico e inmortal creado por Gabriel García Márquez.', icono: '🦋', nivel: 'Avanzado' },
-  { palabra: 'ARGUMENTO', pista: 'Razonamiento lógico que se emplea para probar o defender una tesis.', icono: '⚖️', nivel: 'Avanzado' },
-  { palabra: 'CRONICA', pista: 'Género híbrido que narra hechos reales con técnicas literarias.', icono: '📰', nivel: 'Avanzado' },
-  { palabra: 'PARADOJA', pista: 'Idea o hecho que parece contrario a la lógica pero encierra verdad.', icono: '🌀', nivel: 'Avanzado' },
-  { palabra: 'SINTAXIS', pista: 'Parte de la gramática que estudia cómo se combinan las palabras.', icono: '📐', nivel: 'Avanzado' },
-  { palabra: 'OXIMORON', pista: 'Unión de dos términos contradictorios como "silencio ensordecedor".', icono: '⚡', nivel: 'Avanzado' },
-  { palabra: 'ANAFORA', pista: 'Repetición intencional de una o más palabras al inicio de versos.', icono: '🔁', nivel: 'Avanzado' },
-  { palabra: 'VORAGINE', pista: 'Gran novela de la selva y las caucherías de José Eustasio Rivera.', icono: '🌳', nivel: 'Avanzado' },
-  { palabra: 'SOLILOQUIO', pista: 'Discurso reflexivo que un personaje pronuncia a solas en voz alta.', icono: '🎙️', nivel: 'Avanzado' }
+  { palabra: 'HIPERBOLE', pista: 'Exageración intencional de la realidad para dar fuerza expresiva.', icono: '', nivel: 'Avanzado' },
+  { palabra: 'MACONDO', pista: 'Pueblo mítico e inmortal creado por Gabriel García Márquez.', icono: '', nivel: 'Avanzado' },
+  { palabra: 'ARGUMENTO', pista: 'Razonamiento lógico que se emplea para probar o defender una tesis.', icono: '', nivel: 'Avanzado' },
+  { palabra: 'CRONICA', pista: 'Género híbrido que narra hechos reales con técnicas literarias.', icono: '', nivel: 'Avanzado' },
+  { palabra: 'PARADOJA', pista: 'Idea o hecho que parece contrario a la lógica pero encierra verdad.', icono: '', nivel: 'Avanzado' },
+  { palabra: 'SINTAXIS', pista: 'Parte de la gramática que estudia cómo se combinan las palabras.', icono: '', nivel: 'Avanzado' },
+  { palabra: 'OXIMORON', pista: 'Unión de dos términos contradictorios como "silencio ensordecedor".', icono: '', nivel: 'Avanzado' },
+  { palabra: 'ANAFORA', pista: 'Repetición intencional de una o más palabras al inicio de versos.', icono: '', nivel: 'Avanzado' },
+  { palabra: 'VORAGINE', pista: 'Gran novela de la selva y las caucherías de José Eustasio Rivera.', icono: '', nivel: 'Avanzado' },
+  { palabra: 'SOLILOQUIO', pista: 'Discurso reflexivo que un personaje pronuncia a solas en voz alta.', icono: '', nivel: 'Avanzado' }
 ];
 
 export default function AhorcadoLiterario({ gradoNumero = 1 }) {
@@ -125,13 +125,13 @@ export default function AhorcadoLiterario({ gradoNumero = 1 }) {
 
   // Gráfico visual del explorador según los errores (0 a 6)
   const etapasDibujo = [
-    '🏕️ Campamento seguro',
-    '🧭 El explorador busca el mapa',
-    '🔦 Enciende la linterna secreta',
-    '🎒 Revisa la brújula',
-    '⚠️ ¡Cuidado, se nubla el camino!',
-    '🚨 ¡Última oportunidad de rescate!',
-    '❌ ¡El misterio se esfumó!'
+    ' Campamento seguro',
+    ' El explorador busca el mapa',
+    ' Enciende la linterna secreta',
+    ' Revisa la brújula',
+    ' ¡Cuidado, se nubla el camino!',
+    ' ¡Última oportunidad de rescate!',
+    ' ¡El misterio se esfumó!'
   ];
 
   return (
@@ -148,7 +148,7 @@ export default function AhorcadoLiterario({ gradoNumero = 1 }) {
             </span>
           </div>
           <h3 className="text-2xl sm:text-3xl font-black text-white mt-1.5 flex items-center gap-2">
-            <span>🕵️</span> El Enigma de la Palabra Secreta
+             El Enigma de la Palabra Secreta
           </h3>
           <p className="text-xs sm:text-sm text-slate-300">
             Toca las letras para descifrar la palabra antes de que se agoten tus 6 oportunidades.
@@ -182,13 +182,13 @@ export default function AhorcadoLiterario({ gradoNumero = 1 }) {
         <div className="md:col-span-8 bg-slate-950/70 border border-indigo-800/80 p-4 sm:p-5 rounded-3xl space-y-2">
           <div className="flex items-center justify-between">
             <span className="text-xs font-black text-amber-400 uppercase tracking-wider flex items-center gap-1.5">
-              <span>💡</span> Pista del Profesor
+               Pista del Profesor
             </span>
             <button
               onClick={escucharPista}
               className="px-3 py-1 bg-indigo-900/80 hover:bg-indigo-800 text-indigo-200 border border-indigo-700 rounded-full text-xs font-bold transition-all flex items-center gap-1 cursor-pointer active:scale-95"
             >
-              <span>🔊</span> Escuchar pista
+               Escuchar pista
             </button>
           </div>
           <p className="text-white font-extrabold text-base sm:text-lg leading-relaxed">
@@ -202,19 +202,15 @@ export default function AhorcadoLiterario({ gradoNumero = 1 }) {
             {Array.from({ length: maxErrores }).map((_, i) => (
               <span
                 key={i}
-                className={`text-2xl transition-transform ${
-                  i < maxErrores - errores ? 'opacity-100 scale-100' : 'opacity-20 scale-75 grayscale'
-                }`}
-              >
-                ❤️
-              </span>
+                className={"w-3.5 h-3.5 rounded-full border " + (i < errores ? "bg-slate-800 border-slate-700" : "bg-rose-500 border-rose-400")}
+              />
             ))}
           </div>
           <span className="text-xs font-bold text-indigo-300">
             {etapasDibujo[errores]}
           </span>
           <span className="text-xs font-black text-amber-400 bg-amber-400/20 px-3 py-0.5 rounded-full border border-amber-400/40">
-            ⭐ {puntaje} Puntos
+             {puntaje} Puntos
           </span>
         </div>
       </div>
@@ -229,7 +225,7 @@ export default function AhorcadoLiterario({ gradoNumero = 1 }) {
                 key={i}
                 className={`w-12 h-16 sm:w-16 sm:h-20 rounded-2xl flex items-center justify-center font-black text-2xl sm:text-4xl shadow-xl transition-all border-b-4 ${
                   revelada
-                    ? 'bg-gradient-to-b from-amber-300 to-amber-500 text-amber-950 border-amber-600 animate-bounce'
+                    ? 'bg-gradient-to-b from-amber-300 to-amber-500 text-amber-950 border-amber-600 scale-102 shadow-md'
                     : 'bg-slate-800 text-transparent border-indigo-800'
                 }`}
               >
@@ -282,7 +278,7 @@ export default function AhorcadoLiterario({ gradoNumero = 1 }) {
               : 'bg-rose-950/70 border-rose-400 text-rose-200'
           }`}
         >
-          <span className="text-5xl block animate-bounce">{ganado ? '🏆' : '💨'}</span>
+          <span className="text-5xl block animate-bounce">{ganado ? '' : ''}</span>
           <h4 className="text-2xl font-black">
             {ganado ? '¡PALABRA DESCUBIERTA CON ÉXITO!' : '¡SE AGOTARON LOS INTENTOS!'}
           </h4>
@@ -293,7 +289,7 @@ export default function AhorcadoLiterario({ gradoNumero = 1 }) {
             onClick={() => setIndicePalabra((idx) => idx + 1)}
             className="px-8 py-3.5 bg-gradient-to-r from-amber-400 to-orange-500 hover:from-amber-500 hover:to-orange-600 text-slate-950 font-black text-base rounded-2xl shadow-xl transition-all cursor-pointer active:scale-95"
           >
-            Siguiente Palabra Enigmática ➔
+            Siguiente Palabra Enigmática 
           </button>
         </div>
       )}

@@ -45,3 +45,6 @@ __pycache__/
 *$py.class
 .venv/
 venv/
+
+# Temporary directories
+__temp_repo/

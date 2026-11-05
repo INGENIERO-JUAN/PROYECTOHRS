@@ -27,7 +27,7 @@ export default function GeneradorFichas({ guia, gradoNombre }) {
           onClick={imprimir}
           className="px-6 py-3.5 bg-gradient-to-r from-emerald-600 to-teal-700 hover:from-emerald-700 hover:to-teal-800 text-white font-black text-sm rounded-2xl shadow-lg border-b-4 border-emerald-900 active:border-b-0 active:translate-y-1 transition-all flex items-center gap-2 cursor-pointer"
         >
-          <span>🖨️</span> ¡Imprimir Hoja de Trabajo!
+           ¡Imprimir Hoja de Trabajo!
         </button>
       </div>
 
@@ -80,7 +80,7 @@ export default function GeneradorFichas({ guia, gradoNombre }) {
             "{guia.leccion?.lectura?.slice(0, 420)}..."
           </p>
           <p className="text-xs font-bold text-slate-600 pl-2">
-            ➔ <em>Instrucción: Lee el texto con atención y subraya con color rojo tres palabras que no conozcas. Búscalas con el profesor y escribe su significado abajo.</em>
+             <em>Instrucción: Lee el texto con atención y subraya con color rojo tres palabras que no conozcas. Búscalas con el profesor y escribe su significado abajo.</em>
           </p>
           <div className="border-b border-slate-200 h-6" />
           <div className="border-b border-slate-200 h-6" />
@@ -113,7 +113,7 @@ export default function GeneradorFichas({ guia, gradoNombre }) {
             Actividad 3. Expresión Artística y Creativa (15 Minutos)
           </h4>
           <p className="text-xs font-bold text-slate-600 pl-2">
-            ➔ <em>Dibuja en el recuadro una escena del relato y decórala con elementos naturales o colores.</em>
+             <em>Dibuja en el recuadro una escena del relato y decórala con elementos naturales o colores.</em>
           </p>
           <div className="w-full h-44 rounded-2xl border-2 border-dashed border-slate-300 flex items-center justify-center text-slate-400 text-xs font-bold">
             [Espacio para Dibujo e Ilustración del Estudiante]
@@ -125,13 +125,13 @@ export default function GeneradorFichas({ guia, gradoNombre }) {
           <span className="text-slate-500">¿Cómo sentiste tu trabajo hoy?:</span>
           <div className="flex gap-4">
             <label className="flex items-center gap-1.5 cursor-pointer">
-              <input type="checkbox" className="w-4 h-4 rounded" /> <span>😃 ¡Excelente!</span>
+              <input type="checkbox" className="w-4 h-4 rounded" /> <span> ¡Excelente!</span>
             </label>
             <label className="flex items-center gap-1.5 cursor-pointer">
-              <input type="checkbox" className="w-4 h-4 rounded" /> <span>🤔 ¡Aprendí algo nuevo!</span>
+              <input type="checkbox" className="w-4 h-4 rounded" /> <span> ¡Aprendí algo nuevo!</span>
             </label>
             <label className="flex items-center gap-1.5 cursor-pointer">
-              <input type="checkbox" className="w-4 h-4 rounded" /> <span>💪 ¡Puedo mejorar!</span>
+              <input type="checkbox" className="w-4 h-4 rounded" /> <span> ¡Puedo mejorar!</span>
             </label>
           </div>
           <div className="text-right">

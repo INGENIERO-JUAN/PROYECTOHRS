@@ -185,6 +185,11 @@ class SoundEffects {
     });
   }
 
+  playIncorrect() { this.playWrong(); }
+  playSuccess() { this.playCorrect(); }
+  playReward() { this.playFanfare(); }
+  playStart() { this.playClick(); }
+
   playLevelUp() {
     if (this.muted) return;
     this.init();

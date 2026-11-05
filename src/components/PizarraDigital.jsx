@@ -88,7 +88,7 @@ export default function PizarraDigital({ tituloGuia = "Pizarra Mágica del Saló
       {/* Cabecera de la Pizarra */}
       <div className="flex flex-col sm:flex-row items-center justify-between gap-4 border-b border-slate-700 pb-4">
         <div className="flex items-center gap-3">
-          <span className="text-3xl">🖍️</span>
+          <span className="text-3xl">️</span>
           <div>
             <h3 className="text-xl sm:text-2xl font-black text-amber-300">
               Pizarra Escolar Interactiva
@@ -128,14 +128,14 @@ export default function PizarraDigital({ tituloGuia = "Pizarra Mágica del Saló
                 : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
             }`}
           >
-            🧹 Borrador
+             Borrador
           </button>
 
           <button
             onClick={limpiarPizarra}
             className="px-3 py-1.5 bg-rose-600 hover:bg-rose-700 text-white rounded-xl text-xs font-black transition-all cursor-pointer"
           >
-            🗑️ Limpiar Todo
+            ️ Limpiar Todo
           </button>
         </div>
       </div>
@@ -156,7 +156,7 @@ export default function PizarraDigital({ tituloGuia = "Pizarra Mágica del Saló
       </div>
 
       <div className="flex items-center justify-between text-xs text-slate-400 font-medium">
-        <span>💡 Tip: En pantallas táctiles o tablets de la escuela, puedes dibujar directamente con tu dedo.</span>
+        <span> Tip: En pantallas táctiles o tablets de la escuela, puedes dibujar directamente con tu dedo.</span>
         <span>Grosor: 
           <input
             type="range"

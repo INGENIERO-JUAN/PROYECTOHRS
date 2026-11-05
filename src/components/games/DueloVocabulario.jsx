@@ -103,7 +103,7 @@ function RachaInsignia({ racha, multiplicador }) {
   if (racha < 2) return null;
   return (
     <div className="flex items-center gap-2 px-4 py-2 rounded-2xl bg-gradient-to-r from-orange-500/20 to-red-500/20 border border-orange-400/40 animate-pulse">
-      <span className="text-2xl" role="img" aria-label="fuego">🔥</span>
+      
       <div className="flex flex-col leading-tight">
         <span className="text-orange-300 text-xs font-semibold tracking-widest uppercase">Racha</span>
         <span className="text-white font-black text-lg">{racha} <span className="text-orange-400 text-sm">×{multiplicador}</span></span>
@@ -201,10 +201,10 @@ function PantallaFinal({ puntaje, correctas, totalRondas, mejorRacha, tiempoProm
   const porcentaje = Math.round((correctas / totalRondas) * 100);
 
   let mensaje, emoji;
-  if (porcentaje >= 90) { mensaje = '¡Rendimiento Excepcional!'; emoji = '🏆'; }
-  else if (porcentaje >= 70) { mensaje = '¡Muy Bien Hecho!'; emoji = '🌟'; }
-  else if (porcentaje >= 50) { mensaje = '¡Buen Esfuerzo!'; emoji = '💪'; }
-  else { mensaje = 'Sigue Practicando'; emoji = '📚'; }
+  if (porcentaje >= 90) { mensaje = '¡Rendimiento Excepcional!'; emoji = ''; }
+  else if (porcentaje >= 70) { mensaje = '¡Muy Bien Hecho!'; emoji = ''; }
+  else if (porcentaje >= 50) { mensaje = '¡Buen Esfuerzo!'; emoji = ''; }
+  else { mensaje = 'Sigue Practicando'; emoji = ''; }
 
   return (
     <div className="flex flex-col items-center gap-6 py-4 animate-in fade-in duration-700">
@@ -223,7 +223,7 @@ function PantallaFinal({ puntaje, correctas, totalRondas, mejorRacha, tiempoProm
         </div>
         <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-4 text-center border border-white/10">
           <div className="text-2xl font-black text-orange-400 flex items-center justify-center gap-1">
-            {mejorRacha} <span className="text-lg">🔥</span>
+            {mejorRacha} 
           </div>
           <div className="text-xs text-indigo-300 mt-1">Mejor Racha</div>
         </div>
@@ -307,6 +307,36 @@ export default function DueloVocabulario({ gradoNumero = 7 }) {
     return () => clearInterval(timerRef.current);
   }, [fase, rondaActual, estadoRespuesta]);
 
+  // ── Advance to next round ──
+  const avanzarRonda = useCallback(() => {
+    const siguiente = rondaActual + 1;
+    if (siguiente >= TOTAL_RONDAS) {
+      setFase('resultado');
+
+      // Use a small timeout so state has settled
+      setTimeout(() => {
+        // Read latest puntaje from ref-like pattern via functional state
+        setPuntaje((currentPuntaje) => {
+          if (currentPuntaje >= SCORE_CONFETI) {
+            try { lanzarConfeti(); } catch (_) { /* noop */ }
+            try { sounds.playFanfare(); } catch (_) { /* noop */ }
+          }
+          try {
+            GameProgress.addXP(currentPuntaje);
+            GameProgress.registrarVictoria(mejorRacha);
+          } catch (_) {}
+          return currentPuntaje;
+        });
+      }, 300);
+    } else {
+      setRondaActual(siguiente);
+      setSeleccion(null);
+      setEstadoRespuesta(null);
+      setPuntosGanados(0);
+      setMostrarPuntos(false);
+    }
+  }, [rondaActual, mejorRacha]);
+
   // ── Handle timeout ──
   useEffect(() => {
     if (tiempoRestante <= 0 && fase === 'jugando' && !estadoRespuesta) {
@@ -317,7 +347,7 @@ export default function DueloVocabulario({ gradoNumero = 7 }) {
       setTimeout(() => avanzarRonda(), 1800);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [tiempoRestante, fase, estadoRespuesta]);
+  }, [tiempoRestante, fase, estadoRespuesta, avanzarRonda]);
 
   // ── Handle answer selection ──
   const manejarRespuesta = useCallback((indice) => {
@@ -361,37 +391,7 @@ export default function DueloVocabulario({ gradoNumero = 7 }) {
 
     setTimeout(() => avanzarRonda(), 1800);
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [estadoRespuesta, seleccion, preguntas, rondaActual, racha]);
-
-  // ── Advance to next round ──
-  const avanzarRonda = useCallback(() => {
-    const siguiente = rondaActual + 1;
-    if (siguiente >= TOTAL_RONDAS) {
-      setFase('resultado');
-
-      // Use a small timeout so state has settled
-      setTimeout(() => {
-        // Read latest puntaje from ref-like pattern via functional state
-        setPuntaje((currentPuntaje) => {
-          if (currentPuntaje >= SCORE_CONFETI) {
-            try { lanzarConfeti(); } catch (_) { /* noop */ }
-            try { sounds.playFanfare(); } catch (_) { /* noop */ }
-          }
-          try {
-            GameProgress.addXP(currentPuntaje);
-            GameProgress.registrarVictoria(mejorRacha);
-          } catch (_) {}
-          return currentPuntaje;
-        });
-      }, 300);
-    } else {
-      setRondaActual(siguiente);
-      setSeleccion(null);
-      setEstadoRespuesta(null);
-      setPuntosGanados(0);
-      setMostrarPuntos(false);
-    }
-  }, [rondaActual]);
+  }, [estadoRespuesta, seleccion, preguntas, rondaActual, racha, avanzarRonda]);
 
   // ── Derived values ──
   const multiplicadorActual = Math.min(racha, MULTIPLICADOR_MAX);
@@ -422,7 +422,7 @@ export default function DueloVocabulario({ gradoNumero = 7 }) {
       {/* ── Intro Screen ── */}
       {fase === 'intro' && (
         <div className="flex-1 flex flex-col items-center justify-center gap-6 animate-in fade-in duration-500">
-          <div className="text-6xl">⚔️</div>
+          <div className="text-6xl"></div>
           <h1 className="text-3xl sm:text-4xl font-black text-white text-center">
             Duelo de <span className="bg-gradient-to-r from-violet-400 to-cyan-400 bg-clip-text text-transparent">Vocabulario</span>
           </h1>
@@ -430,10 +430,10 @@ export default function DueloVocabulario({ gradoNumero = 7 }) {
             {TOTAL_RONDAS} rondas · {TIEMPO_POR_PREGUNTA}s por pregunta · Grado {gradoNumero}
           </p>
           <div className="flex flex-wrap justify-center gap-3 text-xs text-indigo-400">
-            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">🎭 Figuras Literarias</span>
-            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">📝 Gramática</span>
-            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">📖 Vocabulario</span>
-            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10">📚 Literatura</span>
+            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10"> Figuras Literarias</span>
+            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10"> Gramática</span>
+            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10"> Vocabulario</span>
+            <span className="px-3 py-1 rounded-full bg-white/5 border border-white/10"> Literatura</span>
           </div>
           <button
             onClick={iniciarJuego}
@@ -508,7 +508,7 @@ export default function DueloVocabulario({ gradoNumero = 7 }) {
             }`}>
               {estadoRespuesta === 'correcta' && `¡Correcto! +${puntosGanados} pts`}
               {estadoRespuesta === 'incorrecta' && '¡Incorrecto! La respuesta correcta está resaltada.'}
-              {estadoRespuesta === 'timeout' && '⏰ ¡Se acabó el tiempo!'}
+              {estadoRespuesta === 'timeout' && ' ¡Se acabó el tiempo!'}
             </div>
           )}
 

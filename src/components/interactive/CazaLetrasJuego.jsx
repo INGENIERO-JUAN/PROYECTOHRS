@@ -187,22 +187,20 @@ export default function CazaLetrasJuego({ modo = 'vocales' }) {
             {configMision.titulo}
           </h3>
           <p className="text-xs sm:text-sm text-sky-200 mt-0.5">
-            🎯 {configMision.objetivoTexto}
+             {configMision.objetivoTexto}
           </p>
         </div>
 
         <div className="flex items-center gap-4">
           <div className="flex items-center gap-1 text-2xl">
             {Array.from({ length: 3 }).map((_, i) => (
-              <span key={i} className={i < vidas ? 'animate-pulse' : 'opacity-20 grayscale'}>
-                ❤️
-              </span>
+              
             ))}
           </div>
 
           <div className="bg-amber-400/20 border border-amber-400 px-4 py-2 rounded-2xl">
             <span className="text-amber-300 font-black text-base sm:text-lg">
-              ⭐ {puntos} / 300 pts
+               {puntos} / 300 pts
             </span>
           </div>
         </div>
@@ -212,7 +210,7 @@ export default function CazaLetrasJuego({ modo = 'vocales' }) {
       <div className="relative w-full h-80 sm:h-96 rounded-3xl overflow-hidden border-2 border-sky-800 bg-gradient-to-b from-slate-950 via-slate-900 to-sky-950 shadow-inner flex items-center justify-center">
         {!juegoActivo && !victoria && vidas > 0 && (
           <div className="text-center p-6 space-y-4 z-10 animate-fade-in">
-            <span className="text-6xl block animate-bounce">🫧</span>
+            
             <h4 className="text-2xl sm:text-3xl font-black text-white">
               ¿Listos para explotar burbujas en el tablero?
             </h4>
@@ -223,14 +221,14 @@ export default function CazaLetrasJuego({ modo = 'vocales' }) {
               onClick={iniciarJuego}
               className="px-8 py-4 bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-600 hover:to-green-700 text-white font-black text-lg rounded-2xl shadow-xl border-b-4 border-emerald-800 active:border-b-0 active:translate-y-1 transition-all cursor-pointer"
             >
-              ▶️ ¡Iniciar Misión en el Salón!
+              ▶ ¡Iniciar Misión en el Salón!
             </button>
           </div>
         )}
 
         {victoria && (
           <div className="text-center p-6 space-y-3 z-10 animate-fade-in">
-            <span className="text-6xl block animate-bounce">🏆</span>
+            
             <h4 className="text-3xl font-black text-emerald-400">
               ¡MISIÓN CUMPLIDA POR EL SALÓN!
             </h4>
@@ -241,14 +239,14 @@ export default function CazaLetrasJuego({ modo = 'vocales' }) {
               onClick={iniciarJuego}
               className="px-6 py-3 bg-amber-500 hover:bg-amber-600 text-slate-950 font-black rounded-xl text-sm transition-transform active:scale-95 cursor-pointer"
             >
-              🔄 Jugar Otra Ronda
+               Jugar Otra Ronda
             </button>
           </div>
         )}
 
         {!juegoActivo && vidas <= 0 && (
           <div className="text-center p-6 space-y-3 z-10 animate-fade-in">
-            <span className="text-6xl block">💨</span>
+            
             <h4 className="text-2xl font-black text-rose-400">
               ¡Se acabaron las vidas del equipo!
             </h4>
@@ -259,7 +257,7 @@ export default function CazaLetrasJuego({ modo = 'vocales' }) {
               onClick={iniciarJuego}
               className="px-6 py-3 bg-rose-600 hover:bg-rose-700 text-white font-black rounded-xl text-sm transition-transform active:scale-95 cursor-pointer"
             >
-              🔄 Reintentar Desafío
+               Reintentar Desafío
             </button>
           </div>
         )}

@@ -11,42 +11,42 @@ const BANCO_ORACIONES = [
     nivel: 'Básico',
     palabrasCorrectas: ['El', 'colibrí', 'vuela', 'entre', 'las', 'flores', 'silvestres'],
     pista: 'Ave diminuta que liba el néctar en el jardín.',
-    icono: '🌸'
+    icono: ''
   },
   {
     id: 2,
     nivel: 'Básico',
     palabrasCorrectas: ['La', 'maestra', 'lee', 'un', 'cuento', 'maravilloso', 'en', 'voz', 'alta'],
     pista: 'Actividad de narración oral en el salón de clases.',
-    icono: '📖'
+    icono: ''
   },
   {
     id: 3,
     nivel: 'Básico',
     palabrasCorrectas: ['El', 'campesino', 'cultiva', 'el', 'café', 'con', 'gran', 'esmero'],
     pista: 'Labor agrícola tradicional en las montañas colombianas.',
-    icono: '☕'
+    icono: ''
   },
   {
     id: 4,
     nivel: 'Básico',
     palabrasCorrectas: ['Los', 'niños', 'escriben', 'poemas', 'con', 'rimas', 'alegres'],
     pista: 'Creación literaria en el cuaderno de español.',
-    icono: '✏️'
+    icono: ''
   },
   {
     id: 5,
     nivel: 'Básico',
     palabrasCorrectas: ['El', 'sol', 'dorado', 'ilumina', 'la', 'mañana', 'en', 'el', 'campo'],
     pista: 'Amanecer radiante en la vereda.',
-    icono: '☀️'
+    icono: ''
   },
   {
     id: 6,
     nivel: 'Básico',
     palabrasCorrectas: ['La', 'mariposa', 'amarilla', 'visita', 'las', 'plantas', 'del', 'huerto'],
     pista: 'Insecto alado de bellos colores.',
-    icono: '🦋'
+    icono: ''
   },
 
   // Nivel 2: Mitos, fábulas y geografía (4° a 5° Grado)
@@ -55,42 +55,42 @@ const BANCO_ORACIONES = [
     nivel: 'Intermedio',
     palabrasCorrectas: ['La', 'Madremonte', 'protege', 'las', 'fuentes', 'de', 'agua', 'cristalina'],
     pista: 'Leyenda del folclor que cuida la naturaleza y los bosques.',
-    icono: '🌿'
+    icono: ''
   },
   {
     id: 8,
     nivel: 'Intermedio',
     palabrasCorrectas: ['Los', 'dioses', 'mayas', 'crearon', 'al', 'hombre', 'a', 'partir', 'del', 'maíz'],
     pista: 'Mito del Popol Vuh sobre el origen sagrado de la humanidad.',
-    icono: '🌽'
+    icono: ''
   },
   {
     id: 9,
     nivel: 'Intermedio',
     palabrasCorrectas: ['Las', 'fábulas', 'dejan', 'una', 'valiosa', 'moraleja', 'para', 'reflexionar'],
     pista: 'Narraciones protagonizadas por animales que enseñan virtudes.',
-    icono: '📜'
+    icono: ''
   },
   {
     id: 10,
     nivel: 'Intermedio',
     palabrasCorrectas: ['El', 'río', 'Magdalena', 'atraviesa', 'valles', 'fértiles', 'de', 'nuestro', 'país'],
     pista: 'Principal arteria fluvial que une las regiones de Colombia.',
-    icono: '🌊'
+    icono: ''
   },
   {
     id: 11,
     nivel: 'Intermedio',
     palabrasCorrectas: ['Bochica', 'abrió', 'el', 'Salto', 'del', 'Tequendama', 'con', 'su', 'báculo', 'sagrado'],
     pista: 'Mito muisca sobre el desagüe de la sabana de Bogotá.',
-    icono: '⚡'
+    icono: ''
   },
   {
     id: 12,
     nivel: 'Intermedio',
     palabrasCorrectas: ['Los', 'adjetivos', 'califican', 'las', 'cualidades', 'del', 'sustantivo', 'en', 'la', 'oración'],
     pista: 'Regla gramatical sobre las palabras que describen personas y cosas.',
-    icono: '📌'
+    icono: ''
   },
 
   // Nivel 3: Sintaxis avanzada, subordinadas y figuras literarias (6° a 9° Grado)
@@ -99,42 +99,42 @@ const BANCO_ORACIONES = [
     nivel: 'Avanzado',
     palabrasCorrectas: ['El', 'realismo', 'mágico', 'entrelaza', 'lo', 'cotidiano', 'con', 'lo', 'fantástico'],
     pista: 'Corriente literaria cumbre de Gabriel García Márquez.',
-    icono: '✨'
+    icono: ''
   },
   {
     id: 14,
     nivel: 'Avanzado',
     palabrasCorrectas: ['Una', 'metáfora', 'transforma', 'las', 'palabras', 'en', 'imágenes', 'poéticas'],
     pista: 'Recurso expresivo que compara realidades sin usar conectores explícitos.',
-    icono: '🎭'
+    icono: ''
   },
   {
     id: 15,
     nivel: 'Avanzado',
     palabrasCorrectas: ['Aunque', 'el', 'camino', 'sea', 'largo', 'el', 'conocimiento', 'ilumina', 'el', 'futuro'],
     pista: 'Oración subordinada concesiva sobre el valor de estudiar.',
-    icono: '💡'
+    icono: ''
   },
   {
     id: 16,
     nivel: 'Avanzado',
     palabrasCorrectas: ['Los', 'ensayos', 'argumentativos', 'defienden', 'una', 'tesis', 'con', 'evidencias', 'demostrables'],
     pista: 'Estructura formal del discurso persuasivo y crítico.',
-    icono: '📚'
+    icono: ''
   },
   {
     id: 17,
     nivel: 'Avanzado',
     palabrasCorrectas: ['La', 'Vorágine', 'denunció', 'la', 'explotación', 'cauchense', 'en', 'las', 'selvas', 'amazónicas'],
     pista: 'Novela de José Eustasio Rivera de 1924.',
-    icono: '🌳'
+    icono: ''
   },
   {
     id: 18,
     nivel: 'Avanzado',
     palabrasCorrectas: ['El', 'oxímoron', 'combina', 'dos', 'términos', 'opuestos', 'en', 'un', 'mismo', 'verso'],
     pista: 'Figura retórica que armoniza conceptos contrarios como fuego helado.',
-    icono: '⚖️'
+    icono: ''
   }
 ];
 
@@ -233,7 +233,7 @@ export default function OrganizadorOraciones() {
             </span>
           </div>
           <h3 className="text-2xl font-black text-slate-800 mt-1 flex items-center gap-2">
-            <span>🔤</span> ¡Ordena la Frase Revuelta!
+             ¡Ordena la Frase Revuelta!
           </h3>
           <p className="text-xs text-slate-500 font-semibold mt-0.5">
             Ubica las palabras en el orden gramatical y lógico correcto para formar una oración con sentido.
@@ -241,7 +241,7 @@ export default function OrganizadorOraciones() {
         </div>
 
         <div className="bg-orange-50 border border-orange-200 px-4 py-2 rounded-2xl flex items-center gap-2 text-sm font-black text-orange-900 shadow-sm">
-          <span>⭐ Puntos:</span>
+          <span> Puntos:</span>
           <span>{puntaje}</span>
         </div>
       </div>
@@ -258,7 +258,7 @@ export default function OrganizadorOraciones() {
               onClick={escucharPista}
               className="inline-flex items-center gap-1 text-[11px] font-black text-orange-950 bg-orange-200/90 hover:bg-orange-300 px-2.5 py-0.5 rounded-full cursor-pointer transition-transform active:scale-95 shadow-sm"
             >
-              <span>🔊</span> Escuchar en voz alta
+               Escuchar en voz alta
             </button>
           </div>
           <p className="text-slate-800 font-bold text-sm sm:text-base leading-snug mt-0.5">
@@ -320,7 +320,7 @@ export default function OrganizadorOraciones() {
       {/* Feedback y Siguiente */}
       {acierto === true && (
         <div className="bg-emerald-50 border-2 border-emerald-300 p-5 rounded-2xl text-center animate-fade-in space-y-3">
-          <span className="text-3xl block">🎉</span>
+          
           <h4 className="text-lg font-black text-emerald-950">
             ¡Oración estructurada con total coherencia y cohesión!
           </h4>
@@ -328,7 +328,7 @@ export default function OrganizadorOraciones() {
             onClick={siguiente}
             className="px-6 py-2.5 bg-emerald-600 hover:bg-emerald-700 text-white font-black text-sm rounded-xl shadow-md transition-all cursor-pointer active:scale-95 animate-pulse"
           >
-            Siguiente Oración ➔
+            Siguiente Oración 
           </button>
         </div>
       )}
@@ -336,13 +336,13 @@ export default function OrganizadorOraciones() {
       {acierto === false && (
         <div className="bg-rose-50 border-2 border-rose-300 p-4 rounded-2xl text-center animate-fade-in space-y-2">
           <p className="text-rose-950 font-bold text-sm">
-            ❌ El orden de las palabras no concuerda gramaticalmente. Toca las palabras para reorganizarlas.
+             El orden de las palabras no concuerda gramaticalmente. Toca las palabras para reorganizarlas.
           </p>
           <button
             onClick={reiniciarActual}
             className="px-4 py-1.5 bg-rose-600 hover:bg-rose-700 text-white font-black text-xs rounded-xl shadow-sm cursor-pointer transition-all active:scale-95"
           >
-            🔄 Limpiar y Reintentar
+             Limpiar y Reintentar
           </button>
         </div>
       )}

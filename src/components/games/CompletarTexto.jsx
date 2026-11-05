@@ -462,7 +462,7 @@ export default function CompletarTexto({ gradoNumero = 7 }) {
   if (juegoTerminado) {
     return (
       <div className="bg-gradient-to-br from-violet-50 to-indigo-50 rounded-3xl p-6 sm:p-8 shadow-xl border-2 border-violet-200 text-center">
-        <div className="text-6xl mb-4">🏆</div>
+        <div className="text-6xl mb-4"></div>
         <h2 className="text-3xl font-black text-violet-800 mb-2">¡Texto Completado!</h2>
         <p className="text-lg text-slate-600 mb-6">
           Has completado todos los pasajes literarios
@@ -497,7 +497,7 @@ export default function CompletarTexto({ gradoNumero = 7 }) {
       <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 mb-5">
         <div>
           <h2 className="text-xl sm:text-2xl font-black text-violet-800 tracking-tight">
-            📖 Completar el Texto
+             Completar el Texto
           </h2>
           <p className="text-sm text-slate-500 mt-0.5">
             Grado {gradoNumero} · Pasaje {pasajeActual + 1} de {listaPasajes.length}
@@ -602,10 +602,10 @@ export default function CompletarTexto({ gradoNumero = 7 }) {
       {/* Instruction */}
       <p className="text-sm text-slate-500 text-center mb-3">
         {blankSeleccionado !== null
-          ? '👆 Ahora selecciona una palabra del banco'
+          ? ' Ahora selecciona una palabra del banco'
           : palabraSeleccionada
-            ? '👇 Ahora haz clic en el espacio donde va la palabra'
-            : '📝 Selecciona un espacio vacío o una palabra para comenzar'}
+            ? ' Ahora haz clic en el espacio donde va la palabra'
+            : ' Selecciona un espacio vacío o una palabra para comenzar'}
       </p>
 
       {/* Word bank */}
@@ -639,7 +639,7 @@ export default function CompletarTexto({ gradoNumero = 7 }) {
         <div className="mt-4 text-center animate-bounce">
           <div className="inline-block bg-emerald-100 border-2 border-emerald-300 rounded-2xl px-6 py-3">
             <p className="text-emerald-700 font-bold text-lg">
-              ✅ ¡Pasaje completado!
+               ¡Pasaje completado!
               {bonusTiempo > 0 && (
                 <span className="text-emerald-500 ml-2 text-sm">+{bonusTiempo} bonus por tiempo</span>
               )}
